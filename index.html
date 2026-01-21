@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Life Reset</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>2026 Life Reset</h1>
+            <p class="subtitle">Your life is 100% your responsibility.</p>
+        </header>
+
+        <section class="reminder-section">
+            <h2>Perspective</h2>
+            <div class="card">
+                <h3>Depression is often just:</h3>
+                <ul>
+                    <li>No gym</li>
+                    <li>No time out</li>
+                    <li>No enough sleep</li>
+                    <li>Bad diet</li>
+                    <li>Too much screentime</li>
+                    <li>Zero purpose</li>
+                    <li>Toxic bonds</li>
+                    <li>No time with family</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tracker-section">
+            <h2>Daily Habit Tracker</h2>
+            <p id="date-display"></p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar">0%</div>
+            </div>
+            <div id="habits-list" class="habits-list">
+                <!-- Habits will be injected here by JS -->
+            </div>
+        </section>
+
+        <section class="controls">
+            <button id="reminder-btn">Get a Reminder</button>
+            <button id="reset-btn">Reset Day</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
