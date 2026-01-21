@@ -34,7 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Date
     const now = new Date();
     const todayDisplay = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-    const todayKey = now.toISOString().split('T')[0]; // YYYY-MM-DD format for stability
+
+    // Use local time for the key, not UTC (toISOString uses UTC)
+    // Format: YYYY-MM-DD
+    const todayKey = now.getFullYear() + '-' +
+                     String(now.getMonth() + 1).padStart(2, '0') + '-' +
+                     String(now.getDate()).padStart(2, '0');
 
     dateDisplay.textContent = todayDisplay;
 
