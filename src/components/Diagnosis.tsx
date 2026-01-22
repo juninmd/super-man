@@ -1,14 +1,14 @@
 import { AlertCircle, Skull } from 'lucide-react';
 
 const PROBLEMS = [
-  "Sem treino",
-  "Sem tempo livre",
-  "Sono insuficiente",
-  "Dieta ruim",
-  "Excesso de telas",
-  "Sem propósito",
-  "Laços tóxicos",
-  "Sem tempo com a família"
+  "Pornografia e Masturbação",
+  "Comida Lixo (Açúcar/Óleos)",
+  "Sedentarismo & Corpo Fraco",
+  "Procrastinação Crônica",
+  "Vício em Redes Sociais",
+  "Falta de Propósito",
+  "Mentalidade de Vítima",
+  "Gastos Emocionais"
 ];
 
 const Diagnosis = () => {
@@ -20,9 +20,9 @@ const Diagnosis = () => {
         textAlign: 'center'
     }}>
       <div style={{
-          background: 'rgba(239, 68, 68, 0.1)',
+          background: 'rgba(239, 68, 68, 0.05)',
           border: '1px solid rgba(239, 68, 68, 0.2)',
-          borderRadius: '24px',
+          borderRadius: '4px',
           padding: '40px',
           backdropFilter: 'blur(10px)',
           marginBottom: '40px'
@@ -30,22 +30,24 @@ const Diagnosis = () => {
         <h2 style={{
             fontSize: '2rem',
             marginBottom: '30px',
-            color: '#fca5a5', // light red
+            color: '#ef4444',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: '12px'
+            gap: '12px',
+            fontWeight: 800,
+            textTransform: 'uppercase'
         }}>
-           <AlertCircle /> O Diagnóstico
+           <AlertCircle /> Identifique o Veneno
         </h2>
 
         <p style={{ fontSize: '1.2rem', marginBottom: '20px', color: 'var(--text-secondary)' }}>
-          A DEPRESSÃO muitas vezes é alimentada por:
+          Se você se sente perdido, fraco ou deprimido, provavelmente está consumindo:
         </p>
 
         <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
             gap: '15px',
             textAlign: 'left',
             marginBottom: '40px'
@@ -55,10 +57,11 @@ const Diagnosis = () => {
                     display: 'flex',
                     alignItems: 'center',
                     gap: '10px',
-                    color: '#fecaca', // very light red
-                    background: 'rgba(0,0,0,0.2)',
-                    padding: '10px 15px',
-                    borderRadius: '8px'
+                    color: '#fecaca',
+                    background: 'rgba(0,0,0,0.3)',
+                    padding: '15px',
+                    borderRadius: '4px',
+                    borderLeft: '3px solid #ef4444'
                 }}>
                     <span style={{ color: '#ef4444' }}>✕</span> {problem}
                 </div>
@@ -66,25 +69,25 @@ const Diagnosis = () => {
         </div>
 
         <div style={{
-            borderTop: '1px solid rgba(255,255,255,0.1)',
+            borderTop: '1px solid rgba(239, 68, 68, 0.2)',
             paddingTop: '30px',
             marginTop: '10px'
         }}>
             <p style={{
-                fontSize: '1.5rem',
+                fontSize: '1.4rem',
                 fontWeight: 'bold',
                 color: 'var(--text-primary)',
                 letterSpacing: '0.5px'
             }}>
-                Sua vida é 100% sua responsabilidade.
+                Você não está "triste". <span style={{color:'#ef4444'}}>Você está desregulado.</span>
             </p>
         </div>
       </div>
 
       <div style={{
           background: 'rgba(0, 0, 0, 0.3)',
-          border: '1px solid rgba(255, 255, 255, 0.1)',
-          borderRadius: '24px',
+          border: '1px solid rgba(255, 255, 255, 0.05)',
+          borderRadius: '4px',
           padding: '40px',
           backdropFilter: 'blur(10px)'
       }}>
@@ -95,14 +98,16 @@ const Diagnosis = () => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: '12px'
+            gap: '12px',
+            fontWeight: 700
           }}>
-             <Skull size={28} /> O Inimigo é o Conforto
+             <Skull size={28} color="var(--primary-color)" /> Morte à Mediocridade
           </h3>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.6', maxWidth: '600px', margin: '0 auto' }}>
-              A mediocridade é uma doença silenciosa. Ela te diz que "está tudo bem" ser fraco,
-              que você merece descansar sem ter trabalhado. Rejeite o caminho fácil.
-              O crescimento só existe fora da zona de conforto.
+          <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.8', maxWidth: '600px', margin: '0 auto' }}>
+              O conforto moderno está castrando homens. Ele te diz que "está tudo bem" ser fraco,
+              que você merece descansar sem ter conquistado nada. <br/><br/>
+              <strong style={{color: 'var(--text-primary)'}}>Isso é mentira.</strong><br/>
+              O respeito é conquistado. A força é construída. O dinheiro é impresso por quem resolve problemas.
           </p>
       </div>
     </section>
