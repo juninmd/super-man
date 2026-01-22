@@ -1,23 +1,36 @@
 # 2026 Life Reset
 
-A simple, local-first habit tracker and motivational app based on the concept of "2026 Life Reset".
+A modern, local-first habit tracker and motivational app based on the concept of "2026 Life Reset".
 
 ## Features
 
-- **Perspective Reminder**: A section reminding you of the factors often contributing to depression.
-- **Daily Habit Tracker**: A list of 12 positive habits to track daily.
-- **Progress Tracking**: Visual progress bar for daily completion.
-- **Local Persistence**: Your daily progress is saved in your browser's LocalStorage and resets automatically the next day.
-- **Reminders**: Built-in reminder feature with motivational quotes (requires browser notification permission).
-
-## How to Use
-
-1. Clone or download this repository.
-2. Open `index.html` in your web browser.
-3. Start checking off your habits!
+- **Hero Section**: Motivational landing with smooth scroll.
+- **Perspective**: Grid layout of lifestyle factors affecting mental health.
+- **Daily Protocol**: Interactive habit tracker with streak counting.
+- **Gamification**: Visual progress bar, confetti on completion, and streak tracking.
+- **Local Persistence**: Data saved in browser LocalStorage.
+- **Modern UI**: Dark mode aesthetic, responsive design, animations.
 
 ## Tech Stack
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
+- **Framework**: React + TypeScript
+- **Build Tool**: Vite
+- **Package Manager**: pnpm
+- **Icons**: Lucide React
+- **Effects**: canvas-confetti
+
+## How to Use
+
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+3. Run development server:
+   ```bash
+   pnpm dev
+   ```
+4. Build for production:
+   ```bash
+   pnpm run build
+   ```
