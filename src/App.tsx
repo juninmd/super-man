@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Hero from './components/Hero';
 import Diagnosis from './components/Diagnosis';
 import Perspective from './components/Perspective';
+import Guide from './components/Guide';
 import Tracker from './components/Tracker';
 import ToastContainer, { Toast } from './components/Toast';
 
@@ -21,12 +22,13 @@ function App() {
       <Hero />
       <Diagnosis />
       <Perspective />
+      <Guide />
       <Tracker addToast={addToast} />
       <ToastContainer toasts={toasts} />
 
       <footer>
         <p style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-secondary)', fontSize: '0.8rem', opacity: 0.6 }}>
-          &copy; 2026 Protocolo de Reinício de Vida. Permaneça Forte.
+          &copy; 2026 Protocolo Mqsculus. A dor é temporária, a glória é eterna.
         </p>
       </footer>
     </div>

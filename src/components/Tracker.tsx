@@ -7,36 +7,33 @@ interface TrackerProps {
 }
 
 const HABITS = [
-  "Comer limpo",
-  "Caminhar mais",
-  "Levantar pesos",
-  "Dormir mais cedo",
-  "Acordar às 5h",
-  "Banho gelado",
-  "Jejum matinal",
-  "Beber água",
-  "Ler 10 páginas",
+  "Zero Pornografia/Masturbação",
+  "Treino Pesado (Musculação/Luta)",
+  "Dieta Limpa (Sem açúcar/processados)",
+  "Cardio (Correr/Caminhar)",
+  "Leitura Estratégica (30min)",
+  "Deep Work (Trabalho Focado)",
+  "Banho Gelado",
+  "Sem Redes Sociais Inúteis",
   "Planejar o dia seguinte",
-  "Falar menos",
-  "Ouvir mais",
-  "Tempo sozinho",
-  "Amar sua família",
-  "Evitar pensamentos negativos"
+  "Investir em Conhecimento",
+  "Silêncio & Reflexão",
+  "Hidratação (3L+)"
 ];
 
 const REMINDERS = [
-  "Sofremos mais na imaginação do que na realidade.",
-  "A melhor vingança é não ser assim.",
-  "Não perca mais tempo discutindo sobre o que um bom homem deve ser. Seja um.",
-  "Se não é certo, não faça; se não é verdade, não diga.",
-  "Você tem poder sobre sua mente - não sobre eventos externos. Perceba isso e encontrará força.",
-  "Disciplina é liberdade.",
-  "Não deseje que fosse mais fácil, deseje que você fosse melhor.",
-  "Permaneça firme.",
-  "Memento Mori: lembre-se que você vai morrer.",
-  "Ame seu destino (Amor Fati).",
-  "A felicidade da sua vida depende da qualidade dos seus pensamentos.",
-  "Nenhum homem é livre se não for mestre de si mesmo."
+  "Ninguém virá te salvar. É responsabilidade sua.",
+  "Dor é o preço da entrada para uma nova vida.",
+  "Enquanto você dorme, seu inimigo treina.",
+  "Não seja escravo das suas emoções. Aja com a razão.",
+  "O que você faz no escuro define quem você é na luz.",
+  "Disciplina é fazer o que odeia como se amasse.",
+  "Seja perigoso, mas controlado.",
+  "A pobreza é, na maioria das vezes, uma doença mental curável.",
+  "Sua rede define seu patrimônio. Afaste-se de perdedores.",
+  "Não conte seus planos. Mostre seus resultados.",
+  "A morte sorri para todos; tudo o que um homem pode fazer é sorrir de volta.",
+  "Não aceite a versão 'beta' de si mesmo."
 ];
 
 const Tracker = ({ addToast }: TrackerProps) => {
@@ -139,9 +136,9 @@ const Tracker = ({ addToast }: TrackerProps) => {
     <section className="tracker-section" id="tracker" style={{
         maxWidth: '800px',
         margin: '80px auto',
-        background: 'rgba(30, 41, 59, 0.5)',
+        background: 'rgba(24, 24, 27, 0.6)',
         padding: '40px',
-        borderRadius: '24px',
+        borderRadius: '4px',
         border: '1px solid rgba(255,255,255,0.05)',
         backdropFilter: 'blur(10px)'
     }}>
@@ -153,14 +150,14 @@ const Tracker = ({ addToast }: TrackerProps) => {
           flexWrap: 'wrap',
           gap: '20px'
       }}>
-        <h2 style={{ fontSize: '2rem' }}>Protocolo Diário</h2>
+        <h2 style={{ fontSize: '2rem', textTransform: 'uppercase', fontWeight: 800 }}>O Campo de Batalha</h2>
         <div className="date-container" style={{ textAlign: 'right' }}>
             <span style={{ display: 'block', color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '5px' }}>{todayDisplay}</span>
             <div className="streak-badge" style={{
                 background: 'rgba(245, 158, 11, 0.1)',
                 color: '#f59e0b',
                 padding: '5px 12px',
-                borderRadius: '20px',
+                borderRadius: '4px',
                 fontWeight: 600,
                 fontSize: '0.9rem',
                 display: 'inline-flex',
@@ -168,19 +165,19 @@ const Tracker = ({ addToast }: TrackerProps) => {
                 gap: '5px',
                 border: '1px solid rgba(245, 158, 11, 0.2)'
             }}>
-                <Flame size={16} /> {streak} Dias de Sequência
+                <Flame size={16} /> {streak} Dias de Foco
             </div>
         </div>
       </div>
 
       <div className="progress-wrapper" style={{ marginBottom: '30px' }}>
         <div className="progress-text" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px', fontSize: '0.9rem', fontWeight: 600 }}>
-            <span>Progresso</span>
+            <span>Status da Missão</span>
             <span>{progressPercentage}%</span>
         </div>
-        <div className="progress-container" style={{ background: 'rgba(255,255,255,0.1)', borderRadius: '10px', height: '12px', overflow: 'hidden' }}>
+        <div className="progress-container" style={{ background: 'rgba(255,255,255,0.05)', borderRadius: '2px', height: '12px', overflow: 'hidden' }}>
             <div className="progress-bar" style={{
-                background: 'linear-gradient(90deg, var(--primary-color), #60a5fa)',
+                background: 'var(--primary-color)',
                 height: '100%',
                 width: `${progressPercentage}%`,
                 transition: 'width 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
@@ -196,17 +193,18 @@ const Tracker = ({ addToast }: TrackerProps) => {
                 className={`habit-item ${checkedState[index] ? 'completed' : ''}`}
                 onClick={() => handleOnChange(index)}
                 style={{
-                    background: checkedState[index] ? 'rgba(16, 185, 129, 0.1)' : 'var(--surface-color)',
+                    background: checkedState[index] ? 'rgba(16, 185, 129, 0.1)' : 'rgba(255,255,255,0.03)',
                     borderColor: checkedState[index] ? 'rgba(16, 185, 129, 0.2)' : 'transparent',
-                    padding: '15px 20px',
-                    borderRadius: '12px',
+                    padding: '20px 25px',
+                    borderRadius: '4px',
                     display: 'flex',
                     alignItems: 'center',
                     cursor: 'pointer',
                     transition: 'all 0.2s',
                     borderWidth: '1px',
                     borderStyle: 'solid',
-                    userSelect: 'none'
+                    userSelect: 'none',
+                    borderLeft: checkedState[index] ? '4px solid var(--success-color)' : '4px solid transparent'
                 }}
              >
                 <div className="checkbox-custom" style={{
@@ -214,8 +212,8 @@ const Tracker = ({ addToast }: TrackerProps) => {
                     height: '24px',
                     border: `2px solid ${checkedState[index] ? 'var(--success-color)' : 'var(--text-secondary)'}`,
                     backgroundColor: checkedState[index] ? 'var(--success-color)' : 'transparent',
-                    borderRadius: '6px',
-                    marginRight: '15px',
+                    borderRadius: '4px',
+                    marginRight: '20px',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -230,7 +228,8 @@ const Tracker = ({ addToast }: TrackerProps) => {
                     cursor: 'pointer',
                     flexGrow: 1,
                     textDecoration: checkedState[index] ? 'line-through' : 'none',
-                    color: checkedState[index] ? 'var(--text-secondary)' : 'var(--text-primary)'
+                    color: checkedState[index] ? 'var(--text-secondary)' : 'var(--text-primary)',
+                    fontWeight: checkedState[index] ? 400 : 500
                 }}>
                     {habit}
                 </label>

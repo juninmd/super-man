@@ -19,7 +19,12 @@ const Perspective = () => {
   return (
     <section className="perspective-section" id="perspective" style={{ padding: '40px 0' }}>
       <div className="section-header" style={{ textAlign: 'center', marginBottom: '50px' }}>
-        <h2 style={{ fontSize: '2.5rem', marginBottom: '10px' }}>A Perspectiva</h2>
+        <h2 style={{
+          fontSize: '2.5rem',
+          marginBottom: '10px',
+          textTransform: 'uppercase',
+          fontWeight: 800
+        }}>A Perspectiva</h2>
         <p style={{ color: 'var(--text-secondary)' }}>O obstáculo é o caminho.</p>
       </div>
       <div className="cards-grid" style={{
