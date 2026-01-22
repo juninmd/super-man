@@ -1,8 +1,8 @@
-# 2026 Life Reset
+# React + TypeScript + Vite
 
 A modern, local-first habit tracker and motivational app based on the concept of "2026 Life Reset".
 
-## Features
+Currently, two official plugins are available:
 
 - **Hero Section**: Motivational landing with smooth scroll.
 - **Perspective**: Grid layout of lifestyle factors affecting mental health.
