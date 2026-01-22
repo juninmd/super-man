@@ -12,8 +12,11 @@ const HABITS = [
   "Levantar pesos",
   "Dormir mais cedo",
   "Acordar às 5h",
+  "Banho gelado",
   "Jejum matinal",
   "Beber água",
+  "Ler 10 páginas",
+  "Planejar o dia seguinte",
   "Falar menos",
   "Ouvir mais",
   "Tempo sozinho",
@@ -29,7 +32,11 @@ const REMINDERS = [
   "Você tem poder sobre sua mente - não sobre eventos externos. Perceba isso e encontrará força.",
   "Disciplina é liberdade.",
   "Não deseje que fosse mais fácil, deseje que você fosse melhor.",
-  "Permaneça firme."
+  "Permaneça firme.",
+  "Memento Mori: lembre-se que você vai morrer.",
+  "Ame seu destino (Amor Fati).",
+  "A felicidade da sua vida depende da qualidade dos seus pensamentos.",
+  "Nenhum homem é livre se não for mestre de si mesmo."
 ];
 
 const Tracker = ({ addToast }: TrackerProps) => {
@@ -47,15 +54,24 @@ const Tracker = ({ addToast }: TrackerProps) => {
 
     if (storedDate !== todayKey) {
         // New day logic
-        // If the previous day was missed, streak might reset (simplified logic here)
-        // For now, we just reset the checks
         localStorage.setItem('habitDate', todayKey);
         localStorage.setItem('habitState', JSON.stringify([])); // clear for new day
         setCheckedState(new Array(HABITS.length).fill(false));
     } else {
         // Same day, load state
+        // If habits length changed, we need to handle it gracefully
         if (storedState.length === HABITS.length) {
             setCheckedState(storedState);
+        } else {
+             // If array length mismatch (e.g. habits added), try to preserve what we can or reset
+             // For simplicity, if structure changes, we might reset or pad.
+             // Let's just pad with false if new habits added
+             if (storedState.length < HABITS.length) {
+                 const newArr = [...storedState, ...new Array(HABITS.length - storedState.length).fill(false)];
+                 setCheckedState(newArr);
+             } else {
+                 setCheckedState(new Array(HABITS.length).fill(false));
+             }
         }
     }
     setStreak(storedStreak);
