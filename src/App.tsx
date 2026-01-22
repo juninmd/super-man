@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Hero from './components/Hero';
+import Diagnosis from './components/Diagnosis';
 import Perspective from './components/Perspective';
 import Tracker from './components/Tracker';
 import ToastContainer, { Toast } from './components/Toast';
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="app-container">
       <Hero />
+      <Diagnosis />
       <Perspective />
       <Tracker addToast={addToast} />
       <ToastContainer toasts={toasts} />

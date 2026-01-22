@@ -7,18 +7,18 @@ interface TrackerProps {
 }
 
 const HABITS = [
-  "Eat clean (Whole foods)",
-  "45m Physical Training",
-  "Read 10 pages",
-  "No social media before noon",
-  "Deep Work (90m)",
-  "Cold Shower",
-  "Drink 3L Water",
-  "Plan tomorrow",
-  "Gratitude Journal",
+  "Eat clean",
+  "Walk more",
+  "Lift weights",
+  "Sleep earlier",
+  "Wake up at 5 AM",
+  "Fast in the morning",
+  "Drink water",
+  "Talk less",
+  "Listen more",
   "Spend time alone",
-  "Connect with family",
-  "Sleep 7+ Hours"
+  "Love your family",
+  "Avoid negative thoughts"
 ];
 
 const REMINDERS = [
