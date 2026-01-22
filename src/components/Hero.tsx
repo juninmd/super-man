@@ -37,7 +37,7 @@ const Hero = () => {
           marginBottom: '2rem',
           maxWidth: '600px',
           margin: '0 auto 2rem auto'
-        }}>Your life is 100% your responsibility.</p>
+        }}>Forge your own path. Take absolute ownership.</p>
         <button
           onClick={scrollToTracker}
           style={{
@@ -64,7 +64,7 @@ const Hero = () => {
             e.currentTarget.style.boxShadow = '0 0 20px var(--primary-glow)';
           }}
         >
-          Start The Reset <ArrowDown size={20} />
+          Begin The Protocol <ArrowDown size={20} />
         </button>
       </div>
     </header>

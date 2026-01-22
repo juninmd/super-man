@@ -1,14 +1,14 @@
 import { Dumbbell, PauseCircle, Moon, Utensils, Smartphone, Target, ShieldBan, Heart } from 'lucide-react';
 
 const cards = [
-  { icon: Dumbbell, title: "Physical Activity", text: "No gym leads to stagnation." },
-  { icon: PauseCircle, title: "Rest & Recovery", text: "No time out leads to burnout." },
-  { icon: Moon, title: "Sleep Hygiene", text: "Not enough sleep kills focus." },
-  { icon: Utensils, title: "Nutrition", text: "Bad diet affects your mind." },
-  { icon: Smartphone, title: "Digital Detox", text: "Too much screentime drains dopamine." },
-  { icon: Target, title: "Purpose", text: "Zero purpose leads to despair." },
-  { icon: ShieldBan, title: "Environment", text: "Toxic bonds hold you back." },
-  { icon: Heart, title: "Connection", text: "Family time is non-negotiable." },
+  { icon: Dumbbell, title: "Physical Mastery", text: "Weak body, weak mind. Train daily." },
+  { icon: PauseCircle, title: "Strategic Rest", text: "Burnout is for the unprepared. Recover." },
+  { icon: Moon, title: "Deep Sleep", text: "Sleep is your superpower. Prioritize it." },
+  { icon: Utensils, title: "Fuel, Not Food", text: "Garbage in, garbage out. Eat for performance." },
+  { icon: Smartphone, title: "Digital Discipline", text: "Don't let the algorithm control your life." },
+  { icon: Target, title: "Clear Mission", text: "A man without a mission is lost. Find yours." },
+  { icon: ShieldBan, title: "Inner Circle", text: "Cut dead weight. Surround yourself with strength." },
+  { icon: Heart, title: "Loyalty & Duty", text: "Protect and provide. Family comes first." },
 ];
 
 const Perspective = () => {
@@ -16,7 +16,7 @@ const Perspective = () => {
     <section className="perspective-section" id="perspective" style={{ padding: '40px 0' }}>
       <div className="section-header" style={{ textAlign: 'center', marginBottom: '50px' }}>
         <h2 style={{ fontSize: '2.5rem', marginBottom: '10px' }}>The Perspective</h2>
-        <p style={{ color: 'var(--text-secondary)' }}>Depression is often a signal. Listen to it.</p>
+        <p style={{ color: 'var(--text-secondary)' }}>The obstacle is the way.</p>
       </div>
       <div className="cards-grid" style={{
         display: 'grid',

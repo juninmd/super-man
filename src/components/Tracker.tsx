@@ -7,29 +7,29 @@ interface TrackerProps {
 }
 
 const HABITS = [
-  "Eat clean",
-  "Walk more",
-  "Lift weights",
-  "Sleep earlier",
-  "Wake up at 5 AM",
-  "Fast in the morning",
-  "Drink water",
-  "Talk less",
-  "Listen more",
+  "Eat clean (Whole foods)",
+  "45m Physical Training",
+  "Read 10 pages",
+  "No social media before noon",
+  "Deep Work (90m)",
+  "Cold Shower",
+  "Drink 3L Water",
+  "Plan tomorrow",
+  "Gratitude Journal",
   "Spend time alone",
-  "Love your family",
-  "Avoid negative thoughts"
+  "Connect with family",
+  "Sleep 7+ Hours"
 ];
 
 const REMINDERS = [
-  "No gym leads to stagnation.",
-  "Take a timeout when needed.",
-  "Sleep is crucial for recovery.",
-  "You are what you eat.",
-  "Limit your screentime.",
-  "Find your purpose.",
-  "Cut toxic bonds.",
-  "Family is everything."
+  "We suffer more in imagination than in reality.",
+  "The best revenge is not to be like that.",
+  "Waste no more time arguing about what a good man should be. Be one.",
+  "If it is not right do not do it; if it is not true do not say it.",
+  "You have power over your mind - not outside events. Realize this, and you will find strength.",
+  "Discipline equals freedom.",
+  "Don't wish it was easier, wish you were better.",
+  "Stay hard."
 ];
 
 const Tracker = ({ addToast }: TrackerProps) => {
@@ -73,7 +73,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
     const allCompleted = updatedCheckedState.every(Boolean);
     if (allCompleted && !checkedState.every(Boolean)) {
         fireConfetti();
-        addToast("All habits completed! You're unstoppable.", "success");
+        addToast("Protocol Complete. You won the day.", "success");
         const newStreak = streak + 1;
         setStreak(newStreak);
         localStorage.setItem('habitStreak', newStreak.toString());
