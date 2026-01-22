@@ -7,29 +7,36 @@ interface TrackerProps {
 }
 
 const HABITS = [
-  "Eat clean",
-  "Walk more",
-  "Lift weights",
-  "Sleep earlier",
-  "Wake up at 5 AM",
-  "Fast in the morning",
-  "Drink water",
-  "Talk less",
-  "Listen more",
-  "Spend time alone",
-  "Love your family",
-  "Avoid negative thoughts"
+  "Comer limpo",
+  "Caminhar mais",
+  "Levantar pesos",
+  "Dormir mais cedo",
+  "Acordar às 5h",
+  "Banho gelado",
+  "Jejum matinal",
+  "Beber água",
+  "Ler 10 páginas",
+  "Planejar o dia seguinte",
+  "Falar menos",
+  "Ouvir mais",
+  "Tempo sozinho",
+  "Amar sua família",
+  "Evitar pensamentos negativos"
 ];
 
 const REMINDERS = [
-  "We suffer more in imagination than in reality.",
-  "The best revenge is not to be like that.",
-  "Waste no more time arguing about what a good man should be. Be one.",
-  "If it is not right do not do it; if it is not true do not say it.",
-  "You have power over your mind - not outside events. Realize this, and you will find strength.",
-  "Discipline equals freedom.",
-  "Don't wish it was easier, wish you were better.",
-  "Stay hard."
+  "Sofremos mais na imaginação do que na realidade.",
+  "A melhor vingança é não ser assim.",
+  "Não perca mais tempo discutindo sobre o que um bom homem deve ser. Seja um.",
+  "Se não é certo, não faça; se não é verdade, não diga.",
+  "Você tem poder sobre sua mente - não sobre eventos externos. Perceba isso e encontrará força.",
+  "Disciplina é liberdade.",
+  "Não deseje que fosse mais fácil, deseje que você fosse melhor.",
+  "Permaneça firme.",
+  "Memento Mori: lembre-se que você vai morrer.",
+  "Ame seu destino (Amor Fati).",
+  "A felicidade da sua vida depende da qualidade dos seus pensamentos.",
+  "Nenhum homem é livre se não for mestre de si mesmo."
 ];
 
 const Tracker = ({ addToast }: TrackerProps) => {
@@ -47,15 +54,24 @@ const Tracker = ({ addToast }: TrackerProps) => {
 
     if (storedDate !== todayKey) {
         // New day logic
-        // If the previous day was missed, streak might reset (simplified logic here)
-        // For now, we just reset the checks
         localStorage.setItem('habitDate', todayKey);
         localStorage.setItem('habitState', JSON.stringify([])); // clear for new day
         setCheckedState(new Array(HABITS.length).fill(false));
     } else {
         // Same day, load state
+        // If habits length changed, we need to handle it gracefully
         if (storedState.length === HABITS.length) {
             setCheckedState(storedState);
+        } else {
+             // If array length mismatch (e.g. habits added), try to preserve what we can or reset
+             // For simplicity, if structure changes, we might reset or pad.
+             // Let's just pad with false if new habits added
+             if (storedState.length < HABITS.length) {
+                 const newArr = [...storedState, ...new Array(HABITS.length - storedState.length).fill(false)];
+                 setCheckedState(newArr);
+             } else {
+                 setCheckedState(new Array(HABITS.length).fill(false));
+             }
         }
     }
     setStreak(storedStreak);
@@ -73,7 +89,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
     const allCompleted = updatedCheckedState.every(Boolean);
     if (allCompleted && !checkedState.every(Boolean)) {
         fireConfetti();
-        addToast("Protocol Complete. You won the day.", "success");
+        addToast("Protocolo Completo. Você venceu o dia.", "success");
         const newStreak = streak + 1;
         setStreak(newStreak);
         localStorage.setItem('habitStreak', newStreak.toString());
@@ -101,11 +117,11 @@ const Tracker = ({ addToast }: TrackerProps) => {
   };
 
   const resetDay = () => {
-      if(confirm("Are you sure you want to reset today's progress?")) {
+      if(confirm("Tem certeza que deseja reiniciar o progresso de hoje?")) {
           const resetState = new Array(HABITS.length).fill(false);
           setCheckedState(resetState);
           localStorage.setItem('habitState', JSON.stringify(resetState));
-          addToast("Day reset.", "warning");
+          addToast("Dia reiniciado.", "warning");
       }
   };
 
@@ -117,7 +133,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
   const completedCount = checkedState.filter(Boolean).length;
   const progressPercentage = Math.round((completedCount / HABITS.length) * 100);
 
-  const todayDisplay = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  const todayDisplay = new Date().toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
   return (
     <section className="tracker-section" id="tracker" style={{
@@ -137,7 +153,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
           flexWrap: 'wrap',
           gap: '20px'
       }}>
-        <h2 style={{ fontSize: '2rem' }}>Daily Protocol</h2>
+        <h2 style={{ fontSize: '2rem' }}>Protocolo Diário</h2>
         <div className="date-container" style={{ textAlign: 'right' }}>
             <span style={{ display: 'block', color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '5px' }}>{todayDisplay}</span>
             <div className="streak-badge" style={{
@@ -152,14 +168,14 @@ const Tracker = ({ addToast }: TrackerProps) => {
                 gap: '5px',
                 border: '1px solid rgba(245, 158, 11, 0.2)'
             }}>
-                <Flame size={16} /> {streak} Day Streak
+                <Flame size={16} /> {streak} Dias de Sequência
             </div>
         </div>
       </div>
 
       <div className="progress-wrapper" style={{ marginBottom: '30px' }}>
         <div className="progress-text" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px', fontSize: '0.9rem', fontWeight: 600 }}>
-            <span>Progress</span>
+            <span>Progresso</span>
             <span>{progressPercentage}%</span>
         </div>
         <div className="progress-container" style={{ background: 'rgba(255,255,255,0.1)', borderRadius: '10px', height: '12px', overflow: 'hidden' }}>
@@ -236,7 +252,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
             alignItems: 'center',
             gap: '8px'
         }}>
-            <Bell size={18} /> Random Stoic Reminder
+            <Bell size={18} /> Lembrete Estoico Aleatório
         </button>
         <button className="danger-btn" onClick={resetDay} style={{
             background: 'rgba(244, 63, 94, 0.1)',
@@ -251,7 +267,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
             alignItems: 'center',
             gap: '8px'
         }}>
-            <RefreshCcw size={18} /> Reset Day
+            <RefreshCcw size={18} /> Reiniciar Dia
         </button>
       </div>
     </section>

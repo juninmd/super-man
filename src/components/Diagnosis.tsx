@@ -1,14 +1,14 @@
-import { AlertCircle } from 'lucide-react';
+import { AlertCircle, Skull } from 'lucide-react';
 
 const PROBLEMS = [
-  "No gym",
-  "No time out",
-  "No enough sleep",
-  "Bad diet",
-  "Too much screentime",
-  "Zero purpose",
-  "Toxic bonds",
-  "No time with family"
+  "Sem treino",
+  "Sem tempo livre",
+  "Sono insuficiente",
+  "Dieta ruim",
+  "Excesso de telas",
+  "Sem propósito",
+  "Laços tóxicos",
+  "Sem tempo com a família"
 ];
 
 const Diagnosis = () => {
@@ -24,7 +24,8 @@ const Diagnosis = () => {
           border: '1px solid rgba(239, 68, 68, 0.2)',
           borderRadius: '24px',
           padding: '40px',
-          backdropFilter: 'blur(10px)'
+          backdropFilter: 'blur(10px)',
+          marginBottom: '40px'
       }}>
         <h2 style={{
             fontSize: '2rem',
@@ -35,11 +36,11 @@ const Diagnosis = () => {
             justifyContent: 'center',
             gap: '12px'
         }}>
-           <AlertCircle /> The Diagnosis
+           <AlertCircle /> O Diagnóstico
         </h2>
 
         <p style={{ fontSize: '1.2rem', marginBottom: '20px', color: 'var(--text-secondary)' }}>
-          DEPRESSION is often just:
+          A DEPRESSÃO muitas vezes é alimentada por:
         </p>
 
         <div style={{
@@ -75,9 +76,34 @@ const Diagnosis = () => {
                 color: 'var(--text-primary)',
                 letterSpacing: '0.5px'
             }}>
-                Your life is 100% your responsibility.
+                Sua vida é 100% sua responsabilidade.
             </p>
         </div>
+      </div>
+
+      <div style={{
+          background: 'rgba(0, 0, 0, 0.3)',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+          borderRadius: '24px',
+          padding: '40px',
+          backdropFilter: 'blur(10px)'
+      }}>
+          <h3 style={{
+            fontSize: '1.8rem',
+            marginBottom: '20px',
+            color: 'var(--text-primary)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '12px'
+          }}>
+             <Skull size={28} /> O Inimigo é o Conforto
+          </h3>
+          <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.6', maxWidth: '600px', margin: '0 auto' }}>
+              A mediocridade é uma doença silenciosa. Ela te diz que "está tudo bem" ser fraco,
+              que você merece descansar sem ter trabalhado. Rejeite o caminho fácil.
+              O crescimento só existe fora da zona de conforto.
+          </p>
       </div>
     </section>
   );
