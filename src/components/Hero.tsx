@@ -30,14 +30,14 @@ const Hero = () => {
           marginBottom: '1rem',
           letterSpacing: '-2px',
           lineHeight: 1.1
-        }}>2026 Life Reset</h1>
+        }}>Reinício de Vida 2026</h1>
         <p style={{
           fontSize: '1.5rem',
           color: 'var(--text-secondary)',
           marginBottom: '2rem',
           maxWidth: '600px',
           margin: '0 auto 2rem auto'
-        }}>Forge your own path. Take absolute ownership.</p>
+        }}>Forje seu próprio caminho. Assuma controle total. A mediocridade é uma escolha, a grandeza também.</p>
         <button
           onClick={scrollToTracker}
           style={{
@@ -64,7 +64,7 @@ const Hero = () => {
             e.currentTarget.style.boxShadow = '0 0 20px var(--primary-glow)';
           }}
         >
-          Begin The Protocol <ArrowDown size={20} />
+          Iniciar o Protocolo <ArrowDown size={20} />
         </button>
       </div>
     </header>

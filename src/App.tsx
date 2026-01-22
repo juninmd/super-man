@@ -26,7 +26,7 @@ function App() {
 
       <footer>
         <p style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-secondary)', fontSize: '0.8rem', opacity: 0.6 }}>
-          &copy; 2026 Life Reset Protocol. Stay Hard.
+          &copy; 2026 Protocolo de Reinício de Vida. Permaneça Forte.
         </p>
       </footer>
     </div>

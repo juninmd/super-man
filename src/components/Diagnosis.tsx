@@ -1,14 +1,14 @@
 import { AlertCircle } from 'lucide-react';
 
 const PROBLEMS = [
-  "No gym",
-  "No time out",
-  "No enough sleep",
-  "Bad diet",
-  "Too much screentime",
-  "Zero purpose",
-  "Toxic bonds",
-  "No time with family"
+  "Sem treino",
+  "Sem tempo livre",
+  "Sono insuficiente",
+  "Dieta ruim",
+  "Excesso de telas",
+  "Sem propósito",
+  "Laços tóxicos",
+  "Sem tempo com a família"
 ];
 
 const Diagnosis = () => {
@@ -35,11 +35,11 @@ const Diagnosis = () => {
             justifyContent: 'center',
             gap: '12px'
         }}>
-           <AlertCircle /> The Diagnosis
+           <AlertCircle /> O Diagnóstico
         </h2>
 
         <p style={{ fontSize: '1.2rem', marginBottom: '20px', color: 'var(--text-secondary)' }}>
-          DEPRESSION is often just:
+          A DEPRESSÃO muitas vezes é alimentada por:
         </p>
 
         <div style={{
@@ -75,7 +75,7 @@ const Diagnosis = () => {
                 color: 'var(--text-primary)',
                 letterSpacing: '0.5px'
             }}>
-                Your life is 100% your responsibility.
+                Sua vida é 100% sua responsabilidade.
             </p>
         </div>
       </div>

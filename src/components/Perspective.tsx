@@ -1,22 +1,22 @@
 import { Dumbbell, PauseCircle, Moon, Utensils, Smartphone, Target, ShieldBan, Heart } from 'lucide-react';
 
 const cards = [
-  { icon: Dumbbell, title: "Physical Mastery", text: "Weak body, weak mind. Train daily." },
-  { icon: PauseCircle, title: "Strategic Rest", text: "Burnout is for the unprepared. Recover." },
-  { icon: Moon, title: "Deep Sleep", text: "Sleep is your superpower. Prioritize it." },
-  { icon: Utensils, title: "Fuel, Not Food", text: "Garbage in, garbage out. Eat for performance." },
-  { icon: Smartphone, title: "Digital Discipline", text: "Don't let the algorithm control your life." },
-  { icon: Target, title: "Clear Mission", text: "A man without a mission is lost. Find yours." },
-  { icon: ShieldBan, title: "Inner Circle", text: "Cut dead weight. Surround yourself with strength." },
-  { icon: Heart, title: "Loyalty & Duty", text: "Protect and provide. Family comes first." },
+  { icon: Dumbbell, title: "Maestria Física", text: "Corpo fraco, mente fraca. Treine diariamente." },
+  { icon: PauseCircle, title: "Descanso Estratégico", text: "Burnout é para os despreparados. Recupere-se." },
+  { icon: Moon, title: "Sono Profundo", text: "O sono é seu superpoder. Priorize-o." },
+  { icon: Utensils, title: "Combustível, Não Comida", text: "Lixo entra, lixo sai. Coma para performance." },
+  { icon: Smartphone, title: "Disciplina Digital", text: "Não deixe o algoritmo controlar sua vida." },
+  { icon: Target, title: "Missão Clara", text: "Um homem sem missão está perdido. Encontre a sua." },
+  { icon: ShieldBan, title: "Círculo Interno", text: "Corte o peso morto. Cerque-se de força." },
+  { icon: Heart, title: "Lealdade e Dever", text: "Proteja e proveja. A família vem primeiro." },
 ];
 
 const Perspective = () => {
   return (
     <section className="perspective-section" id="perspective" style={{ padding: '40px 0' }}>
       <div className="section-header" style={{ textAlign: 'center', marginBottom: '50px' }}>
-        <h2 style={{ fontSize: '2.5rem', marginBottom: '10px' }}>The Perspective</h2>
-        <p style={{ color: 'var(--text-secondary)' }}>The obstacle is the way.</p>
+        <h2 style={{ fontSize: '2.5rem', marginBottom: '10px' }}>A Perspectiva</h2>
+        <p style={{ color: 'var(--text-secondary)' }}>O obstáculo é o caminho.</p>
       </div>
       <div className="cards-grid" style={{
         display: 'grid',
