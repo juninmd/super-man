@@ -8,18 +8,18 @@ interface TrackerProps {
 }
 
 const HABITS = [
-  "Zero Pornografia/Masturbação",
-  "Treino Pesado (Musculação/Luta)",
-  "Dieta Limpa (Sem açúcar/processados)",
-  "Cardio (Correr/Caminhar)",
-  "Leitura Estratégica (30min)",
-  "Deep Work (Trabalho Focado)",
-  "Banho Gelado",
-  "Sem Redes Sociais Inúteis",
-  "Planejar o dia seguinte",
-  "Investir em Conhecimento",
-  "Silêncio & Reflexão",
-  "Hidratação (3L+)"
+  "Comer Limpo",
+  "Caminhar Mais",
+  "Levantar Peso",
+  "Dormir Mais Cedo",
+  "Acordar às 05:00",
+  "Jejum Matinal",
+  "Beber Água",
+  "Falar Menos",
+  "Ouvir Mais",
+  "Tempo Sozinho",
+  "Amar a Família",
+  "Evitar Negatividade"
 ];
 
 const REMINDERS = [
@@ -46,14 +46,14 @@ const Tracker = ({ addToast }: TrackerProps) => {
   // Initialize state from local storage
   useEffect(() => {
     const todayKey = new Date().toISOString().split('T')[0];
-    const storedDate = localStorage.getItem('habitDate');
-    const storedState = JSON.parse(localStorage.getItem('habitState') || '[]');
-    const storedStreak = parseInt(localStorage.getItem('habitStreak') || '0');
+    const storedDate = localStorage.getItem('habitDate2026');
+    const storedState = JSON.parse(localStorage.getItem('habitState2026') || '[]');
+    const storedStreak = parseInt(localStorage.getItem('habitStreak2026') || '0');
 
     if (storedDate !== todayKey) {
       // New day logic
-      localStorage.setItem('habitDate', todayKey);
-      localStorage.setItem('habitState', JSON.stringify([])); // clear for new day
+      localStorage.setItem('habitDate2026', todayKey);
+      localStorage.setItem('habitState2026', JSON.stringify([])); // clear for new day
       setCheckedState(new Array(HABITS.length).fill(false));
     } else {
       // Same day, load state
@@ -77,7 +77,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
     );
 
     setCheckedState(updatedCheckedState);
-    localStorage.setItem('habitState', JSON.stringify(updatedCheckedState));
+    localStorage.setItem('habitState2026', JSON.stringify(updatedCheckedState));
 
     // Check for 100% completion
     const allCompleted = updatedCheckedState.every(Boolean);
@@ -86,7 +86,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
       addToast("Protocolo Completo. Você venceu o dia.", "success");
       const newStreak = streak + 1;
       setStreak(newStreak);
-      localStorage.setItem('habitStreak', newStreak.toString());
+      localStorage.setItem('habitStreak2026', newStreak.toString());
     }
   };
 
@@ -114,7 +114,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
     if (confirm("Tem certeza que deseja reiniciar o progresso de hoje?")) {
       const resetState = new Array(HABITS.length).fill(false);
       setCheckedState(resetState);
-      localStorage.setItem('habitState', JSON.stringify(resetState));
+      localStorage.setItem('habitState2026', JSON.stringify(resetState));
       addToast("Dia reiniciado.", "warning");
     }
   };

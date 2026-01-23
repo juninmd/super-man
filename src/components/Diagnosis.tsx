@@ -1,14 +1,14 @@
 import { AlertCircle, Skull } from 'lucide-react';
 
 const PROBLEMS = [
-    "Pornografia e Masturbação",
-    "Comida Lixo (Açúcar/Óleos)",
-    "Sedentarismo & Corpo Fraco",
-    "Procrastinação Crônica",
-    "Vício em Redes Sociais",
-    "Falta de Propósito",
-    "Mentalidade de Vítima",
-    "Gastos Emocionais"
+    "Sem Academia",
+    "Sem Tempo Livre",
+    "Sono Insuficiente",
+    "Dieta Ruim",
+    "Tempo Excessivo de Tela",
+    "Zero Propósito",
+    "Laços Tóxicos",
+    "Sem Tempo com a Família"
 ];
 
 const Diagnosis = () => {
@@ -41,13 +41,13 @@ const Diagnosis = () => {
 
             <div className="bg-surface-100/50 border border-white/5 rounded-2xl p-10 backdrop-blur-sm">
                 <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center justify-center gap-3">
-                    <Skull className="text-primary w-8 h-8" /> Morte à Mediocridade
+                    <Skull className="text-primary w-8 h-8" /> Responsabilidade Radical
                 </h3>
                 <p className="text-lg text-text-secondary leading-relaxed max-w-3xl mx-auto">
-                    O conforto moderno está castrando homens. Ele te diz que "está tudo bem" ser fraco,
-                    que você merece descansar sem ter conquistado nada. <br /><br />
-                    <strong className="text-white text-xl block mb-2">Isso é mentira.</strong>
-                    O respeito é conquistado. A força é construída. O dinheiro é impresso por quem resolve problemas.
+                    Depressão muitas vezes é apenas o resultado de escolhas ruins repetidas diariamente.
+                    <br /><br />
+                    <strong className="text-white text-xl block mb-2">Sua vida é 100% sua responsabilidade.</strong>
+                    Não culpe ninguém. Assuma o controle. Mude seus hábitos e mudará sua mente.
                 </p>
             </div>
         </section>
