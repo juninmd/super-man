@@ -1,117 +1,57 @@
 import { AlertCircle, Skull } from 'lucide-react';
 
 const PROBLEMS = [
-  "Pornografia e Masturbação",
-  "Comida Lixo (Açúcar/Óleos)",
-  "Sedentarismo & Corpo Fraco",
-  "Procrastinação Crônica",
-  "Vício em Redes Sociais",
-  "Falta de Propósito",
-  "Mentalidade de Vítima",
-  "Gastos Emocionais"
+    "Pornografia e Masturbação",
+    "Comida Lixo (Açúcar/Óleos)",
+    "Sedentarismo & Corpo Fraco",
+    "Procrastinação Crônica",
+    "Vício em Redes Sociais",
+    "Falta de Propósito",
+    "Mentalidade de Vítima",
+    "Gastos Emocionais"
 ];
 
 const Diagnosis = () => {
-  return (
-    <section className="diagnosis-section" style={{
-        maxWidth: '800px',
-        margin: '0 auto 80px auto',
-        padding: '0 20px',
-        textAlign: 'center'
-    }}>
-      <div style={{
-          background: 'rgba(239, 68, 68, 0.05)',
-          border: '1px solid rgba(239, 68, 68, 0.2)',
-          borderRadius: '4px',
-          padding: '40px',
-          backdropFilter: 'blur(10px)',
-          marginBottom: '40px'
-      }}>
-        <h2 style={{
-            fontSize: '2rem',
-            marginBottom: '30px',
-            color: '#ef4444',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '12px',
-            fontWeight: 800,
-            textTransform: 'uppercase'
-        }}>
-           <AlertCircle /> Identifique o Veneno
-        </h2>
+    return (
+        <section className="max-w-4xl mx-auto mb-20 px-6 text-center">
+            <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-10 backdrop-blur-sm mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8 text-red-500 flex items-center justify-center gap-3 uppercase font-heading">
+                    <AlertCircle className="w-8 h-8 md:w-10 md:h-10" /> Identifique o Veneno
+                </h2>
 
-        <p style={{ fontSize: '1.2rem', marginBottom: '20px', color: 'var(--text-secondary)' }}>
-          Se você se sente perdido, fraco ou deprimido, provavelmente está consumindo:
-        </p>
+                <p className="text-lg md:text-xl mb-8 text-text-secondary">
+                    Se você se sente perdido, fraco ou deprimido, provavelmente está consumindo:
+                </p>
 
-        <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gap: '15px',
-            textAlign: 'left',
-            marginBottom: '40px'
-        }}>
-            {PROBLEMS.map((problem, index) => (
-                <div key={index} style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '10px',
-                    color: '#fecaca',
-                    background: 'rgba(0,0,0,0.3)',
-                    padding: '15px',
-                    borderRadius: '4px',
-                    borderLeft: '3px solid #ef4444'
-                }}>
-                    <span style={{ color: '#ef4444' }}>✕</span> {problem}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10 text-left">
+                    {PROBLEMS.map((problem, index) => (
+                        <div key={index} className="flex items-center gap-3 bg-black/40 p-4 rounded-lg border-l-4 border-red-500 text-red-200">
+                            <span className="text-red-500 font-bold">✕</span>
+                            <span className="text-sm font-medium">{problem}</span>
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </div>
 
-        <div style={{
-            borderTop: '1px solid rgba(239, 68, 68, 0.2)',
-            paddingTop: '30px',
-            marginTop: '10px'
-        }}>
-            <p style={{
-                fontSize: '1.4rem',
-                fontWeight: 'bold',
-                color: 'var(--text-primary)',
-                letterSpacing: '0.5px'
-            }}>
-                Você não está "triste". <span style={{color:'#ef4444'}}>Você está desregulado.</span>
-            </p>
-        </div>
-      </div>
+                <div className="border-t border-red-500/20 pt-8 mt-4">
+                    <p className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+                        Você não está "triste". <span className="text-red-500 block md:inline mt-2 md:mt-0">Você está desregulado.</span>
+                    </p>
+                </div>
+            </div>
 
-      <div style={{
-          background: 'rgba(0, 0, 0, 0.3)',
-          border: '1px solid rgba(255, 255, 255, 0.05)',
-          borderRadius: '4px',
-          padding: '40px',
-          backdropFilter: 'blur(10px)'
-      }}>
-          <h3 style={{
-            fontSize: '1.8rem',
-            marginBottom: '20px',
-            color: 'var(--text-primary)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '12px',
-            fontWeight: 700
-          }}>
-             <Skull size={28} color="var(--primary-color)" /> Morte à Mediocridade
-          </h3>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.8', maxWidth: '600px', margin: '0 auto' }}>
-              O conforto moderno está castrando homens. Ele te diz que "está tudo bem" ser fraco,
-              que você merece descansar sem ter conquistado nada. <br/><br/>
-              <strong style={{color: 'var(--text-primary)'}}>Isso é mentira.</strong><br/>
-              O respeito é conquistado. A força é construída. O dinheiro é impresso por quem resolve problemas.
-          </p>
-      </div>
-    </section>
-  );
+            <div className="bg-surface-100/50 border border-white/5 rounded-2xl p-10 backdrop-blur-sm">
+                <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center justify-center gap-3">
+                    <Skull className="text-primary w-8 h-8" /> Morte à Mediocridade
+                </h3>
+                <p className="text-lg text-text-secondary leading-relaxed max-w-3xl mx-auto">
+                    O conforto moderno está castrando homens. Ele te diz que "está tudo bem" ser fraco,
+                    que você merece descansar sem ter conquistado nada. <br /><br />
+                    <strong className="text-white text-xl block mb-2">Isso é mentira.</strong>
+                    O respeito é conquistado. A força é construída. O dinheiro é impresso por quem resolve problemas.
+                </p>
+            </div>
+        </section>
+    );
 };
 
 export default Diagnosis;

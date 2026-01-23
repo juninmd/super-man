@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --bg-color: #09090b; /* Zinc 950 */
-  --surface-color: #18181b; /* Zinc 900 */
-  --primary-color: #f59e0b; /* Amber 500 - The Gold Standard */
-  --primary-glow: rgba(245, 158, 11, 0.5);
-  --accent-color: #ef4444; /* Red 500 - For warnings/failures */
-  --text-primary: #fafafa;
+  --bg-color: #000000; /* True Black for depth */
+  --surface-color: #09090b; /* Zinc 950 */
+  --surface-100: #18181b; /* Zinc 900 */
+  --surface-200: #27272a; /* Zinc 800 */
+  
+  --primary-color: #f59e0b; /* Amber 500 */
+  --primary-glow: rgba(245, 158, 11, 0.4);
+  
+  --text-primary: #ffffff;
   --text-secondary: #a1a1aa;
-  --success-color: #10b981;
+  
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
-  --card-hover-transform: translateY(-5px);
-  --transition-speed: 0.3s;
+
 }
 
 * {

@@ -17,44 +17,27 @@ const cards = [
 
 const Perspective = () => {
   return (
-    <section className="perspective-section" id="perspective" style={{ padding: '40px 0' }}>
-      <div className="section-header" style={{ textAlign: 'center', marginBottom: '50px' }}>
-        <h2 style={{
-          fontSize: '2.5rem',
-          marginBottom: '10px',
-          textTransform: 'uppercase',
-          fontWeight: 800
-        }}>A Perspectiva</h2>
-        <p style={{ color: 'var(--text-secondary)' }}>O obstáculo é o caminho.</p>
-      </div>
-      <div className="cards-grid" style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-        gap: '20px'
-      }}>
-        {cards.map((card, index) => (
-          <div key={index} className="card" style={{
-            background: 'var(--surface-color)',
-            padding: '30px',
-            borderRadius: '16px',
-            border: '1px solid rgba(255,255,255,0.05)',
-            transition: 'transform 0.3s, border-color 0.3s',
-            cursor: 'default'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-5px)';
-            e.currentTarget.style.borderColor = 'var(--primary-color)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.borderColor = 'rgba(255,255,255,0.05)';
-          }}
-          >
-            <card.icon size={40} style={{ marginBottom: '15px', color: 'var(--primary-color)' }} />
-            <h3 style={{ marginBottom: '10px', fontSize: '1.25rem' }}>{card.title}</h3>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>{card.text}</p>
-          </div>
-        ))}
+    <section className="py-24 px-6 relative" id="perspective">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-20 animate-fade-up">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 uppercase tracking-tight text-white font-heading">
+            A Perspectiva
+          </h2>
+          <p className="text-text-secondary text-lg">O obstáculo é o caminho.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="group bg-surface-100 p-8 rounded-2xl border border-white/5 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5"
+            >
+              <card.icon size={32} className="mb-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors">{card.title}</h3>
+              <p className="text-text-secondary text-sm leading-relaxed">{card.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

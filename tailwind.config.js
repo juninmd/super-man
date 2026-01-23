@@ -7,6 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
+        background: 'var(--bg-color)',
+        surface: {
+          DEFAULT: 'var(--surface-color)',
+          100: 'var(--surface-100)',
+          200: 'var(--surface-200)',
+        },
+        primary: {
+          DEFAULT: 'var(--primary-color)',
+          glow: 'var(--primary-glow)',
+        },
         brand: {
           50: '#f0f9ff',
           100: '#e0f2fe',

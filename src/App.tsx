@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Hero from './components/Hero';
 import Diagnosis from './components/Diagnosis';
 import Perspective from './components/Perspective';
+import Readings from './components/Readings';
 import Guide from './components/Guide';
 import Tracker from './components/Tracker';
 import ToastContainer, { Toast } from './components/Toast';
@@ -22,6 +23,7 @@ function App() {
       <Hero />
       <Diagnosis />
       <Perspective />
+      <Readings />
       <Guide />
       <Tracker addToast={addToast} />
       <ToastContainer toasts={toasts} />

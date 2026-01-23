@@ -84,91 +84,61 @@ const Guide = () => {
   };
 
   return (
-    <section className="guide-section" style={{
-      maxWidth: '800px',
-      margin: '0 auto 80px auto',
-      padding: '0 20px'
-    }}>
-      <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-        <h2 style={{
-          fontSize: '2.5rem',
-          fontWeight: 800,
-          marginBottom: '10px',
-          textTransform: 'uppercase',
-          letterSpacing: '-1px'
-        }}>
+    <section className="max-w-4xl mx-auto mb-20 px-6">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 uppercase tracking-tighter font-heading text-white">
           O Código
         </h2>
-        <p style={{ color: 'var(--text-secondary)' }}>
+        <p className="text-text-secondary text-lg">
           Princípios imutáveis para a construção de um homem de valor.
         </p>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      <div className="flex flex-col gap-6">
         {SECTIONS.map((section) => {
           const isOpen = openSection === section.id;
           return (
-            <div key={section.id} style={{
-              background: 'var(--surface-color)',
-              borderRadius: '8px',
-              border: `1px solid ${isOpen ? 'var(--primary-color)' : 'rgba(255,255,255,0.05)'}`,
-              overflow: 'hidden',
-              transition: 'all 0.3s'
-            }}>
+            <div
+              key={section.id}
+              className={`
+                    bg-surface-100 rounded-xl overflow-hidden transition-all duration-300 border
+                    ${isOpen ? 'border-primary/50 shadow-[0_0_20px_rgba(245,158,11,0.1)]' : 'border-white/5 hover:border-white/20'}
+                `}
+            >
               <button
                 onClick={() => toggleSection(section.id)}
-                style={{
-                  width: '100%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  padding: '20px 30px',
-                  background: 'none',
-                  border: 'none',
-                  color: isOpen ? 'var(--primary-color)' : 'var(--text-primary)',
-                  cursor: 'pointer',
-                  fontSize: '1.2rem',
-                  fontWeight: 700,
-                  textTransform: 'uppercase'
-                }}
+                className={`
+                    w-full flex items-center justify-between p-6 md:p-8 bg-transparent border-none cursor-pointer text-lg md:text-xl font-bold uppercase transition-colors
+                    ${isOpen ? 'text-primary' : 'text-white hover:text-primary/80'}
+                `}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                  <section.icon size={24} />
+                <div className="flex items-center gap-4">
+                  <section.icon size={28} className={isOpen ? "text-primary" : "text-text-secondary"} />
                   {section.title}
                 </div>
-                {isOpen ? <ChevronUp /> : <ChevronDown />}
+                {isOpen ? <ChevronUp /> : <ChevronDown className="text-text-secondary" />}
               </button>
 
-              {isOpen && (
-                <div style={{
-                  padding: '0 30px 30px 30px',
-                  borderTop: '1px solid rgba(255,255,255,0.05)'
-                }}>
+              <div
+                className={`
+                    transition-all duration-500 ease-in-out overflow-hidden
+                    ${isOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}
+                `}
+              >
+                <div className="px-6 pb-6 md:px-8 md:pb-8 pt-0 border-t border-white/5">
                   {section.content.map((item, idx) => (
-                    <div key={idx} style={{ marginTop: '25px' }}>
-                      <h4 style={{
-                        fontSize: '1.1rem',
-                        color: 'var(--text-primary)',
-                        marginBottom: '8px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '8px'
-                      }}>
-                        <span style={{ height: '2px', width: '15px', background: 'var(--primary-color)', display: 'block' }}></span>
+                    <div key={idx} className="mt-8 first:mt-6">
+                      <h4 className="text-lg font-bold text-white mb-2 flex items-center gap-3">
+                        <span className="h-[2px] w-4 bg-primary block rounded-full"></span>
                         {item.subtitle}
                       </h4>
-                      <p style={{
-                        color: 'var(--text-secondary)',
-                        fontSize: '1rem',
-                        lineHeight: '1.7',
-                        marginLeft: '23px'
-                      }}>
+                      <p className="text-text-secondary text-base leading-relaxed ml-7">
                         {item.text}
                       </p>
                     </div>
                   ))}
                 </div>
-              )}
+              </div>
             </div>
           );
         })}

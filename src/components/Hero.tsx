@@ -1,4 +1,4 @@
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Flame } from 'lucide-react';
 
 const Hero = () => {
   const scrollToTracker = () => {
@@ -9,85 +9,47 @@ const Hero = () => {
   };
 
   return (
-    <header className="hero" style={{
-      minHeight: '90vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      textAlign: 'center',
-      position: 'relative',
-      borderBottom: '1px solid rgba(245, 158, 11, 0.1)',
-      marginBottom: '60px',
-      padding: '40px 20px'
-    }}>
-      <div className="hero-content animate-fade-up">
-        <div style={{
-          display: 'inline-block',
-          border: '1px solid var(--primary-color)',
-          padding: '5px 15px',
-          borderRadius: '20px',
-          color: 'var(--primary-color)',
-          marginBottom: '20px',
-          fontSize: '0.9rem',
-          fontWeight: 600,
-          textTransform: 'uppercase',
-          letterSpacing: '2px'
-        }}>
-          Mentor Mqsculus
+    <header className="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-6 border-b border-white/5 overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-background to-background opacity-50 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none" />
+
+      <div className="relative z-10 animate-fade-up max-w-4xl mx-auto">
+        <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary mb-8 animate-fade-in backdrop-blur-sm">
+          <Flame size={14} className="animate-pulse" />
+          <span className="text-xs font-bold uppercase tracking-[0.2em]">Mentor Mqsculus</span>
         </div>
-        <h1 style={{
-          fontSize: 'clamp(2.5rem, 8vw, 5rem)',
-          fontWeight: 800,
-          background: 'linear-gradient(to right, #ffffff, #f59e0b)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          marginBottom: '1.5rem',
-          letterSpacing: '-2px',
-          lineHeight: 1.1,
-          textTransform: 'uppercase'
-        }}>Protocolo de<br/>Alta Performance</h1>
-        <p style={{
-          fontSize: 'clamp(1rem, 4vw, 1.4rem)',
-          color: 'var(--text-secondary)',
-          marginBottom: '2.5rem',
-          maxWidth: '700px',
-          margin: '0 auto 2.5rem auto',
-          lineHeight: 1.6
-        }}>
+
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tighter leading-[0.9] text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40 uppercase font-heading">
+          Protocolo de<br />
+          <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary via-orange-400 to-primary">Alta Performance</span>
+        </h1>
+
+        <p className="text-lg md:text-2xl text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed font-light">
           Rejeite a fraqueza moderna. Domine sua mente. Esculpa seu corpo. Enriqueça seu bolso.
-          <br/><span style={{color: 'var(--primary-color)', fontWeight: 600}}>A mediocridade é o inferno em vida.</span>
+          <span className="block mt-4 text-white font-medium">A mediocridade é o inferno em vida.</span>
         </p>
-        <button
-          onClick={scrollToTracker}
-          style={{
-            background: 'var(--primary-color)',
-            color: '#000',
-            border: 'none',
-            padding: '16px 45px',
-            fontSize: '1.1rem',
-            fontWeight: 800,
-            textTransform: 'uppercase',
-            letterSpacing: '1px',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            boxShadow: '0 0 30px var(--primary-glow)',
-            transition: 'all 0.3s',
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '12px'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-2px)';
-            e.currentTarget.style.boxShadow = '0 0 50px var(--primary-glow)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 0 30px var(--primary-glow)';
-          }}
-        >
-          Iniciar Transformação <ArrowDown size={20} />
-        </button>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <button
+            onClick={scrollToTracker}
+            className="group relative px-8 py-4 bg-primary text-black font-bold text-lg uppercase tracking-wide rounded-lg flex items-center gap-3 transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(245,158,11,0.4)] overflow-hidden"
+          >
+            <span className="relative z-10 flex items-center gap-2">
+              Iniciar Transformação <ArrowDown size={20} className="group-hover:translate-y-1 transition-transform" />
+            </span>
+            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+          </button>
+
+          <button className="px-8 py-4 bg-white/5 border border-white/10 text-white font-medium text-lg uppercase tracking-wide rounded-lg hover:bg-white/10 transition-colors backdrop-blur-sm">
+            Saiba Mais
+          </button>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-10 animate-bounce opacity-50">
+        <ArrowDown size={24} className="text-text-secondary" />
       </div>
     </header>
   );
