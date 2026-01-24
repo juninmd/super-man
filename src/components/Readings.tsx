@@ -46,14 +46,14 @@ const Readings = () => {
         <div className="text-center mb-16 animate-fade-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-primary mb-6">
             <BookOpen size={16} />
-            <span className="text-sm font-semibold uppercase tracking-wider">Biblioteca Mental</span>
+            <span className="text-sm font-semibold uppercase tracking-wider">Mental Library</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent mb-6">
-            Software para o Cérebro
+            Software for the Brain
           </h2>
           <p className="text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed">
-            Seu corpo é o hardware. Sua mente é o software. 
-            <span className="text-primary block mt-2">Instale estes upgrades.</span>
+            Your body is hardware. Your mind is software.
+            <span className="text-primary block mt-2">Install these upgrades.</span>
           </p>
         </div>
 
@@ -74,7 +74,7 @@ const Readings = () => {
                       {book.title}
                     </h3>
                     <p className="text-primary/80 font-medium font-mono text-sm">
-                      LINHAS DE CÓDIGO POR {book.author.toUpperCase()}
+                      LINES OF CODE BY {book.author.toUpperCase()}
                     </p>
                   </div>
                   <div className="p-3 bg-white/5 rounded-full group-hover:bg-primary/20 transition-colors">
@@ -89,7 +89,7 @@ const Readings = () => {
                 <div className="mt-auto border-t border-white/10 pt-6">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col">
-                      <span className="text-xs text-neutral-500 uppercase tracking-widest mb-1">Impacto</span>
+                      <span className="text-xs text-neutral-500 uppercase tracking-widest mb-1">Impact</span>
                       <span className="text-sm font-semibold text-white/90">{book.impact}</span>
                     </div>
                     
@@ -99,7 +99,7 @@ const Readings = () => {
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-sm font-bold text-white bg-white/10 px-6 py-3 rounded-lg hover:bg-primary hover:text-black transition-all duration-300"
                     >
-                      Adquirir
+                      Acquire
                       <ExternalLink size={16} />
                     </a>
                   </div>

@@ -30,7 +30,7 @@ function App() {
 
       <footer>
         <p style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-secondary)', fontSize: '0.8rem', opacity: 0.6 }}>
-          &copy; 2026 Protocolo Mqsculus. A dor é temporária, a glória é eterna.
+          &copy; 2026 Protocolo Mqsculus. Pain is temporary, glory is eternal.
         </p>
       </footer>
     </div>

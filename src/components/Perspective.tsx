@@ -1,18 +1,18 @@
 import { Dumbbell, PauseCircle, Moon, Utensils, Smartphone, Target, ShieldBan, Heart, Brain, BookOpen, Coins, Crown } from 'lucide-react';
 
 const cards = [
-  { icon: Dumbbell, title: "Maestria Física", text: "Corpo fraco, mente fraca. Treine diariamente." },
-  { icon: PauseCircle, title: "Descanso Estratégico", text: "Burnout é para os despreparados. Recupere-se." },
-  { icon: Moon, title: "Sono Profundo", text: "O sono é seu superpoder. Priorize-o." },
-  { icon: Utensils, title: "Combustível, Não Comida", text: "Lixo entra, lixo sai. Coma para performance." },
-  { icon: Smartphone, title: "Disciplina Digital", text: "Não deixe o algoritmo controlar sua vida." },
-  { icon: Target, title: "Missão Clara", text: "Um homem sem missão está perdido. Encontre a sua." },
-  { icon: ShieldBan, title: "Círculo Interno", text: "Corte o peso morto. Cerque-se de força." },
-  { icon: Heart, title: "Lealdade e Dever", text: "Proteja e proveja. A família vem primeiro." },
-  { icon: Brain, title: "Controle Emocional", text: "Seja uma rocha em meio à tempestade. Estoicismo." },
-  { icon: BookOpen, title: "Intelecto Afiado", text: "Aprenda algo novo todos os dias. Evolua." },
-  { icon: Coins, title: "Independência", text: "Controle seus recursos. Não seja escravo de dívidas." },
-  { icon: Crown, title: "Legado", text: "O que você deixará para trás? Construa para a eternidade." },
+  { icon: Dumbbell, title: "Physical Mastery", text: "Weak body, weak mind. Train daily." },
+  { icon: PauseCircle, title: "Strategic Rest", text: "Burnout is for the unprepared. Recover." },
+  { icon: Moon, title: "Deep Sleep", text: "Sleep is your superpower. Prioritize it." },
+  { icon: Utensils, title: "Fuel, Not Food", text: "Garbage in, garbage out. Eat for performance." },
+  { icon: Smartphone, title: "Digital Discipline", text: "Don't let the algorithm control your life." },
+  { icon: Target, title: "Clear Mission", text: "A man without a mission is lost. Find yours." },
+  { icon: ShieldBan, title: "Inner Circle", text: "Cut the dead weight. Surround yourself with strength." },
+  { icon: Heart, title: "Loyalty and Duty", text: "Protect and provide. Family comes first." },
+  { icon: Brain, title: "Emotional Control", text: "Be a rock in the storm. Stoicism." },
+  { icon: BookOpen, title: "Sharp Intellect", text: "Learn something new every day. Evolve." },
+  { icon: Coins, title: "Independence", text: "Control your resources. Don't be a slave to debt." },
+  { icon: Crown, title: "Legacy", text: "What will you leave behind? Build for eternity." },
 ];
 
 const Perspective = () => {
@@ -21,9 +21,9 @@ const Perspective = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 uppercase tracking-tight text-white font-heading">
-            A Perspectiva
+            The Perspective
           </h2>
-          <p className="text-text-secondary text-lg">O obstáculo é o caminho.</p>
+          <p className="text-text-secondary text-lg">The obstacle is the way.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
