@@ -21,13 +21,13 @@ const Hero = () => {
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tighter leading-[0.9] text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40 uppercase font-heading">
-          Protocolo de<br />
-          <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary via-orange-400 to-primary">Alta Performance</span>
+          High Performance<br />
+          <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary via-orange-400 to-primary">Protocol</span>
         </h1>
 
         <p className="text-lg md:text-2xl text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-          Rejeite a fraqueza moderna. Domine sua mente. Esculpa seu corpo. Enriqueça seu bolso.
-          <span className="block mt-4 text-white font-medium">A mediocridade é o inferno em vida.</span>
+          Reject modern weakness. Master your mind. Sculpt your body. Enrich your pocket.
+          <span className="block mt-4 text-white font-medium">Mediocrity is hell on earth.</span>
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -36,13 +36,13 @@ const Hero = () => {
             className="group relative px-8 py-4 bg-primary text-black font-bold text-lg uppercase tracking-wide rounded-lg flex items-center gap-3 transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(245,158,11,0.4)] overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
-              Iniciar Transformação <ArrowDown size={20} className="group-hover:translate-y-1 transition-transform" />
+              Start Transformation <ArrowDown size={20} className="group-hover:translate-y-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           </button>
 
           <button className="px-8 py-4 bg-white/5 border border-white/10 text-white font-medium text-lg uppercase tracking-wide rounded-lg hover:bg-white/10 transition-colors backdrop-blur-sm">
-            Saiba Mais
+            Learn More
           </button>
         </div>
       </div>

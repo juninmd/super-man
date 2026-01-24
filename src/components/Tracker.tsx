@@ -8,33 +8,33 @@ interface TrackerProps {
 }
 
 const HABITS = [
-  "Comer Limpo",
-  "Caminhar Mais",
-  "Levantar Peso",
-  "Dormir Mais Cedo",
-  "Acordar às 05:00",
-  "Jejum Matinal",
-  "Beber Água",
-  "Falar Menos",
-  "Ouvir Mais",
-  "Tempo Sozinho",
-  "Amar a Família",
-  "Evitar Negatividade"
+  "Eat clean",
+  "Walk more",
+  "Lift weights",
+  "Sleep earlier",
+  "Wake up at 5 AM",
+  "Fast in the morning",
+  "Drink water",
+  "Talk less",
+  "Listen more",
+  "Spend time alone",
+  "Love your family",
+  "Avoid negative thoughts"
 ];
 
 const REMINDERS = [
-  "Ninguém virá te salvar. É responsabilidade sua.",
-  "Dor é o preço da entrada para uma nova vida.",
-  "Enquanto você dorme, seu inimigo treina.",
-  "Não seja escravo das suas emoções. Aja com a razão.",
-  "O que você faz no escuro define quem você é na luz.",
-  "Disciplina é fazer o que odeia como se amasse.",
-  "Seja perigoso, mas controlado.",
-  "A pobreza é, na maioria das vezes, uma doença mental curável.",
-  "Sua rede define seu patrimônio. Afaste-se de perdedores.",
-  "Não conte seus planos. Mostre seus resultados.",
-  "A morte sorri para todos; tudo o que um homem pode fazer é sorrir de volta.",
-  "Não aceite a versão 'beta' de si mesmo."
+  "No one is coming to save you. It is your responsibility.",
+  "Pain is the price of admission for a new life.",
+  "While you sleep, your enemy trains.",
+  "Do not be a slave to your emotions. Act with reason.",
+  "What you do in the dark defines who you are in the light.",
+  "Discipline is doing what you hate like you love it.",
+  "Be dangerous, but controlled.",
+  "Poverty is, most of the time, a curable mental disease.",
+  "Your network is your net worth. Stay away from losers.",
+  "Don't tell your plans. Show your results.",
+  "Death smiles at us all; all a man can do is smile back.",
+  "Do not accept the 'beta' version of yourself."
 ];
 
 const Tracker = ({ addToast }: TrackerProps) => {
@@ -83,7 +83,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
     const allCompleted = updatedCheckedState.every(Boolean);
     if (allCompleted && !checkedState.every(Boolean)) {
       fireConfetti();
-      addToast("Protocolo Completo. Você venceu o dia.", "success");
+      addToast("Protocol Complete. You won the day.", "success");
       const newStreak = streak + 1;
       setStreak(newStreak);
       localStorage.setItem('habitStreak2026', newStreak.toString());
@@ -111,11 +111,11 @@ const Tracker = ({ addToast }: TrackerProps) => {
   };
 
   const resetDay = () => {
-    if (confirm("Tem certeza que deseja reiniciar o progresso de hoje?")) {
+    if (confirm("Are you sure you want to reset today's progress?")) {
       const resetState = new Array(HABITS.length).fill(false);
       setCheckedState(resetState);
       localStorage.setItem('habitState2026', JSON.stringify(resetState));
-      addToast("Dia reiniciado.", "warning");
+      addToast("Day reset.", "warning");
     }
   };
 
@@ -126,28 +126,28 @@ const Tracker = ({ addToast }: TrackerProps) => {
 
   const completedCount = checkedState.filter(Boolean).length;
   const progressPercentage = Math.round((completedCount / HABITS.length) * 100);
-  const todayDisplay = new Date().toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  const todayDisplay = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
   return (
     <section className="max-w-4xl mx-auto my-20 p-6 md:p-10 bg-surface-100/60 backdrop-blur-md rounded-2xl border border-white/5 shadow-2xl" id="tracker">
       <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold uppercase font-heading tracking-tight mb-2">O Campo de Batalha</h2>
-          <p className="text-text-secondary">Execute o protocolo. Sem desculpas.</p>
+          <h2 className="text-3xl md:text-4xl font-bold uppercase font-heading tracking-tight mb-2">The Battlefield</h2>
+          <p className="text-text-secondary">Execute the protocol. No excuses.</p>
         </div>
 
         <div className="text-right flex flex-col items-end">
           <span className="text-sm text-text-secondary mb-2 capitalize">{todayDisplay}</span>
           <div className="flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-lg font-bold">
             <Flame size={18} className={streak > 0 ? "animate-pulse" : ""} />
-            {streak} Dias de Foco
+            {streak} Days of Focus
           </div>
         </div>
       </div>
 
       <div className="mb-10">
         <div className="flex justify-between mb-3 text-sm font-bold uppercase tracking-wider text-text-secondary">
-          <span>Status da Missão</span>
+          <span>Mission Status</span>
           <span className={progressPercentage === 100 ? "text-primary" : "text-white"}>{progressPercentage}%</span>
         </div>
         <div className="h-3 bg-surface-200 rounded-full overflow-hidden">
@@ -195,13 +195,13 @@ const Tracker = ({ addToast }: TrackerProps) => {
           onClick={showReminder}
           className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg font-medium transition-all"
         >
-          <Bell size={18} /> Lembrete Estoico
+          <Bell size={18} /> Stoic Reminder
         </button>
         <button
           onClick={resetDay}
           className="flex items-center gap-2 px-6 py-3 bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/20 rounded-lg font-medium transition-all"
         >
-          <RefreshCcw size={18} /> Reiniciar Dia
+          <RefreshCcw size={18} /> Reset Day
         </button>
       </div>
     </section>

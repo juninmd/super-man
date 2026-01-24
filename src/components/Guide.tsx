@@ -4,73 +4,73 @@ import { Dumbbell, Brain, Wallet, Trophy, ChevronDown, ChevronUp } from 'lucide-
 const SECTIONS = [
   {
     id: 'mind',
-    title: 'Mentalidade de Ferro',
+    title: 'Iron Mindset',
     icon: Brain,
     content: [
       {
-        subtitle: 'Estoicismo Aplicado',
-        text: 'Você não controla o que acontece, apenas como reage. O trânsito, a economia, a opinião dos outros - tudo ruído. Foque no que está sob suas mãos: seu esforço, sua integridade, sua disciplina.'
+        subtitle: 'Applied Stoicism',
+        text: 'You do not control what happens, only how you react. Traffic, the economy, others\' opinions - all noise. Focus on what is in your hands: your effort, your integrity, your discipline.'
       },
       {
-        subtitle: 'A Regra dos 5 Segundos',
-        text: 'Quando você sabe que precisa fazer algo, tem 5 segundos antes que seu cérebro crie uma desculpa. Conte 5-4-3-2-1 e VÁ. A hesitação é o túmulo do progresso.'
+        subtitle: 'The 5 Second Rule',
+        text: 'When you know you need to do something, you have 5 seconds before your brain creates an excuse. Count 5-4-3-2-1 and GO. Hesitation is the grave of progress.'
       },
       {
-        subtitle: 'Vitimização é Veneno',
-        text: 'Ninguém se importa com seus problemas. O mundo só respeita resultados. Pare de culpar seus pais, o governo ou sua ex. Assuma a responsabilidade extrema por tudo na sua vida.'
+        subtitle: 'Victimhood is Poison',
+        text: 'No one cares about your problems. The world only respects results. Stop blaming your parents, the government, or your ex. Take extreme responsibility for everything in your life.'
       }
     ]
   },
   {
     id: 'body',
-    title: 'Templo de Guerra',
+    title: 'Temple of War',
     icon: Dumbbell,
     content: [
       {
-        subtitle: 'Levante Peso Pesado',
-        text: 'Um homem fraco é um homem ignorado. Treine força 4-5x por semana. Foque nos básicos: Agachamento, Levantamento Terra, Supino, Barra Fixa.'
+        subtitle: 'Lift Heavy Weights',
+        text: 'A weak man is an ignored man. Train strength 4-5x a week. Focus on basics: Squat, Deadlift, Bench Press, Pull-up.'
       },
       {
-        subtitle: 'Combustível Real',
-        text: 'Coma o que sua bisavó reconheceria como comida. Carne, ovos, frutas, vegetais, arroz. Elimine óleos de sementes, açúcar refinado e soja.'
+        subtitle: 'Real Fuel',
+        text: 'Eat what your great-grandmother would recognize as food. Meat, eggs, fruits, vegetables, rice. Eliminate seed oils, refined sugar, and soy.'
       },
       {
-        subtitle: 'Sono Anabólico',
-        text: '7-8 horas. Quarto escuro e frio. Sem celular 1h antes. É aqui que a testosterona é produzida e o cérebro limpo.'
+        subtitle: 'Anabolic Sleep',
+        text: '7-8 hours. Dark and cool room. No phone 1h before. This is where testosterone is produced and the brain cleaned.'
       }
     ]
   },
   {
     id: 'money',
-    title: 'Recursos & Poder',
+    title: 'Resources & Power',
     icon: Wallet,
     content: [
       {
-        subtitle: 'Aumente seu Valor',
-        text: 'Dinheiro é uma troca de valor. Se você quer mais dinheiro, resolva problemas maiores. Aprenda vendas, programação, gestão ou oratória.'
+        subtitle: 'Increase Your Value',
+        text: 'Money is an exchange of value. If you want more money, solve bigger problems. Learn sales, programming, management, or public speaking.'
       },
       {
-        subtitle: 'Viva Abaixo dos Meios',
-        text: 'Não compre passivos para impressionar pessoas que você não gosta. Invista a diferença. O objetivo é liberdade, não aparência de riqueza.'
+        subtitle: 'Live Below Your Means',
+        text: 'Don\'t buy liabilities to impress people you don\'t like. Invest the difference. The goal is freedom, not the appearance of wealth.'
       },
       {
-        subtitle: 'Network é Networth',
-        text: 'Você é a média das 5 pessoas com quem mais convive. Se seus amigos só falam de futebol e bebida, troque de amigos.'
+        subtitle: 'Network is Net Worth',
+        text: 'You are the average of the 5 people you spend the most time with. If your friends only talk about soccer and drinking, change friends.'
       }
     ]
   },
   {
     id: 'spirit',
-    title: 'Legado & Honra',
+    title: 'Legacy & Honor',
     icon: Trophy,
     content: [
       {
-        subtitle: 'Palavra de Honra',
-        text: 'Se você disse que faria, faça. Sua reputação é seu ativo mais valioso. Um homem sem palavra não é nada.'
+        subtitle: 'Word of Honor',
+        text: 'If you said you would do it, do it. Your reputation is your most valuable asset. A man without his word is nothing.'
       },
       {
-        subtitle: 'Propósito Maior',
-        text: 'Encontre algo pelo qual vale a pena morrer, e viva por isso. Pode ser sua família, sua fé, sua obra. Sem um norte, qualquer vento serve.'
+        subtitle: 'Higher Purpose',
+        text: 'Find something worth dying for, and live for it. It could be your family, your faith, your work. Without a north, any wind will do.'
       }
     ]
   }
@@ -87,10 +87,10 @@ const Guide = () => {
     <section className="max-w-4xl mx-auto mb-20 px-6">
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 uppercase tracking-tighter font-heading text-white">
-          O Código
+          The Code
         </h2>
         <p className="text-text-secondary text-lg">
-          Princípios imutáveis para a construção de um homem de valor.
+          Immutable principles for building a man of value.
         </p>
       </div>
 
