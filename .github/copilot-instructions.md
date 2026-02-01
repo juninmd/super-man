@@ -14,7 +14,7 @@
 ### Data Flow Pattern
 1. **State Management**: Local component state + localStorage (no Redux/Context)
 2. **LocalStorage Keys**: All persist with "2026" suffix (e.g., `habitState2026`, `habitStreak2026`)
-3. **Daily Reset Logic**: 
+3. **Daily Reset Logic**:
    - Date key format: `YYYY-MM-DD` (ISO date string)
    - Reset triggers when stored date ≠ current date
    - Habits array clears but streak persists
