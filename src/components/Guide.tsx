@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Dumbbell, Brain, Wallet, Trophy, ChevronDown, ChevronUp } from 'lucide-react';
+import { Dumbbell, Brain, Wallet, Trophy, Users, ChevronDown, ChevronUp } from 'lucide-react';
 
 const SECTIONS = [
   {
@@ -71,6 +71,25 @@ const SECTIONS = [
       {
         subtitle: 'Higher Purpose',
         text: 'Find something worth dying for, and live for it. It could be your family, your faith, your work. Without a north, any wind will do.'
+      }
+    ]
+  },
+  {
+    id: 'tribe',
+    title: 'Brotherhood & Tribe',
+    icon: Users,
+    content: [
+      {
+        subtitle: 'Iron Sharpens Iron',
+        text: 'Surround yourself with men who are stronger, smarter, and wealthier than you. Their standards will become yours. If you are the smartest person in the room, you are in the wrong room.'
+      },
+      {
+        subtitle: 'Value Exchange',
+        text: 'Do not ask for handouts. Offer value first. Relationships are built on mutual respect and benefit. Be useful, and you will never be alone.'
+      },
+      {
+        subtitle: 'Loyalty Over Royalty',
+        text: 'A small circle of loyal brothers is worth more than a thousand acquaintances. Betrayal is the ultimate sin. Protect your own.'
       }
     ]
   }
