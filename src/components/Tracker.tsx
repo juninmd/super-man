@@ -19,7 +19,11 @@ const HABITS = [
   "Listen more",
   "Spend time alone",
   "Love your family",
-  "Avoid negative thoughts"
+  "Avoid negative thoughts",
+  "Read 10 pages",
+  "No sugar",
+  "Cold shower",
+  "Journaling"
 ];
 
 const REMINDERS = [
@@ -34,7 +38,11 @@ const REMINDERS = [
   "Your network is your net worth. Stay away from losers.",
   "Don't tell your plans. Show your results.",
   "Death smiles at us all; all a man can do is smile back.",
-  "Do not accept the 'beta' version of yourself."
+  "Do not accept the 'beta' version of yourself.",
+  "We suffer more often in imagination than in reality. (Seneca)",
+  "It is not death that a man should fear, but he should fear never beginning to live. (Marcus Aurelius)",
+  "Man conquers the world by conquering himself. (Zeno)",
+  "Waste no more time arguing what a good man should be. Be one. (Marcus Aurelius)"
 ];
 
 const Tracker = ({ addToast }: TrackerProps) => {

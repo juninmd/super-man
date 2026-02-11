@@ -8,7 +8,11 @@ const PROBLEMS = [
     "Too much screentime",
     "Zero purpose",
     "Toxic bonds",
-    "No time with family"
+    "No time with family",
+    "Pornography",
+    "Alcohol",
+    "Cheap Dopamine",
+    "Complaining"
 ];
 
 const Diagnosis = () => {

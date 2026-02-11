@@ -36,6 +36,34 @@ const books: Book[] = [
     description: "Master your mind and defy the odds. The path to becoming the hardest person you know.",
     impact: "Mental Callus & Durability",
     link: "https://amazon.com/dp/1544512287"
+  },
+  {
+    title: "The 48 Laws of Power",
+    author: "Robert Greene",
+    description: "A manual for those who want to negotiate power dynamics in society. Amoral, cunning, ruthless, and instructive.",
+    impact: "Strategic Dominance",
+    link: "https://amazon.com/dp/0140280197"
+  },
+  {
+    title: "Skin in the Game",
+    author: "Nassim Nicholas Taleb",
+    description: "The most important rule in life: never trust anyone who doesn't have something to lose if they are wrong.",
+    impact: "Risk Management & Ethics",
+    link: "https://amazon.com/dp/042528462X"
+  },
+  {
+    title: "Extreme Ownership",
+    author: "Jocko Willink",
+    description: "Leadership principles from the battlefield. There are no bad teams, only bad leaders.",
+    impact: "Absolute Responsibility",
+    link: "https://amazon.com/dp/1250067057"
+  },
+  {
+    title: "Man's Search for Meaning",
+    author: "Viktor E. Frankl",
+    description: "A psychiatrist's memoir of life in Nazi death camps. He who has a why to live can bear almost any how.",
+    impact: "Finding Purpose in Suffering",
+    link: "https://amazon.com/dp/0807014273"
   }
 ];
 
