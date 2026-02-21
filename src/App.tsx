@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Hero from './components/Hero';
+import DailyStoic from './components/DailyStoic';
 import Diagnosis from './components/Diagnosis';
 import MementoMori from './components/MementoMori';
 import Perspective from './components/Perspective';
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className="app-container">
       <Hero />
+      <DailyStoic />
       <Diagnosis />
       <MementoMori />
       <Perspective />

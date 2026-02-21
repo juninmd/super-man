@@ -18,6 +18,10 @@ const SECTIONS = [
       {
         subtitle: 'Victimhood is Poison',
         text: 'No one cares about your problems. The world only respects results. Stop blaming your parents, the government, or your ex. Take extreme responsibility for everything in your life.'
+      },
+      {
+        subtitle: 'Amor Fati',
+        text: 'Love your fate. Do not just bear it. Embrace it. Everything that happens is fuel for your growth. The obstacle is the way.'
       }
     ]
   },
@@ -26,6 +30,10 @@ const SECTIONS = [
     title: 'Temple of War',
     icon: Dumbbell,
     content: [
+      {
+        subtitle: 'Voluntary Discomfort',
+        text: 'Take cold showers. Fast. Sleep on the floor occasionally. Train your mind to endure hardship so that when life strikes, you are ready.'
+      },
       {
         subtitle: 'Lift Heavy Weights',
         text: 'A weak man is an ignored man. Train strength 4-5x a week. Focus on basics: Squat, Deadlift, Bench Press, Pull-up.'
@@ -116,6 +124,7 @@ const Guide = () => {
       <div className="flex flex-col gap-6">
         {SECTIONS.map((section) => {
           const isOpen = openSection === section.id;
+          const Icon = section.icon;
           return (
             <div
               key={section.id}
@@ -132,7 +141,7 @@ const Guide = () => {
                 `}
               >
                 <div className="flex items-center gap-4">
-                  <section.icon size={28} className={isOpen ? "text-primary" : "text-text-secondary"} />
+                  <Icon size={28} className={isOpen ? "text-primary" : "text-text-secondary"} />
                   {section.title}
                 </div>
                 {isOpen ? <ChevronUp /> : <ChevronDown className="text-text-secondary" />}

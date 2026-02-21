@@ -1,17 +1,17 @@
 import { Dumbbell, PauseCircle, Moon, Utensils, Smartphone, Target, ShieldBan, Heart, Brain, BookOpen, Coins, Crown } from 'lucide-react';
 
 const cards = [
-  { icon: Dumbbell, title: "Physical Mastery", text: "Weak body, weak mind. Train daily." },
-  { icon: PauseCircle, title: "Strategic Rest", text: "Burnout is for the unprepared. Recover." },
-  { icon: Moon, title: "Deep Sleep", text: "Sleep is your superpower. Prioritize it." },
-  { icon: Utensils, title: "Fuel, Not Food", text: "Garbage in, garbage out. Eat for performance." },
-  { icon: Smartphone, title: "Digital Discipline", text: "Don't let the algorithm control your life." },
-  { icon: Target, title: "Clear Mission", text: "A man without a mission is lost. Find yours." },
+  { icon: Dumbbell, title: "Iron Body", text: "Weak body, weak mind. Forge yourself daily." },
+  { icon: PauseCircle, title: "Active Recovery", text: "Burnout is for the unprepared. Recover strategically." },
+  { icon: Moon, title: "Deep Sleep", text: "Sleep is your superpower. Prioritize it or die young." },
+  { icon: Utensils, title: "Fuel, Not Food", text: "Garbage in, garbage out. Eat for performance, not pleasure." },
+  { icon: Smartphone, title: "Digital Discipline", text: "Don't let the algorithm control your life. Focus." },
+  { icon: Target, title: "Defined Purpose", text: "A man without a mission is lost. Find your North Star." },
   { icon: ShieldBan, title: "Inner Circle", text: "Cut the dead weight. Surround yourself with strength." },
-  { icon: Heart, title: "Loyalty and Duty", text: "Protect and provide. Family comes first." },
-  { icon: Brain, title: "Emotional Control", text: "Be a rock in the storm. Stoicism." },
-  { icon: BookOpen, title: "Sharp Intellect", text: "Learn something new every day. Evolve." },
-  { icon: Coins, title: "Independence", text: "Control your resources. Don't be a slave to debt." },
+  { icon: Heart, title: "Duty & Honor", text: "Protect and provide. Feelings change, duty does not." },
+  { icon: Brain, title: "Stoic Fortitude", text: "Be a rock in the storm. Emotions must not rule you." },
+  { icon: BookOpen, title: "Sharp Intellect", text: "Read. Learn. Apply. Evolve or dissolve." },
+  { icon: Coins, title: "Sovereignty", text: "Control your resources. Debt is slavery." },
   { icon: Crown, title: "Legacy", text: "What will you leave behind? Build for eternity." },
 ];
 
