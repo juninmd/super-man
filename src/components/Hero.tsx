@@ -26,8 +26,10 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-2xl text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-          Reject modern weakness. Master your mind. Sculpt your body. Enrich your pocket.
-          <span className="block mt-4 text-white font-medium">Mediocrity is hell on earth.</span>
+          Reject modern weakness. Master your mind. Sculpt your body.
+          <br className="hidden md:block" />
+          <span className="text-primary/80 mt-2 block text-base uppercase tracking-widest font-bold">Discipline • Strength • Resilience</span>
+          <span className="block mt-6 text-white font-medium">"No man is free who is not master of himself."</span>
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -42,7 +44,7 @@ const Hero = () => {
           </button>
 
           <button className="px-8 py-4 bg-white/5 border border-white/10 text-white font-medium text-lg uppercase tracking-wide rounded-lg hover:bg-white/10 transition-colors backdrop-blur-sm">
-            Learn More
+            The Code
           </button>
         </div>
       </div>

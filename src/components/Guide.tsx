@@ -18,6 +18,10 @@ const SECTIONS = [
       {
         subtitle: 'Victimhood is Poison',
         text: 'No one cares about your problems. The world only respects results. Stop blaming your parents, the government, or your ex. Take extreme responsibility for everything in your life.'
+      },
+      {
+        subtitle: 'Amor Fati',
+        text: 'Love your fate. Do not just bear it. Embrace it. Everything that happens is fuel for your growth. The obstacle is the way.'
       }
     ]
   },
@@ -26,6 +30,10 @@ const SECTIONS = [
     title: 'Temple of War',
     icon: Dumbbell,
     content: [
+      {
+        subtitle: 'Voluntary Discomfort',
+        text: 'Take cold showers. Fast. Sleep on the floor occasionally. Train your mind to endure hardship so that when life strikes, you are ready.'
+      },
       {
         subtitle: 'Lift Heavy Weights',
         text: 'A weak man is an ignored man. Train strength 4-5x a week. Focus on basics: Squat, Deadlift, Bench Press, Pull-up.'

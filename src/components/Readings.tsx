@@ -17,6 +17,20 @@ const books: Book[] = [
     link: "https://amazon.com/dp/0812968255"
   },
   {
+    title: "Letters from a Stoic",
+    author: "Seneca",
+    description: "Practical wisdom on friendship, death, and the brevity of life. A guide to living with virtue and tranquility.",
+    impact: "Moral Character & Wisdom",
+    link: "https://amazon.com/dp/0140442103"
+  },
+  {
+    title: "Discourses",
+    author: "Epictetus",
+    description: "Direct teachings from a former slave turned philosopher. Focuses on what is within our control and what is not.",
+    impact: "Unshakeable Freedom",
+    link: "https://amazon.com/dp/0140449469"
+  },
+  {
     title: "Atomic Habits",
     author: "James Clear",
     description: "The most practical guide to breaking bad habits and building good ones. Small changes, remarkable results.",

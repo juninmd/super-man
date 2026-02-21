@@ -1,18 +1,18 @@
 import { AlertCircle, Skull } from 'lucide-react';
 
 const PROBLEMS = [
-    "No gym",
-    "No time out",
-    "No enough sleep",
-    "Bad diet",
-    "Too much screentime",
-    "Zero purpose",
-    "Toxic bonds",
-    "No time with family",
+    "Weak Body",
+    "Lack of Discipline",
+    "Sleep Deprivation",
+    "Poisonous Diet",
+    "Screen Addiction",
+    "Aimlessness",
+    "Toxic Circle",
+    "Neglect of Duty",
     "Pornography",
-    "Alcohol",
+    "Substance Abuse",
     "Cheap Dopamine",
-    "Complaining"
+    "Ungratefulness"
 ];
 
 const Diagnosis = () => {
@@ -38,7 +38,7 @@ const Diagnosis = () => {
 
                 <div className="border-t border-red-500/20 pt-8 mt-4">
                     <p className="text-2xl md:text-3xl font-bold text-white tracking-tight">
-                        You are not "sad". <span className="text-red-500 block md:inline mt-2 md:mt-0">You are unregulated.</span>
+                        You are not "sad". <span className="text-red-500 block md:inline mt-2 md:mt-0">You are undisciplined.</span>
                     </p>
                 </div>
             </div>
@@ -50,8 +50,8 @@ const Diagnosis = () => {
                 <p className="text-lg text-text-secondary leading-relaxed max-w-3xl mx-auto">
                     Depression is often just the result of poor choices repeated daily.
                     <br /><br />
-                    <strong className="text-white text-xl block mb-2">Your life is 100% your responsibility.</strong>
-                    Do not blame anyone. Take control. Change your habits and you will change your mind.
+                    <strong className="text-white text-xl block mb-2">The Obstacle is the Way.</strong>
+                    Your life is 100% your responsibility. Do not blame anyone. Take control. Change your habits and you will change your mind.
                 </p>
             </div>
         </section>
