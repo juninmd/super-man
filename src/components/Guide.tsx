@@ -124,6 +124,7 @@ const Guide = () => {
       <div className="flex flex-col gap-6">
         {SECTIONS.map((section) => {
           const isOpen = openSection === section.id;
+          const Icon = section.icon;
           return (
             <div
               key={section.id}
@@ -140,7 +141,7 @@ const Guide = () => {
                 `}
               >
                 <div className="flex items-center gap-4">
-                  <section.icon size={28} className={isOpen ? "text-primary" : "text-text-secondary"} />
+                  <Icon size={28} className={isOpen ? "text-primary" : "text-text-secondary"} />
                   {section.title}
                 </div>
                 {isOpen ? <ChevronUp /> : <ChevronDown className="text-text-secondary" />}
