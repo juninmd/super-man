@@ -4,15 +4,15 @@ import { useState, useEffect } from 'react';
 const QUOTES = [
   { text: "You have power over your mind - not outside events. Realize this, and you will find strength.", author: "Marcus Aurelius" },
   { text: "Waste no more time arguing what a good man should be. Be one.", author: "Marcus Aurelius" },
-  { text: "It is not death that a man should fear, but he should fear never beginning to live.", author: "Marcus Aurelius" },
-  { text: "We suffer more often in imagination than in reality.", author: "Seneca" },
-  { text: "If a man knows not to which port he sails, no wind is favorable.", author: "Seneca" },
-  { text: "He who fears death will never do anything worthy of a man who is alive.", author: "Seneca" },
-  { text: "It's not what happens to you, but how you react to it that matters.", author: "Epictetus" },
+  { text: "The obstacle in the path becomes the path. Never forget, within every obstacle is an opportunity to improve our condition.", author: "Marcus Aurelius" },
+  { text: "Difficulty shows what men are.", author: "Epictetus" },
   { text: "First say to yourself what you would be; and then do what you have to do.", author: "Epictetus" },
   { text: "No man is free who is not master of himself.", author: "Epictetus" },
-  { text: "The happiness of your life depends upon the quality of your thoughts.", author: "Marcus Aurelius" },
-  { text: "Luck is what happens when preparation meets opportunity.", author: "Seneca" }
+  { text: "To bear trials with a calm mind robs misfortune of its strength and burden.", author: "Seneca" },
+  { text: "A gem cannot be polished without friction, nor a man perfected without trials.", author: "Seneca" },
+  { text: "If you want to be beautiful, make your choices beautiful.", author: "Epictetus" },
+  { text: "The soul becomes dyed with the color of its thoughts.", author: "Marcus Aurelius" },
+  { text: "He who fears death will never do anything worthy of a man who is alive.", author: "Seneca" }
 ];
 
 const DailyStoic = () => {

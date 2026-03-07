@@ -8,41 +8,41 @@ interface TrackerProps {
 }
 
 const HABITS = [
-  "Eat clean",
-  "Walk more",
-  "Lift weights",
-  "Sleep earlier",
-  "Wake up at 5 AM",
-  "Fast in the morning",
-  "Drink water",
-  "Talk less",
-  "Listen more",
-  "Spend time alone",
-  "Love your family",
-  "Avoid negative thoughts",
-  "Read 10 pages",
-  "No sugar",
-  "Cold shower",
-  "Journaling"
+  "Train body: Lift weights",
+  "Train mind: Read 10 pages",
+  "Voluntary discomfort: Cold shower",
+  "Control fuel: Zero processed sugar",
+  "Master time: Wake up at 5 AM",
+  "Build focus: Intermittent fasting",
+  "Hydrate: 3L of water",
+  "Control speech: Speak only what is necessary",
+  "Reflect: Nightly journaling",
+  "Protect peace: Avoid digital distraction",
+  "Fulfill duty: Provide for family",
+  "Mental armor: Reject victimhood",
+  "Action over words: Show, don't tell",
+  "Physical endurance: 10k steps",
+  "Recovery: 8 hours of sleep",
+  "Gratitude: Acknowledge what you have"
 ];
 
 const REMINDERS = [
-  "No one is coming to save you. It is your responsibility.",
-  "Pain is the price of admission for a new life.",
-  "While you sleep, your enemy trains.",
-  "Do not be a slave to your emotions. Act with reason.",
+  "No one is coming to save you. Total responsibility.",
+  "Difficulty shows what men are. Embrace the struggle.",
+  "First say to yourself what you would be; and then do what you have to do.",
+  "Do not be a slave to your emotions. Reason must rule.",
   "What you do in the dark defines who you are in the light.",
-  "Discipline is doing what you hate like you love it.",
-  "Be dangerous, but controlled.",
-  "Poverty is, most of the time, a curable mental disease.",
-  "Your network is your net worth. Stay away from losers.",
-  "Don't tell your plans. Show your results.",
-  "Death smiles at us all; all a man can do is smile back.",
-  "Do not accept the 'beta' version of yourself.",
-  "We suffer more often in imagination than in reality. (Seneca)",
-  "It is not death that a man should fear, but he should fear never beginning to live. (Marcus Aurelius)",
-  "Man conquers the world by conquering himself. (Zeno)",
-  "Waste no more time arguing what a good man should be. Be one. (Marcus Aurelius)"
+  "Discipline is choosing between what you want now and what you want most.",
+  "To bear trials with a calm mind robs misfortune of its strength.",
+  "A gem cannot be polished without friction.",
+  "If you want to be beautiful, make your choices beautiful.",
+  "Waste no more time arguing what a good man should be. Be one.",
+  "The obstacle in the path becomes the path.",
+  "He who fears death will never do anything worthy of a man who is alive.",
+  "We suffer more often in imagination than in reality.",
+  "It is not death that a man should fear, but he should fear never beginning to live.",
+  "Man conquers the world by conquering himself.",
+  "The soul becomes dyed with the color of its thoughts."
 ];
 
 const Tracker = ({ addToast }: TrackerProps) => {

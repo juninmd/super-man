@@ -26,10 +26,10 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-2xl text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-          Reject modern weakness. Master your mind. Sculpt your body.
+          Embrace the Stoic path. Forge an unbreakable mind. Build relentless discipline.
           <br className="hidden md:block" />
-          <span className="text-primary/80 mt-2 block text-base uppercase tracking-widest font-bold">Discipline • Strength • Resilience</span>
-          <span className="block mt-6 text-white font-medium">"No man is free who is not master of himself."</span>
+          <span className="text-primary/80 mt-2 block text-base uppercase tracking-widest font-bold">Discipline • Fortitude • Resilience</span>
+          <span className="block mt-6 text-white font-medium">"First say to yourself what you would be; and then do what you have to do." - Epictetus</span>
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -38,7 +38,7 @@ const Hero = () => {
             className="group relative px-8 py-4 bg-primary text-black font-bold text-lg uppercase tracking-wide rounded-lg flex items-center gap-3 transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(245,158,11,0.4)] overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
-              Start Transformation <ArrowDown size={20} className="group-hover:translate-y-1 transition-transform" />
+              Begin the Work <ArrowDown size={20} className="group-hover:translate-y-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           </button>
