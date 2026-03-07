@@ -1,18 +1,18 @@
 import { Dumbbell, PauseCircle, Moon, Utensils, Smartphone, Target, ShieldBan, Heart, Brain, BookOpen, Coins, Crown } from 'lucide-react';
 
 const cards = [
-  { icon: Dumbbell, title: "Iron Body", text: "Weak body, weak mind. Forge yourself daily." },
-  { icon: PauseCircle, title: "Active Recovery", text: "Burnout is for the unprepared. Recover strategically." },
-  { icon: Moon, title: "Deep Sleep", text: "Sleep is your superpower. Prioritize it or die young." },
-  { icon: Utensils, title: "Fuel, Not Food", text: "Garbage in, garbage out. Eat for performance, not pleasure." },
-  { icon: Smartphone, title: "Digital Discipline", text: "Don't let the algorithm control your life. Focus." },
-  { icon: Target, title: "Defined Purpose", text: "A man without a mission is lost. Find your North Star." },
-  { icon: ShieldBan, title: "Inner Circle", text: "Cut the dead weight. Surround yourself with strength." },
-  { icon: Heart, title: "Duty & Honor", text: "Protect and provide. Feelings change, duty does not." },
-  { icon: Brain, title: "Stoic Fortitude", text: "Be a rock in the storm. Emotions must not rule you." },
-  { icon: BookOpen, title: "Sharp Intellect", text: "Read. Learn. Apply. Evolve or dissolve." },
-  { icon: Coins, title: "Sovereignty", text: "Control your resources. Debt is slavery." },
-  { icon: Crown, title: "Legacy", text: "What will you leave behind? Build for eternity." },
+  { icon: Dumbbell, title: "Physical Fortitude", text: "A strong mind demands a strong vessel. Embrace the physical struggle." },
+  { icon: PauseCircle, title: "Strategic Rest", text: "Rest is not weakness; it is preparation for the next battle." },
+  { icon: Moon, title: "Vital Recovery", text: "Guard your sleep. It is the foundation of cognitive dominance." },
+  { icon: Utensils, title: "Clean Fuel", text: "Consume for function, not indulgence. Master your appetites." },
+  { icon: Smartphone, title: "Digital Fasting", text: "Reject the algorithm's noise. Preserve your focus and attention." },
+  { icon: Target, title: "Clear Purpose", text: "A life without direction is wasted. Define your objective." },
+  { icon: ShieldBan, title: "Protect Your Peace", text: "Ruthlessly cut out toxic influences. Guard your inner citadel." },
+  { icon: Heart, title: "Duty Above Desire", text: "Do what is required, regardless of how you feel." },
+  { icon: Brain, title: "Emotional Control", text: "Reason must rule over passion. Respond, do not react." },
+  { icon: BookOpen, title: "Continuous Study", text: "The mind atrophies without knowledge. Read and implement." },
+  { icon: Coins, title: "Resource Sovereignty", text: "Financial discipline is freedom. Avoid the chains of debt." },
+  { icon: Crown, title: "Enduring Legacy", text: "Live so that your actions speak long after you are gone." },
 ];
 
 const Perspective = () => {

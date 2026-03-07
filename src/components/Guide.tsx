@@ -4,100 +4,100 @@ import { Dumbbell, Brain, Wallet, Trophy, Users, ChevronDown, ChevronUp } from '
 const SECTIONS = [
   {
     id: 'mind',
-    title: 'Iron Mindset',
+    title: 'Stoic Mindset',
     icon: Brain,
     content: [
       {
-        subtitle: 'Applied Stoicism',
-        text: 'You do not control what happens, only how you react. Traffic, the economy, others\' opinions - all noise. Focus on what is in your hands: your effort, your integrity, your discipline.'
+        subtitle: 'Dichotomy of Control',
+        text: 'You do not control what happens, only how you react. Traffic, the economy, others\' opinions - all noise. Focus entirely on what is in your hands: your effort, your integrity, your discipline.'
       },
       {
-        subtitle: 'The 5 Second Rule',
-        text: 'When you know you need to do something, you have 5 seconds before your brain creates an excuse. Count 5-4-3-2-1 and GO. Hesitation is the grave of progress.'
+        subtitle: 'Eradicate Excuses',
+        text: 'Hesitation breeds weakness. When a task must be done, do not negotiate with yourself. Execute immediately. Action over deliberation.'
       },
       {
-        subtitle: 'Victimhood is Poison',
-        text: 'No one cares about your problems. The world only respects results. Stop blaming your parents, the government, or your ex. Take extreme responsibility for everything in your life.'
+        subtitle: 'Radical Responsibility',
+        text: 'No one is coming to save you. Stop blaming external forces. Take extreme ownership of your failures and your successes. Your life is your fault.'
       },
       {
         subtitle: 'Amor Fati',
-        text: 'Love your fate. Do not just bear it. Embrace it. Everything that happens is fuel for your growth. The obstacle is the way.'
+        text: 'Love your fate. Do not merely endure adversity, embrace it. Every obstacle, every pain, is an opportunity to practice virtue and build resilience.'
       }
     ]
   },
   {
     id: 'body',
-    title: 'Temple of War',
+    title: 'Physical Fortitude',
     icon: Dumbbell,
     content: [
       {
         subtitle: 'Voluntary Discomfort',
-        text: 'Take cold showers. Fast. Sleep on the floor occasionally. Train your mind to endure hardship so that when life strikes, you are ready.'
+        text: 'Take cold showers. Fast regularly. Embrace the strenuous. Train your mind to endure hardship daily, so that when true tragedy strikes, you remain unshaken.'
       },
       {
-        subtitle: 'Lift Heavy Weights',
-        text: 'A weak man is an ignored man. Train strength 4-5x a week. Focus on basics: Squat, Deadlift, Bench Press, Pull-up.'
+        subtitle: 'Forge the Vessel',
+        text: 'A weak body betrays a weak will. Lift heavy, run far, train consistently. Physical strength is the foundation of mental durability.'
       },
       {
-        subtitle: 'Real Fuel',
-        text: 'Eat what your great-grandmother would recognize as food. Meat, eggs, fruits, vegetables, rice. Eliminate seed oils, refined sugar, and soy.'
+        subtitle: 'Fuel for Performance',
+        text: 'Eat for sustenance and strength, not for pleasure. Eliminate processed garbage. Master your appetites before they master you.'
       },
       {
-        subtitle: 'Anabolic Sleep',
-        text: '7-8 hours. Dark and cool room. No phone 1h before. This is where testosterone is produced and the brain cleaned.'
+        subtitle: 'Restorative Discipline',
+        text: 'Sleep is not weakness; it is a necessity for recovery. Maintain a strict schedule. Rebuild the body to fight the next day.'
       }
     ]
   },
   {
-    id: 'money',
-    title: 'Resources & Power',
+    id: 'discipline',
+    title: 'Relentless Routine',
     icon: Wallet,
     content: [
       {
-        subtitle: 'Increase Your Value',
-        text: 'Money is an exchange of value. If you want more money, solve bigger problems. Learn sales, programming, management, or public speaking.'
+        subtitle: 'Master Your Time',
+        text: 'Time is your only non-renewable resource. Guard it fiercely. Eliminate frivolous distractions and focus entirely on your immediate duties.'
       },
       {
-        subtitle: 'Live Below Your Means',
-        text: 'Don\'t buy liabilities to impress people you don\'t like. Invest the difference. The goal is freedom, not the appearance of wealth.'
+        subtitle: 'Delayed Gratification',
+        text: 'Reject cheap dopamine. Sacrifice the comforts of today for the strength of tomorrow. True freedom requires self-denial.'
       },
       {
-        subtitle: 'Network is Net Worth',
-        text: 'You are the average of the 5 people you spend the most time with. If your friends only talk about soccer and drinking, change friends.'
+        subtitle: 'System Over Motivation',
+        text: 'Motivation is fleeting; discipline is permanent. Build systems and habits that force you to execute even when you feel like quitting.'
       }
     ]
   },
   {
     id: 'spirit',
-    title: 'Legacy & Honor',
+    title: 'Virtue & Duty',
     icon: Trophy,
     content: [
       {
-        subtitle: 'Word of Honor',
-        text: 'If you said you would do it, do it. Your reputation is your most valuable asset. A man without his word is nothing.'
+        subtitle: 'Unbreakable Word',
+        text: 'Your integrity is your most valuable possession. If you commit, follow through. Do not compromise your character for convenience.'
       },
       {
-        subtitle: 'Higher Purpose',
-        text: 'Find something worth dying for, and live for it. It could be your family, your faith, your work. Without a north, any wind will do.'
+        subtitle: 'Fulfill Your Role',
+        text: 'Understand your duty to yourself, your family, and your community. Execute that duty regardless of how heavy the burden feels.'
       }
     ]
   },
   {
     id: 'tribe',
-    title: 'Brotherhood & Tribe',
+    title: 'Inner Citadel',
     icon: Users,
     content: [
       {
-        subtitle: 'Iron Sharpens Iron',
-        text: 'Surround yourself with men who are stronger, smarter, and wealthier than you. Their standards will become yours. If you are the smartest person in the room, you are in the wrong room.'
+        subtitle: 'Guard Your Circle',
+        text: 'Surround yourself only with those who demand more of you. Cut ties with those who drag you down into complacency and vice.'
       },
       {
-        subtitle: 'Value Exchange',
-        text: 'Do not ask for handouts. Offer value first. Relationships are built on mutual respect and benefit. Be useful, and you will never be alone.'
+        subtitle: 'Self-Sufficiency',
+        text: 'Rely on no one for your peace of mind. Build an inner fortress that cannot be breached by the actions or words of others.'
       },
       {
-        subtitle: 'Loyalty Over Royalty',
-        text: 'A small circle of loyal brothers is worth more than a thousand acquaintances. Betrayal is the ultimate sin. Protect your own.'
+        subtitle: 'Lead by Example',
+        text: 'Do not preach philosophy. Embody it. Let your actions, your discipline, and your resilience be the only argument you ever need.'
       }
     ]
   }
