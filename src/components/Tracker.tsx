@@ -23,7 +23,12 @@ const HABITS = [
   "Action over words: Show, don't tell",
   "Physical endurance: 10k steps",
   "Recovery: 8 hours of sleep",
-  "Gratitude: Acknowledge what you have"
+  "Gratitude: Acknowledge what you have",
+  "Train resilience: Do one hard thing",
+  "Amor Fati: Accept what happens",
+  "Premeditatio Malorum: Expect the worst",
+  "Memento Mori: Remember death",
+  "Radical Honesty: No lies today"
 ];
 
 const REMINDERS = [
