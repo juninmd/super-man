@@ -78,6 +78,20 @@ const books: Book[] = [
     description: "A psychiatrist's memoir of life in Nazi death camps. He who has a why to live can bear almost any how.",
     impact: "Finding Purpose in Suffering",
     link: "https://amazon.com/dp/0807014273"
+  },
+  {
+    title: "Discipline is Destiny",
+    author: "Ryan Holiday",
+    description: "The power of self-control. A guide to mastering your will and achieving greatness through discipline.",
+    impact: "Self-Mastery",
+    link: "https://amazon.com/dp/0593190816"
+  },
+  {
+    title: "Ego Is the Enemy",
+    author: "Ryan Holiday",
+    description: "The fight to master our greatest opponent. Learn to be humble in your aspirations, gracious in your success, and resilient in your failures.",
+    impact: "Humility",
+    link: "https://amazon.com/dp/1591847818"
   }
 ];
 

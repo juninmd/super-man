@@ -22,6 +22,10 @@ const SECTIONS = [
       {
         subtitle: 'Amor Fati',
         text: 'Love your fate. Do not merely endure adversity, embrace it. Every obstacle, every pain, is an opportunity to practice virtue and build resilience.'
+      },
+      {
+        subtitle: 'Premeditatio Malorum',
+        text: 'Prepare for the worst. Visualize losing what you love, facing failure, and enduring pain. By rehearsing hardship, you strip it of its power to paralyze you when it arrives.'
       }
     ]
   },
