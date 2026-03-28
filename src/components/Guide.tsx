@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Dumbbell, Brain, Wallet, Trophy, Users, ChevronDown, ChevronUp } from 'lucide-react';
+import { Dumbbell, Brain, Shield, Trophy, Users, ChevronDown, ChevronUp } from 'lucide-react';
 
 const SECTIONS = [
   {
@@ -55,7 +55,7 @@ const SECTIONS = [
   {
     id: 'discipline',
     title: 'Relentless Routine',
-    icon: Wallet,
+    icon: Shield,
     content: [
       {
         subtitle: 'Master Your Time',
