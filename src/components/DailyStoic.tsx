@@ -19,7 +19,13 @@ const QUOTES = [
   { text: "We suffer more often in imagination than in reality.", author: "Seneca" },
   { text: "The best revenge is to be unlike him who performed the injury.", author: "Marcus Aurelius" },
   { text: "A man is as unhappy as he has convinced himself he is.", author: "Seneca" },
-  { text: "Man conquers the world by conquering himself.", author: "Zeno of Citium" }
+  { text: "Man conquers the world by conquering himself.", author: "Zeno of Citium" },
+  { text: "You must build up your life action by action, and be content if each one achieves its goal as far as possible.", author: "Marcus Aurelius" },
+  { text: "Don't explain your philosophy. Embody it.", author: "Epictetus" },
+  { text: "The more we value things outside our control, the less control we have.", author: "Epictetus" },
+  { text: "It's not what happens to you, but how you react to it that matters.", author: "Epictetus" },
+  { text: "Sometimes even to live is an act of courage.", author: "Seneca" },
+  { text: "He who sweats more in training bleeds less in war.", author: "Spartan Proverb" }
 ];
 
 const DailyStoic = () => {
