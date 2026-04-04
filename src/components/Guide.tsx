@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Dumbbell, Brain, Wallet, Trophy, Users, ChevronDown, ChevronUp } from 'lucide-react';
+import { Dumbbell, Brain, Wallet, Trophy, Users, ChevronDown, ChevronUp, Shield } from 'lucide-react';
 
 const SECTIONS = [
   {
@@ -102,6 +102,21 @@ const SECTIONS = [
       {
         subtitle: 'Lead by Example',
         text: 'Do not preach philosophy. Embody it. Let your actions, your discipline, and your resilience be the only argument you ever need.'
+      }
+    ]
+  },
+  {
+    id: 'resilience',
+    title: 'Iron Resilience',
+    icon: Shield,
+    content: [
+      {
+        subtitle: 'Embrace the Suck',
+        text: 'Adversity is not an anomaly; it is the training ground. When things get difficult, smile. This is where you grow.'
+      },
+      {
+        subtitle: 'Antifragility',
+        text: 'Do not just withstand shocks, grow stronger from them. Let chaos and pain become the fuel for your undeniable ascent.'
       }
     ]
   }

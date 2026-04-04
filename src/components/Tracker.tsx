@@ -28,7 +28,10 @@ const HABITS = [
   "Amor Fati: Accept what happens",
   "Premeditatio Malorum: Expect the worst",
   "Memento Mori: Remember death",
-  "Radical Honesty: No lies today"
+  "Radical Honesty: No lies today",
+  "Discipline: Execute today's most difficult task first",
+  "Endurance: Push past the point of wanting to quit",
+  "Resilience: Reframe a negative event into a positive lesson"
 ];
 
 const REMINDERS = [
@@ -47,7 +50,10 @@ const REMINDERS = [
   "We suffer more often in imagination than in reality.",
   "It is not death that a man should fear, but he should fear never beginning to live.",
   "Man conquers the world by conquering himself.",
-  "The soul becomes dyed with the color of its thoughts."
+  "The soul becomes dyed with the color of its thoughts.",
+  "Do not pray for an easy life, pray for the strength to endure a difficult one.",
+  "Your mind will quit a thousand times before your body does. Keep pushing.",
+  "Discipline equals freedom. Own your day."
 ];
 
 const Tracker = ({ addToast }: TrackerProps) => {
