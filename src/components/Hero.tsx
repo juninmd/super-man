@@ -26,7 +26,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-2xl text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-          Embrace the Stoic path. Forge an unbreakable mind. Build relentless discipline.
+          Embrace the Stoic path. Forge an unbreakable mind, undeniable strength, and absolute resilience. Build relentless discipline.
           <br className="hidden md:block" />
           <span className="text-primary/80 mt-2 block text-base uppercase tracking-widest font-bold">Discipline • Fortitude • Resilience</span>
           <span className="block mt-6 text-white font-medium">"First say to yourself what you would be; and then do what you have to do." - Epictetus</span>

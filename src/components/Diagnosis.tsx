@@ -50,7 +50,7 @@ const Diagnosis = () => {
                 <p className="text-lg text-text-secondary leading-relaxed max-w-3xl mx-auto">
                     Weakness is the result of poor choices and avoidance of discomfort.
                     <br /><br />
-                    <strong className="text-white text-xl block mb-2">The Obstacle is the Way.</strong>
+                    <strong className="text-white text-xl block mb-2">The Obstacle is the Way. True strength is forged in adversity. Embrace resilience.</strong>
                     Your circumstances are 100% your responsibility. Do not blame anyone. Take control. Forge your mind, command your actions, and you will transform your life.
                 </p>
             </div>

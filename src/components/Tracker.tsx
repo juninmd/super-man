@@ -30,8 +30,8 @@ const HABITS = [
   "Memento Mori: Remember death",
   "Radical Honesty: No lies today",
   "Discipline: Execute today's most difficult task first",
-  "Endurance: Push past the point of wanting to quit",
-  "Resilience: Reframe a negative event into a positive lesson"
+  "Endurance & Strength: Push past the point of wanting to quit, build physical and mental fortitude",
+  "Absolute Resilience: Reframe a negative event into a positive lesson, emerge stronger than before"
 ];
 
 const REMINDERS = [
