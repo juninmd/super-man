@@ -13,7 +13,7 @@ const SECTIONS = [
       },
       {
         subtitle: 'Eradicate Excuses',
-        text: 'Hesitation breeds weakness. When a task must be done, do not negotiate with yourself. Execute immediately. Action over deliberation.'
+        text: 'Hesitation breeds weakness. When a task must be done, do not negotiate with yourself. Execute immediately. Action over deliberation. Discipline is your only path to true strength.'
       },
       {
         subtitle: 'Radical Responsibility',
@@ -112,7 +112,7 @@ const SECTIONS = [
     content: [
       {
         subtitle: 'Embrace the Suck',
-        text: 'Adversity is not an anomaly; it is the training ground. When things get difficult, smile. This is where you grow.'
+        text: 'Adversity is not an anomaly; it is the training ground. When things get difficult, smile. This is where you build unshakeable resilience and strength.'
       },
       {
         subtitle: 'Antifragility',
