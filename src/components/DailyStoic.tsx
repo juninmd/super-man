@@ -10,22 +10,24 @@ const QUOTES = [
   { text: "No man is free who is not master of himself.", author: "Epictetus" },
   { text: "To bear trials with a calm mind robs misfortune of its strength and burden.", author: "Seneca" },
   { text: "A gem cannot be polished without friction, nor a man perfected without trials.", author: "Seneca" },
-  { text: "If you want to be beautiful, make your choices beautiful.", author: "Epictetus" },
-  { text: "The soul becomes dyed with the color of its thoughts.", author: "Marcus Aurelius" },
+  { text: "The soul becomes dyed with the color of its thoughts. Think only on what elevates you.", author: "Marcus Aurelius" },
   { text: "He who fears death will never do anything worthy of a man who is alive.", author: "Seneca" },
   { text: "It is not death that a man should fear, but he should fear never beginning to live.", author: "Marcus Aurelius" },
   { text: "If it is not right, do not do it; if it is not true, do not say it.", author: "Marcus Aurelius" },
   { text: "How long are you going to wait before you demand the best for yourself?", author: "Epictetus" },
   { text: "We suffer more often in imagination than in reality.", author: "Seneca" },
-  { text: "The best revenge is to be unlike him who performed the injury.", author: "Marcus Aurelius" },
-  { text: "A man is as unhappy as he has convinced himself he is.", author: "Seneca" },
+  { text: "The best revenge is to be unlike him who performed the injury. Rise above.", author: "Marcus Aurelius" },
+  { text: "A man is as unhappy as he has convinced himself he is. Master your perception.", author: "Seneca" },
   { text: "Man conquers the world by conquering himself.", author: "Zeno of Citium" },
   { text: "You must build up your life action by action, and be content if each one achieves its goal as far as possible.", author: "Marcus Aurelius" },
   { text: "Don't explain your philosophy. Embody it.", author: "Epictetus" },
   { text: "The more we value things outside our control, the less control we have.", author: "Epictetus" },
   { text: "It's not what happens to you, but how you react to it that matters.", author: "Epictetus" },
   { text: "Sometimes even to live is an act of courage.", author: "Seneca" },
-  { text: "He who sweats more in training bleeds less in war.", author: "Spartan Proverb" }
+  { text: "He who sweats more in training bleeds less in war.", author: "Spartan Proverb" },
+  { text: "Discipline equals freedom.", author: "Jocko Willink" },
+  { text: "Do not pray for an easy life, pray for the strength to endure a difficult one.", author: "Bruce Lee" },
+  { text: "It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable.", author: "Socrates" }
 ];
 
 const DailyStoic = () => {
