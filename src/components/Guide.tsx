@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Dumbbell, Brain, Wallet, Trophy, Users, ChevronDown, ChevronUp, Shield } from 'lucide-react';
+import { Dumbbell, Brain, Target, Trophy, Users, ChevronDown, ChevronUp, Shield } from 'lucide-react';
 
 const SECTIONS = [
   {
@@ -55,19 +55,19 @@ const SECTIONS = [
   {
     id: 'discipline',
     title: 'Relentless Routine',
-    icon: Wallet,
+    icon: Target,
     content: [
       {
         subtitle: 'Master Your Time',
-        text: 'Time is your only non-renewable resource. Guard it fiercely. Eliminate frivolous distractions and focus entirely on your immediate duties.'
+        text: 'Time is your only non-renewable resource. Guard it fiercely. Ruthlessly eliminate distractions and direct all energy to your core mission.'
       },
       {
         subtitle: 'Delayed Gratification',
-        text: 'Reject cheap dopamine. Sacrifice the comforts of today for the strength of tomorrow. True freedom requires self-denial.'
+        text: 'Reject the weak pull of cheap dopamine. Sacrifice the comfortable indulgence of today for the unshakeable strength of tomorrow. Absolute freedom requires absolute self-denial.'
       },
       {
         subtitle: 'System Over Motivation',
-        text: 'Motivation is fleeting; discipline is permanent. Build systems and habits that force you to execute even when you feel like quitting.'
+        text: 'Motivation is an illusion for the weak. Discipline is permanent. Forge ironclad systems that compel you to execute relentlessly, especially when your mind screams to quit.'
       }
     ]
   },
@@ -111,12 +111,12 @@ const SECTIONS = [
     icon: Shield,
     content: [
       {
-        subtitle: 'Embrace the Suck',
-        text: 'Adversity is not an anomaly; it is the training ground. When things get difficult, smile. This is where you build unshakeable resilience and strength.'
+        subtitle: 'Embrace the Struggle',
+        text: 'Adversity is not an anomaly; it is the crucible. When the burden feels unbearable, smile. You are being tested. Lean into the pain to build unshakeable fortitude.'
       },
       {
         subtitle: 'Antifragility',
-        text: 'Do not just withstand shocks, grow stronger from them. Let chaos and pain become the fuel for your undeniable ascent.'
+        text: 'Surviving is the baseline. Do not just withstand the storm—absorb its energy. Let every failure, betrayal, and physical exhaustion become the raw fuel for your undeniable ascent.'
       }
     ]
   }

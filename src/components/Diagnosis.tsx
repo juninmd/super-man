@@ -24,7 +24,7 @@ const Diagnosis = () => {
                 </h2>
 
                 <p className="text-lg md:text-xl mb-8 text-text-secondary">
-                    If you feel lost or lacking in strength, it is likely you are yielding to:
+                    If you lack strength, it is because you tolerate weakness. You are actively yielding to:
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10 text-left">
@@ -38,7 +38,7 @@ const Diagnosis = () => {
 
                 <div className="border-t border-red-500/20 pt-8 mt-4">
                     <p className="text-2xl md:text-3xl font-bold text-white tracking-tight">
-                        Your suffering is often chosen. <span className="text-red-500 block md:inline mt-2 md:mt-0">Choose discipline instead.</span>
+                        Your suffering is a choice. <span className="text-red-500 block md:inline mt-2 md:mt-0">Eradicate excuses. Choose discipline.</span>
                     </p>
                 </div>
             </div>
@@ -48,10 +48,10 @@ const Diagnosis = () => {
                     <Skull className="text-primary w-8 h-8" /> Radical Responsibility
                 </h3>
                 <p className="text-lg text-text-secondary leading-relaxed max-w-3xl mx-auto">
-                    Weakness is the result of poor choices and avoidance of discomfort.
+                    Weakness is not an accident; it is the predictable result of avoiding discomfort and seeking the easy path.
                     <br /><br />
-                    <strong className="text-white text-xl block mb-2">The Obstacle is the Way. True strength is forged in adversity. Embrace resilience.</strong>
-                    Your circumstances are 100% your responsibility. Do not blame anyone. Take control. Forge your mind, command your actions, and you will transform your life.
+                    <strong className="text-white text-xl block mb-2">The Obstacle is the Way. True strength is forged exclusively in the crucible of adversity.</strong>
+                    Your circumstances are your fault. Stop blaming others. Stop hoping for salvation. Take absolute control. Command your mind, execute with discipline, and build undeniable resilience.
                 </p>
             </div>
         </section>
