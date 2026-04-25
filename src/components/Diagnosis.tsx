@@ -54,6 +54,41 @@ const Diagnosis = () => {
                     Your circumstances are your fault. Stop blaming others. Stop hoping for salvation. Take absolute control. Command your mind, execute with discipline, and build undeniable resilience.
                 </p>
             </div>
+
+            <div className="mt-12 text-left bg-black/20 border border-white/5 rounded-2xl p-8 md:p-10">
+                <h3 className="text-3xl font-bold mb-8 text-white uppercase tracking-tight text-center">
+                    How to Forge Yourself
+                </h3>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="flex flex-col gap-3">
+                        <div className="text-primary font-bold text-xl uppercase tracking-wider mb-2 border-b border-primary/20 pb-2">
+                            1. Discipline
+                        </div>
+                        <p className="text-text-secondary leading-relaxed">
+                            <strong className="text-white">Start small, execute daily.</strong> Motivation is fleeting; routine is permanent. Do not wait to feel ready. Choose the hardest task of your day and attack it first. Relentless consistency over time is the only path.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col gap-3">
+                        <div className="text-primary font-bold text-xl uppercase tracking-wider mb-2 border-b border-primary/20 pb-2">
+                            2. Strength
+                        </div>
+                        <p className="text-text-secondary leading-relaxed">
+                            <strong className="text-white">Embrace voluntary discomfort.</strong> Push your physical and mental limits when you don't have to. Take cold showers, lift heavy, and run until your mind begs you to quit. True strength is built by repeatedly choosing the hard path.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col gap-3">
+                        <div className="text-primary font-bold text-xl uppercase tracking-wider mb-2 border-b border-primary/20 pb-2">
+                            3. Resilience
+                        </div>
+                        <p className="text-text-secondary leading-relaxed">
+                            <strong className="text-white">Anticipate adversity.</strong> Practice <em>Premeditatio Malorum</em>. When failure or hardship strikes, do not act surprised. Smile at the obstacle. Every setback is merely raw material to build an unshakeable mind.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };

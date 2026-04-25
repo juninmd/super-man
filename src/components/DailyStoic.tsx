@@ -27,7 +27,11 @@ const QUOTES = [
   { text: "He who sweats more in training bleeds less in war.", author: "Spartan Proverb" },
   { text: "Discipline equals freedom.", author: "Jocko Willink" },
   { text: "Do not pray for an easy life, pray for the strength to endure a difficult one.", author: "Bruce Lee" },
-  { text: "It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable.", author: "Socrates" }
+  { text: "It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable.", author: "Socrates" },
+  { text: "Fire tests gold, suffering tests brave men.", author: "Seneca" },
+  { text: "No person has the power to have everything they want, but it is in their power not to want what they don't have, and to cheerfully put to good use what they do have.", author: "Seneca" },
+  { text: "You have been given your own work to do. Get to it right now, do your best at it, and don't worry about who is watching you.", author: "Epictetus" },
+  { text: "You must be like a promontory of the sea, against which, though the waves beat continually, yet it both itself stands, and about it are those swelling waves stilled and quieted.", author: "Marcus Aurelius" }
 ];
 
 const DailyStoic = () => {
