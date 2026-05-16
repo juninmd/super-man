@@ -1,7 +1,7 @@
-# Copilot Instructions for Super-Man Project
+# Copilot Instructions for Mqsculus Protocol Project
 
 ## Project Overview
-**Super-Man** is a motivational habit tracker and "2026 Life Reset" app. It's a local-first React+TypeScript application themed around high-performance protocol execution with gamification elements. The app emphasizes personal discipline and transformation.
+**Mqsculus Protocol** is a motivational habit tracker and "2026 Life Reset" app. It's a local-first React+TypeScript application themed around high-performance protocol execution with Stoic philosophy. The app emphasizes personal discipline, strength, resilience, and transformation through continuous improvement and unshakeable fortitude.
 
 ## Architecture & Key Components
 
