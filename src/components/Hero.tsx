@@ -21,14 +21,14 @@ const Hero = () => {
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tighter leading-[0.9] text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40 uppercase font-heading">
-          High Performance<br />
-          <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary via-orange-400 to-primary">Protocol</span>
+          Stoic Discipline<br />
+          <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary via-orange-400 to-primary">& Absolute Resilience</span>
         </h1>
 
         <p className="text-lg md:text-2xl text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-          Embrace the Stoic path. Forge an unbreakable mind, undeniable strength, and absolute resilience. Build relentless discipline.
+          Master your mind through the Stoic path. Forge an unbreakable will, push past your physical and mental limits to build undeniable strength, and construct relentless, unyielding discipline. Eradicate all weakness and focus entirely on constant personal improvement.
           <br className="hidden md:block" />
-          <span className="text-primary/80 mt-2 block text-base uppercase tracking-widest font-bold">Discipline • Fortitude • Resilience</span>
+          <span className="text-primary/80 mt-2 block text-base uppercase tracking-widest font-bold">Unbreakable Discipline • Absolute Strength • Radical Resilience</span>
           <span className="block mt-6 text-white font-medium">"First say to yourself what you would be; and then do what you have to do." - Epictetus</span>
         </p>
 

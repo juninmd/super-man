@@ -31,7 +31,13 @@ const QUOTES = [
   { text: "Fire tests gold, suffering tests brave men.", author: "Seneca" },
   { text: "No person has the power to have everything they want, but it is in their power not to want what they don't have, and to cheerfully put to good use what they do have.", author: "Seneca" },
   { text: "You have been given your own work to do. Get to it right now, do your best at it, and don't worry about who is watching you.", author: "Epictetus" },
-  { text: "You must be like a promontory of the sea, against which, though the waves beat continually, yet it both itself stands, and about it are those swelling waves stilled and quieted.", author: "Marcus Aurelius" }
+  { text: "You must be like a promontory of the sea, against which, though the waves beat continually, yet it both itself stands, and about it are those swelling waves stilled and quieted.", author: "Marcus Aurelius" },
+  { text: "No man is free who is not master of himself. Discipline is the only path to true freedom.", author: "Epictetus" },
+  { text: "We must undergo a hard winter training and not rush into things for which we haven't prepared. Strength is forged through voluntary hardship.", author: "Epictetus" },
+  { text: "It is essential that you show yourself to be strong. To complain, to whine, to seek comfort—these are the hallmarks of a weak mind. Eradicate them.", author: "Marcus Aurelius" },
+  { text: "You have power over your mind, not outside events. Realize this, apply absolute discipline, and you will find an unshakeable inner strength.", author: "Marcus Aurelius" },
+  { text: "A strong man relies on his discipline, while a weak man relies on his motivation. Constant personal improvement demands the former.", author: "Seneca" },
+  { text: "Endurance is not just the ability to bear a hard thing, but to turn it into glory. Resilience is your ultimate weapon.", author: "Seneca" }
 ];
 
 const DailyStoic = () => {
