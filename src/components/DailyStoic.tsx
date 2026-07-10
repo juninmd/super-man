@@ -37,7 +37,12 @@ const QUOTES = [
   { text: "It is essential that you show yourself to be strong. To complain, to whine, to seek comfort—these are the hallmarks of a weak mind. Eradicate them.", author: "Marcus Aurelius" },
   { text: "You have power over your mind, not outside events. Realize this, apply absolute discipline, and you will find an unshakeable inner strength.", author: "Marcus Aurelius" },
   { text: "A strong man relies on his discipline, while a weak man relies on his motivation. Constant personal improvement demands the former.", author: "Seneca" },
-  { text: "Endurance is not just the ability to bear a hard thing, but to turn it into glory. Resilience is your ultimate weapon.", author: "Seneca" }
+  { text: "Endurance is not just the ability to bear a hard thing, but to turn it into glory. Resilience is your ultimate weapon.", author: "Seneca" },
+  { text: "Wake up early. Do the hardest task first. This simple protocol will forge a discipline that no obstacle can break.", author: "Mentor Mqsculus" },
+  { text: "Strength is built not in the days you feel motivated, but in the days you execute despite your weakness.", author: "Stoic Discipline" },
+  { text: "Do not negotiate with your inner voice of comfort. When the alarm rings, move. Immediate action is the foundation of resilience.", author: "Stoic Action" },
+  { text: "Track your failures ruthlessly. They are the exact coordinates of where your next improvement must occur.", author: "Resilience Protocol" },
+  { text: "Every time you choose the hard path over the easy one, you cast a vote for the strong, resilient version of yourself.", author: "Daily Forging" }
 ];
 
 const DailyStoic = () => {

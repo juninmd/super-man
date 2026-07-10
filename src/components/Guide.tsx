@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Dumbbell, Brain, Target, Trophy, Users, ChevronDown, ChevronUp, Shield } from 'lucide-react';
+import { Dumbbell, Brain, Target, Trophy, Users, ChevronDown, ChevronUp, Shield, Activity } from 'lucide-react';
 
 const SECTIONS = [
   {
@@ -117,6 +117,29 @@ const SECTIONS = [
       {
         subtitle: 'Antifragility',
         text: 'Surviving is the baseline. Do not just withstand the storm—absorb its energy. Let every failure, betrayal, and physical exhaustion become the raw fuel for your undeniable ascent.'
+      }
+    ]
+  },
+  {
+    id: 'protocols',
+    title: 'Action Protocols',
+    icon: Activity,
+    content: [
+      {
+        subtitle: 'The Morning Forge',
+        text: 'Do not touch your phone for the first 60 minutes. Hydrate immediately. Spend 5 minutes visualizing your day and the obstacles you will face. Complete your hardest, most dreaded task immediately. Win the morning, win the war.'
+      },
+      {
+        subtitle: 'Stoic Evening Audit',
+        text: 'End your day with a ruthless self-examination. Write down: What did I do wrong today? What did I do right? What duty did I neglect? Correct the trajectory daily.'
+      },
+      {
+        subtitle: 'The 24-Hour Rule',
+        text: 'When you feel a strong negative emotion—anger, frustration, despair—do not react. Impose a strict 24-hour waiting period before responding. Time neutralizes emotion and allows reason to dictate your action.'
+      },
+      {
+        subtitle: 'Dopamine Fasting',
+        text: 'Schedule one day a week with zero cheap dopamine. No social media, no entertainment, no junk food, no distractions. Reset your baseline and reclaim your ability to do deep, difficult work.'
       }
     ]
   }
