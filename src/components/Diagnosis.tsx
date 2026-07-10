@@ -66,7 +66,7 @@ const Diagnosis = () => {
                             1. Discipline
                         </div>
                         <p className="text-text-secondary leading-relaxed">
-                            <strong className="text-white">Start small, execute daily.</strong> Motivation is fleeting; routine is permanent. Do not wait to feel ready. Choose the hardest task of your day and attack it first. Relentless consistency over time is the only path.
+                            <strong className="text-white">Execute the 5-Second Rule.</strong> Motivation is an illusion. When a task arises, count 5-4-3-2-1 and immediately move. Block out the first 90 minutes of your day exclusively for your most difficult work. Build an unbreakable routine, because consistency is the only metric that matters.
                         </p>
                     </div>
 
@@ -75,7 +75,7 @@ const Diagnosis = () => {
                             2. Strength
                         </div>
                         <p className="text-text-secondary leading-relaxed">
-                            <strong className="text-white">Embrace voluntary discomfort.</strong> Push your physical and mental limits when you don't have to. Take cold showers, lift heavy, and run until your mind begs you to quit. True strength is built by repeatedly choosing the hard path.
+                            <strong className="text-white">Schedule Voluntary Discomfort.</strong> You cannot grow in your comfort zone. Program physical exertion daily: lift heavier than last week, or run past your mental breaking point. End every shower with 2 minutes of freezing water. Force your mind to obey your will.
                         </p>
                     </div>
 
@@ -84,7 +84,7 @@ const Diagnosis = () => {
                             3. Resilience
                         </div>
                         <p className="text-text-secondary leading-relaxed">
-                            <strong className="text-white">Anticipate adversity.</strong> Practice <em>Premeditatio Malorum</em>. When failure or hardship strikes, do not act surprised. Smile at the obstacle. Every setback is merely raw material to build an unshakeable mind.
+                            <strong className="text-white">Rehearse Failure (Premeditatio Malorum).</strong> Spend 5 minutes every morning visualizing everything going wrong. When a setback hits, say 'Amor Fati' (Love your fate) out loud. Immediately ask: "What is the single most aggressive step I can take right now to solve this?" Turn the obstacle into the path.
                         </p>
                     </div>
                 </div>
