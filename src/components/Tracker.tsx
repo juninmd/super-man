@@ -31,7 +31,12 @@ const HABITS = [
   "Radical Honesty: Tell the truth, especially when it hurts.",
   "Discipline: Attack today's most difficult task first.",
   "Endurance & Strength: Push past the point where weak minds quit.",
-  "Absolute Resilience: Turn every setback into strategic advantage."
+  "Absolute Resilience: Turn every setback into strategic advantage.",
+  "Unrelenting Focus: Do deep work for 2 uninterrupted hours.",
+  "Physical Fortitude: Complete 100 pushups or equivalent strength training.",
+  "Mental Calibration: Read 10 pages of philosophical or strategic texts.",
+  "Emotional Discipline: Identify one negative emotion and neutralize it.",
+  "Financial Prudence: Review expenses and eliminate one unnecessary cost."
 ];
 
 const REMINDERS = [

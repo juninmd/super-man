@@ -42,7 +42,16 @@ const QUOTES = [
   { text: "Strength is built not in the days you feel motivated, but in the days you execute despite your weakness.", author: "Stoic Discipline" },
   { text: "Do not negotiate with your inner voice of comfort. When the alarm rings, move. Immediate action is the foundation of resilience.", author: "Stoic Action" },
   { text: "Track your failures ruthlessly. They are the exact coordinates of where your next improvement must occur.", author: "Resilience Protocol" },
-  { text: "Every time you choose the hard path over the easy one, you cast a vote for the strong, resilient version of yourself.", author: "Daily Forging" }
+  { text: "Every time you choose the hard path over the easy one, you cast a vote for the strong, resilient version of yourself.", author: "Daily Forging" },
+  { text: "Pain is temporary, quitting lasts forever. Endure the pain and forge your character.", author: "Resilience Protocol" },
+  { text: "Your potential is on the other side of exhaustion. Keep pushing when others stop.", author: "Mentor Mqsculus" },
+  { text: "Discipline is the bridge between goals and accomplishment.", author: "Jim Rohn" },
+  { text: "To conquer oneself is a greater task than conquering others.", author: "Buddha" },
+  { text: "Do not seek an easy life. Seek the strength to endure a difficult one.", author: "Stoic Mindset" },
+  { text: "The measure of a man is what he does with power. Master your own mind.", author: "Plato" },
+  { text: "He who is brave is free. Face your fears with unyielding resolve.", author: "Seneca" },
+  { text: "Strength does not come from physical capacity. It comes from an indomitable will.", author: "Mahatma Gandhi" },
+  { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" }
 ];
 
 const DailyStoic = () => {
