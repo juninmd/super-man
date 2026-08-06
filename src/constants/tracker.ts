@@ -29,7 +29,10 @@ export const HABITS = [
   "Emotional Discipline: Identify one negative emotion and neutralize it.",
   "Financial Prudence: Review expenses and eliminate one unnecessary cost.",
   "Unrelenting Execution: Start the hardest task immediately",
-  "Stoic Silence: Do not complain for 24 hours"
+  "Stoic Silence: Do not complain for 24 hours",
+  "Personal Improvement: Identify one weakness today and execute a plan to destroy it.",
+  "Resilience Training: When faced with a setback today, respond with immediate, aggressive action.",
+  "Absolute Discipline: Complete your most dreaded task before doing anything else."
 ];
 
 export const REMINDERS = [

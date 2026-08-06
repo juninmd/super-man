@@ -26,7 +26,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-2xl text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-          Master your mind through the Stoic path. Forge an unbreakable will, push past your physical and mental limits to build undeniable strength, and construct relentless, unyielding discipline. Eradicate all weakness and focus entirely on constant personal improvement.
+          Master your mind through the Stoic path. Focus intensely on constant personal improvement. Learn how to be more disciplined, forge an unbreakable will, and push past your physical and mental limits to build undeniable strength and absolute resilience. Eradicate all weakness.
           <br className="hidden md:block" />
           <span className="text-primary/80 mt-2 block text-base uppercase tracking-widest font-bold">Unbreakable Discipline • Absolute Strength • Radical Resilience</span>
           <span className="block mt-6 text-white font-medium">"First say to yourself what you would be; and then do what you have to do." - Epictetus</span>
