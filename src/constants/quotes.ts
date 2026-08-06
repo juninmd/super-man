@@ -49,5 +49,8 @@ export const QUOTES = [
   { text: "He who is brave is free. Face your fears with unyielding resolve.", author: "Seneca" },
   { text: "Strength does not come from physical capacity. It comes from an indomitable will.", author: "Mahatma Gandhi" },
   { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
-  { text: "We must all suffer one of two things: the pain of discipline or the pain of regret.", author: "Jim Rohn" }
+  { text: "We must all suffer one of two things: the pain of discipline or the pain of regret.", author: "Jim Rohn" },
+  { text: "Personal improvement is not a destination, it is a relentless, daily execution of discipline.", author: "Stoic Mindset" },
+  { text: "To be stronger, you must first accept that you are currently weak, and then do the work to change it.", author: "Stoic Discipline" },
+  { text: "Resilience is forged in the fires of discomfort. Seek the hard path.", author: "Mentor Mqsculus" }
 ];
