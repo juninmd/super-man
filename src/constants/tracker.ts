@@ -32,7 +32,12 @@ export const HABITS = [
   "Stoic Silence: Do not complain for 24 hours",
   "Personal Improvement: Identify one weakness today and execute a plan to destroy it.",
   "Resilience Training: When faced with a setback today, respond with immediate, aggressive action.",
-  "Absolute Discipline: Complete your most dreaded task before doing anything else."
+  "Absolute Discipline: Complete your most dreaded task before doing anything else.",
+  "Digital Fasting: Zero social media or entertainment until all work is complete.",
+  "Voluntary Hardship: Take a 3-minute cold shower.",
+  "Stoic Fasting: Skip one meal to master your appetite.",
+  "Immediate Execution: Apply the 5-second rule to the first hard task of the day.",
+  "Refuse Comfort: Choose the hardest path physically today (e.g., stairs over elevator)."
 ];
 
 export const REMINDERS = [

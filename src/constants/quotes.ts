@@ -52,5 +52,15 @@ export const QUOTES = [
   { text: "We must all suffer one of two things: the pain of discipline or the pain of regret.", author: "Jim Rohn" },
   { text: "Personal improvement is not a destination, it is a relentless, daily execution of discipline.", author: "Stoic Mindset" },
   { text: "To be stronger, you must first accept that you are currently weak, and then do the work to change it.", author: "Stoic Discipline" },
-  { text: "Resilience is forged in the fires of discomfort. Seek the hard path.", author: "Mentor Mqsculus" }
+  { text: "Resilience is forged in the fires of discomfort. Seek the hard path.", author: "Mentor Mqsculus" },
+  { text: "You must build up your life action by action, and be content if each one achieves its goal as far as possible.", author: "Marcus Aurelius" },
+  { text: "The impediment to action advances action. What stands in the way becomes the way.", author: "Marcus Aurelius" },
+  { text: "It is not that we have a short time to live, but that we waste a lot of it.", author: "Seneca" },
+  { text: "If a man knows not to which port he sails, no wind is favorable.", author: "Seneca" },
+  { text: "First say to yourself what you would be; and then do what you have to do.", author: "Epictetus" },
+  { text: "Wealth consists not in having great possessions, but in having few wants.", author: "Epictetus" },
+  { text: "I judge you unfortunate because you have never lived through misfortune. You have passed through life without an opponent—no one can ever know what you are capable of, not even you.", author: "Seneca" },
+  { text: "A gem cannot be polished without friction, nor a man perfected without trials.", author: "Seneca" },
+  { text: "He who sweats more in training bleeds less in war.", author: "Spartan Proverb" },
+  { text: "Embrace the struggle. Adversity is the only forge capable of casting true resilience.", author: "Mentor Mqsculus" }
 ];
