@@ -141,5 +141,28 @@ export const SECTIONS = [
         text: 'Schedule one day a week with zero cheap dopamine. No social media, no entertainment, no junk food, no distractions. Reset your baseline and reclaim your ability to do deep, difficult work.'
       }
     ]
+  },
+  {
+    id: 'resilience-forge',
+    title: 'Resilience Forge',
+    icon: Dumbbell,
+    content: [
+      {
+        subtitle: 'The 5-Second Execution',
+        text: 'When a hard task arises, motivation is irrelevant. Count 5-4-3-2-1 and execute immediately. Action precedes motivation. This builds ironclad discipline.'
+      },
+      {
+        subtitle: 'Seek the Cold',
+        text: 'End every shower with 2 minutes of freezing water. Force your mind to submit to your will. This voluntary discomfort builds the resilience needed for actual crises.'
+      },
+      {
+        subtitle: 'Ruthless Elimination',
+        text: 'Identify one bad habit making you weak (sugar, doomscrolling, complaining). Eliminate it immediately and absolutely. Tolerance of weakness breeds more weakness.'
+      },
+      {
+        subtitle: 'Embrace the Pain',
+        text: 'When faced with physical or mental exhaustion, lean into it. Smile at the adversity. Tell yourself: "This is the fire that forges the steel." Never quit when you are tired.'
+      }
+    ]
   }
 ];
