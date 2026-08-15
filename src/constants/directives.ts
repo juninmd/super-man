@@ -1,0 +1,21 @@
+export const DIRECTIVES = [
+  "Do not negotiate with your alarm clock tomorrow. Wake up and move immediately.",
+  "Identify one comfort you rely on daily. Eliminate it for the next 24 hours.",
+  "When you feel the urge to complain today, remain completely silent instead.",
+  "Do your hardest, most dreaded task first today. No excuses.",
+  "Push yourself past your physical limit in your next training session.",
+  "Embrace an obstacle today. Say 'Amor Fati' and attack the problem.",
+  "Refuse cheap dopamine today. No mindless scrolling. Guard your focus.",
+  "Take absolute responsibility for a recent failure. Do not blame anyone else.",
+  "If it is not right, do not do it; if it is not true, do not say it.",
+  "Identify a weakness in your character. Build a rigorous plan today to destroy it.",
+  "When exhaustion hits, smile. Tell yourself: 'This is where the real work begins.'",
+  "Seek voluntary hardship today. Take the stairs, choose the cold shower, skip a meal.",
+  "End your day with a ruthless self-examination. Where did you lack discipline?",
+  "Practice premeditatio malorum: Visualize your biggest fear happening today, and mentally prepare your stoic response.",
+  "Speak less, listen more. Only contribute to a conversation if it improves upon the silence.",
+  "You do not control external events, only your reaction. Master your reaction today.",
+  "Do not waste time deliberating. Make a decision on a lingering problem and execute.",
+  "Actively seek criticism today. Let go of your ego and use the feedback to grow stronger.",
+  "When faced with an urge to consume (food, media, purchases), pause for 10 minutes and let reason dictate your choice."
+];

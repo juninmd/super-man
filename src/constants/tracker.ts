@@ -37,7 +37,13 @@ export const HABITS = [
   "Voluntary Hardship: Take a 3-minute cold shower.",
   "Stoic Fasting: Skip one meal to master your appetite.",
   "Immediate Execution: Apply the 5-second rule to the first hard task of the day.",
-  "Refuse Comfort: Choose the hardest path physically today (e.g., stairs over elevator)."
+  "Refuse Comfort: Choose the hardest path physically today (e.g., stairs over elevator).",
+  "Radical Accountability: Do not make a single excuse today.",
+  "Endurance Training: Hold a plank for 2 minutes or until failure.",
+  "Intellectual Rigor: Read one challenging article or chapter and summarize its core argument.",
+  "Stoic Isolation: Spend 30 minutes in complete silence with no stimuli.",
+  "Delayed Gratification: Postpone a desired reward by 24 hours.",
+  "Absolute Resolve: If you say you will do something today, it is done. Period."
 ];
 
 export const REMINDERS = [
@@ -61,5 +67,10 @@ export const REMINDERS = [
   "Your mind will quit a thousand times before your body does. Keep pushing.",
   "Discipline equals freedom. Own your day.",
   "Pain is temporary, quitting lasts forever.",
-  "Do not negotiate with your inner voice of comfort."
+  "Do not negotiate with your inner voice of comfort.",
+  "Strength is not a gift, it is forged through relentless daily effort.",
+  "Excuses sound best to the person making them. Ignore them.",
+  "Action is the only metric of true discipline.",
+  "Let your actions speak so loudly that your words are unnecessary.",
+  "When the mind says stop, the body has only just begun."
 ];

@@ -1,17 +1,7 @@
 import { Quote, Activity } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { QUOTES } from '../constants/quotes';
-
-const DIRECTIVES = [
-  "Do not negotiate with your alarm clock tomorrow. Wake up and move immediately.",
-  "Identify one comfort you rely on daily. Eliminate it for the next 24 hours.",
-  "When you feel the urge to complain today, remain completely silent instead.",
-  "Do your hardest, most dreaded task first today. No excuses.",
-  "Push yourself past your physical limit in your next training session.",
-  "Embrace an obstacle today. Say 'Amor Fati' and attack the problem.",
-  "Refuse cheap dopamine today. No mindless scrolling. Guard your focus.",
-  "Take absolute responsibility for a recent failure. Do not blame anyone else."
-];
+import { DIRECTIVES } from '../constants/directives';
 
 const DailyStoic = () => {
   const [quote, setQuote] = useState(QUOTES[0]);
