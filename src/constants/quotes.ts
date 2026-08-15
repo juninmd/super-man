@@ -62,5 +62,15 @@ export const QUOTES = [
   { text: "I judge you unfortunate because you have never lived through misfortune. You have passed through life without an opponent—no one can ever know what you are capable of, not even you.", author: "Seneca" },
   { text: "A gem cannot be polished without friction, nor a man perfected without trials.", author: "Seneca" },
   { text: "He who sweats more in training bleeds less in war.", author: "Spartan Proverb" },
-  { text: "Embrace the struggle. Adversity is the only forge capable of casting true resilience.", author: "Mentor Mqsculus" }
+  { text: "Embrace the struggle. Adversity is the only forge capable of casting true resilience.", author: "Mentor Mqsculus" },
+  { text: "No man is more unhappy than he who never faces adversity. For he is not permitted to prove himself.", author: "Seneca" },
+  { text: "The mind that is anxious about future events is miserable.", author: "Seneca" },
+  { text: "You have power over your mind - not outside events. Realize this, and you will find strength.", author: "Marcus Aurelius" },
+  { text: "Waste no more time arguing what a good man should be. Be one.", author: "Marcus Aurelius" },
+  { text: "The obstacle in the path becomes the path. Never forget, within every obstacle is an opportunity to improve our condition.", author: "Marcus Aurelius" },
+  { text: "Difficulty shows what men are.", author: "Epictetus" },
+  { text: "No man is free who is not master of himself.", author: "Epictetus" },
+  { text: "To bear trials with a calm mind robs misfortune of its strength and burden.", author: "Seneca" },
+  { text: "The soul becomes dyed with the color of its thoughts. Think only on what elevates you.", author: "Marcus Aurelius" },
+  { text: "He who fears death will never do anything worthy of a man who is alive.", author: "Seneca" }
 ];
