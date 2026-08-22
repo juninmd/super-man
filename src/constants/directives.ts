@@ -17,14 +17,5 @@ export const DIRECTIVES = [
   "You do not control external events, only your reaction. Master your reaction today.",
   "Do not waste time deliberating. Make a decision on a lingering problem and execute.",
   "Actively seek criticism today. Let go of your ego and use the feedback to grow stronger.",
-  "When faced with an urge to consume (food, media, purchases), pause for 10 minutes and let reason dictate your choice.",
-  "Count backwards from 5 and execute immediately when faced with resistance today. Do not give weakness time to negotiate.",
-  "Stop waiting for motivation. Force yourself to execute one task you've been avoiding. Discipline is built in action.",
-  "Train your body harder today than you did yesterday. Physical weakness is a choice you must unmake.",
-  "When adversity strikes today, immediately respond with: 'Good. Now I have a chance to prove my resilience.'",
-  "Eliminate one distraction from your workspace entirely. Guard your attention as fiercely as your life.",
-  "Do not complain about the weather, traffic, or minor inconveniences. Endure them silently and focus on your mission.",
-  "Forgive yourself for yesterday's failures, but demand absolute perfection in today's effort.",
-  "Make your bed immediately upon waking. The first victory sets the tone for the war of the day.",
-  "Replace 'I have to do this' with 'I get to do this.' Reframe duty as an opportunity for mastery."
+  "When faced with an urge to consume (food, media, purchases), pause for 10 minutes and let reason dictate your choice."
 ];
