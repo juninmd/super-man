@@ -1,43 +1,20 @@
-import { Quote } from 'lucide-react';
+import { Quote, Activity } from 'lucide-react';
 import { useState, useEffect } from 'react';
-
-const QUOTES = [
-  { text: "You have power over your mind - not outside events. Realize this, and you will find strength.", author: "Marcus Aurelius" },
-  { text: "Waste no more time arguing what a good man should be. Be one.", author: "Marcus Aurelius" },
-  { text: "The obstacle in the path becomes the path. Never forget, within every obstacle is an opportunity to improve our condition.", author: "Marcus Aurelius" },
-  { text: "Difficulty shows what men are.", author: "Epictetus" },
-  { text: "First say to yourself what you would be; and then do what you have to do.", author: "Epictetus" },
-  { text: "No man is free who is not master of himself.", author: "Epictetus" },
-  { text: "To bear trials with a calm mind robs misfortune of its strength and burden.", author: "Seneca" },
-  { text: "A gem cannot be polished without friction, nor a man perfected without trials.", author: "Seneca" },
-  { text: "The soul becomes dyed with the color of its thoughts. Think only on what elevates you.", author: "Marcus Aurelius" },
-  { text: "He who fears death will never do anything worthy of a man who is alive.", author: "Seneca" },
-  { text: "It is not death that a man should fear, but he should fear never beginning to live.", author: "Marcus Aurelius" },
-  { text: "If it is not right, do not do it; if it is not true, do not say it.", author: "Marcus Aurelius" },
-  { text: "How long are you going to wait before you demand the best for yourself?", author: "Epictetus" },
-  { text: "We suffer more often in imagination than in reality.", author: "Seneca" },
-  { text: "The best revenge is to be unlike him who performed the injury. Rise above.", author: "Marcus Aurelius" },
-  { text: "A man is as unhappy as he has convinced himself he is. Master your perception.", author: "Seneca" },
-  { text: "Man conquers the world by conquering himself.", author: "Zeno of Citium" },
-  { text: "You must build up your life action by action, and be content if each one achieves its goal as far as possible.", author: "Marcus Aurelius" },
-  { text: "Don't explain your philosophy. Embody it.", author: "Epictetus" },
-  { text: "The more we value things outside our control, the less control we have.", author: "Epictetus" },
-  { text: "It's not what happens to you, but how you react to it that matters.", author: "Epictetus" },
-  { text: "Sometimes even to live is an act of courage.", author: "Seneca" },
-  { text: "He who sweats more in training bleeds less in war.", author: "Spartan Proverb" },
-  { text: "Discipline equals freedom.", author: "Jocko Willink" },
-  { text: "Do not pray for an easy life, pray for the strength to endure a difficult one.", author: "Bruce Lee" },
-  { text: "It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable.", author: "Socrates" }
-];
+import { QUOTES } from '../constants/quotes';
+import { DIRECTIVES } from '../constants/directives';
 
 const DailyStoic = () => {
   const [quote, setQuote] = useState(QUOTES[0]);
+  const [directive, setDirective] = useState(DIRECTIVES[0]);
 
   useEffect(() => {
     // Randomly select a quote on mount, but maybe we can make it daily based on date?
     // For now random is fine to keep it fresh on reload.
-    const randomIndex = Math.floor(Math.random() * QUOTES.length);
-    setQuote(QUOTES[randomIndex]);
+    const randomQuoteIndex = Math.floor(Math.random() * QUOTES.length);
+    setQuote(QUOTES[randomQuoteIndex]);
+
+    const randomDirectiveIndex = Math.floor(Math.random() * DIRECTIVES.length);
+    setDirective(DIRECTIVES[randomDirectiveIndex]);
   }, []);
 
   return (
@@ -51,12 +28,23 @@ const DailyStoic = () => {
           "{quote.text}"
         </blockquote>
 
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex items-center justify-center gap-4 mb-10">
             <div className="h-[1px] w-12 bg-primary/30"></div>
             <cite className="text-primary font-bold uppercase tracking-[0.2em] text-sm not-italic">
             {quote.author}
             </cite>
             <div className="h-[1px] w-12 bg-primary/30"></div>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-white/5">
+          <div className="flex flex-col items-center justify-center gap-3">
+            <div className="flex items-center gap-2 text-primary font-bold uppercase tracking-wider text-sm mb-2">
+               <Activity size={16} /> Daily Actionable Directive
+            </div>
+            <p className="text-lg text-text-secondary font-medium max-w-2xl">
+              {directive}
+            </p>
+          </div>
         </div>
       </div>
     </section>

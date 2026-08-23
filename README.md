@@ -1,13 +1,15 @@
-# 🦸 Super-Man
+# 🏛️ Mqsculus Protocol (2026 Life Reset)
 
-> Um dashboard heróico para monitoramento e gestão.
+> Um dashboard implacável para estoicismo, aprimoramento pessoal, disciplina e resiliência.
 
 [![Deployment Status](https://img.shields.io/badge/ArgoCD-Synced-success?style=for-the-badge&logo=argocd)](https://argocd.antonio-code.duckdns.org)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 ## 📝 Descrição
 
-O **Super-Man** é um painel de controle de alta performance desenvolvido com React e Vite. Ele oferece visualizações dinâmicas, gráficos interativos e um design focado na experiência do usuário heróico.
+O **Mqsculus Protocol** é um painel de controle de alta performance desenvolvido com React e Vite, com foco total em **estoicismo, aprimoramento pessoal, construção de disciplina e força mental e física**.
+
+O aplicativo rejeita o caminho fácil e incentiva o usuário a ser mais disciplinado, forte e resiliente através de princípios como *Amor Fati*, *Memento Mori* e *Premeditatio Malorum*. Ele oferece visualizações dinâmicas e acompanhamento de rotinas focadas em forjar uma mente inabalável.
 
 ## 🛠️ Tech Stack
 
@@ -28,7 +30,7 @@ O **Super-Man** é um painel de controle de alta performance desenvolvido com Re
    ```
 3. Inicie o servidor de desenvolvimento:
    ```bash
-   pnpm dev
+   pnpm run dev
    ```
 
 ## 📦 Deployment

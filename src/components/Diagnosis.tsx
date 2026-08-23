@@ -54,6 +54,41 @@ const Diagnosis = () => {
                     Your circumstances are your fault. Stop blaming others. Stop hoping for salvation. Take absolute control. Command your mind, execute with discipline, and build undeniable resilience.
                 </p>
             </div>
+
+            <div className="mt-12 text-left bg-black/20 border border-white/5 rounded-2xl p-8 md:p-10">
+                <h3 className="text-3xl font-bold mb-8 text-white uppercase tracking-tight text-center">
+                    How to Forge Yourself
+                </h3>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="flex flex-col gap-3">
+                        <div className="text-primary font-bold text-xl uppercase tracking-wider mb-2 border-b border-primary/20 pb-2">
+                            1. Discipline
+                        </div>
+                        <p className="text-text-secondary leading-relaxed">
+                            <strong className="text-white">Execute the 5-Second Rule.</strong> Motivation is an illusion. When a task arises, count 5-4-3-2-1 and immediately move. Block out the first 90 minutes of your day exclusively for your most difficult work. Build an unbreakable routine, because consistency is the only metric that matters.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col gap-3">
+                        <div className="text-primary font-bold text-xl uppercase tracking-wider mb-2 border-b border-primary/20 pb-2">
+                            2. Strength
+                        </div>
+                        <p className="text-text-secondary leading-relaxed">
+                            <strong className="text-white">Schedule Voluntary Discomfort.</strong> You cannot grow in your comfort zone. Program physical exertion daily: lift heavier than last week, or run past your mental breaking point. End every shower with 2 minutes of freezing water. Force your mind to obey your will.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col gap-3">
+                        <div className="text-primary font-bold text-xl uppercase tracking-wider mb-2 border-b border-primary/20 pb-2">
+                            3. Resilience
+                        </div>
+                        <p className="text-text-secondary leading-relaxed">
+                            <strong className="text-white">Rehearse Failure (Premeditatio Malorum).</strong> Spend 5 minutes every morning visualizing everything going wrong. When a setback hits, say 'Amor Fati' (Love your fate) out loud. Immediately ask: "What is the single most aggressive step I can take right now to solve this?" Turn the obstacle into the path.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };
