@@ -72,5 +72,14 @@ export const QUOTES = [
   { text: "No man is free who is not master of himself.", author: "Epictetus" },
   { text: "To bear trials with a calm mind robs misfortune of its strength and burden.", author: "Seneca" },
   { text: "The soul becomes dyed with the color of its thoughts. Think only on what elevates you.", author: "Marcus Aurelius" },
-  { text: "He who fears death will never do anything worthy of a man who is alive.", author: "Seneca" }
+  { text: "He who fears death will never do anything worthy of a man who is alive.", author: "Seneca" },
+  { text: "He who says he can and he who says he can't are both usually right.", author: "Confucius" },
+  { text: "There is only one way to happiness and that is to cease worrying about things which are beyond the power of our will.", author: "Epictetus" },
+  { text: "If you want to improve, be content to be thought foolish and stupid.", author: "Epictetus" },
+  { text: "First say to yourself what you would be; and then do what you have to do.", author: "Epictetus" },
+  { text: "Never let the future disturb you. You will meet it, if you have to, with the same weapons of reason which today arm you against the present.", author: "Marcus Aurelius" },
+  { text: "Very little is needed to make a happy life; it is all within yourself in your way of thinking.", author: "Marcus Aurelius" },
+  { text: "Do not waste what remains of your life in speculating about your neighbors, unless with a view to some mutual benefit.", author: "Marcus Aurelius" },
+  { text: "Luck is what happens when preparation meets opportunity.", author: "Seneca" },
+  { text: "As is a tale, so is life: not how long it is, but how good it is, is what matters.", author: "Seneca" }
 ];

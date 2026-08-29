@@ -17,5 +17,11 @@ export const DIRECTIVES = [
   "You do not control external events, only your reaction. Master your reaction today.",
   "Do not waste time deliberating. Make a decision on a lingering problem and execute.",
   "Actively seek criticism today. Let go of your ego and use the feedback to grow stronger.",
-  "When faced with an urge to consume (food, media, purchases), pause for 10 minutes and let reason dictate your choice."
+  "When faced with an urge to consume (food, media, purchases), pause for 10 minutes and let reason dictate your choice.",
+  "Wake up at the first sound of your alarm. Do not hit snooze. Start the day with a small victory.",
+  "Take a cold shower today to practice voluntary discomfort and build mental toughness.",
+  "Identify one trivial task that you have been putting off and complete it immediately.",
+  "Write down three things you are grateful for right now. Reframe your mindset.",
+  "Spend 15 minutes today reflecting on your actions. Did they align with your principles?",
+  "Whenever you feel anger rising today, pause for 5 seconds before speaking or reacting."
 ];
