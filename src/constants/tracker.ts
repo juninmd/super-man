@@ -43,7 +43,12 @@ export const HABITS = [
   "Intellectual Rigor: Read one challenging article or chapter and summarize its core argument.",
   "Stoic Isolation: Spend 30 minutes in complete silence with no stimuli.",
   "Delayed Gratification: Postpone a desired reward by 24 hours.",
-  "Absolute Resolve: If you say you will do something today, it is done. Period."
+  "Absolute Resolve: If you say you will do something today, it is done. Period.",
+  "Total Commitment: Execute a workout session with zero compromises.",
+  "Iron Will: Fast for at least 16 hours to practice dietary discipline.",
+  "Resilient Focus: Complete one hour of deep work without breaking concentration.",
+  "Unwavering Standards: Refuse to take the easy way out on any task today.",
+  "Radical Action: Do one thing today that terrifies you."
 ];
 
 export const REMINDERS = [
@@ -72,5 +77,10 @@ export const REMINDERS = [
   "Excuses sound best to the person making them. Ignore them.",
   "Action is the only metric of true discipline.",
   "Let your actions speak so loudly that your words are unnecessary.",
-  "When the mind says stop, the body has only just begun."
+  "When the mind says stop, the body has only just begun.",
+  "The harder the conflict, the more glorious the triumph.",
+  "Your comfort zone is a beautiful place, but nothing ever grows there.",
+  "Discipline is the bridge between your goals and your success.",
+  "Endurance is not just the ability to bear a hard thing, but to turn it into glory.",
+  "Strength does not come from winning. Your struggles develop your strengths."
 ];

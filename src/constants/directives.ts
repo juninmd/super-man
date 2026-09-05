@@ -23,5 +23,10 @@ export const DIRECTIVES = [
   "Identify one trivial task that you have been putting off and complete it immediately.",
   "Write down three things you are grateful for right now. Reframe your mindset.",
   "Spend 15 minutes today reflecting on your actions. Did they align with your principles?",
-  "Whenever you feel anger rising today, pause for 5 seconds before speaking or reacting."
+  "Whenever you feel anger rising today, pause for 5 seconds before speaking or reacting.",
+  "Perform physical exercise until you want to quit, and then do two more reps. Build physical and mental endurance.",
+  "Do not complain about anything today, neither aloud nor in your head. Absolute acceptance.",
+  "Tackle the task you fear the most right now. Hesitation only breeds weakness.",
+  "Fast from all digital entertainment for the entire day. Reclaim your time and focus.",
+  "Go out of your way to do something difficult that has no immediate reward. Forge discipline in obscurity."
 ];
