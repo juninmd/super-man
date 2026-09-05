@@ -81,5 +81,10 @@ export const QUOTES = [
   { text: "Very little is needed to make a happy life; it is all within yourself in your way of thinking.", author: "Marcus Aurelius" },
   { text: "Do not waste what remains of your life in speculating about your neighbors, unless with a view to some mutual benefit.", author: "Marcus Aurelius" },
   { text: "Luck is what happens when preparation meets opportunity.", author: "Seneca" },
-  { text: "As is a tale, so is life: not how long it is, but how good it is, is what matters.", author: "Seneca" }
+  { text: "As is a tale, so is life: not how long it is, but how good it is, is what matters.", author: "Seneca" },
+  { text: "Self-discipline is the center of all material success.", author: "Will Smith" },
+  { text: "He who submits to discipline, conquers himself. He who conquers himself, conquers the world.", author: "Seneca" },
+  { text: "Success is the sum of small efforts, repeated day in and day out. Discipline makes it possible.", author: "Robert Collier" },
+  { text: "Mental toughness is many things and rather difficult to explain. Its qualities are sacrifice and self-denial.", author: "Vince Lombardi" },
+  { text: "Endurance and to be able to endure is the first lesson a child should learn because it's the one they will most need to know.", author: "Jean-Jacques Rousseau" }
 ];
