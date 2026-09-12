@@ -86,13 +86,5 @@ export const QUOTES = [
   { text: "He who submits to discipline, conquers himself. He who conquers himself, conquers the world.", author: "Seneca" },
   { text: "Success is the sum of small efforts, repeated day in and day out. Discipline makes it possible.", author: "Robert Collier" },
   { text: "Mental toughness is many things and rather difficult to explain. Its qualities are sacrifice and self-denial.", author: "Vince Lombardi" },
-  { text: "Endurance and to be able to endure is the first lesson a child should learn because it's the one they will most need to know.", author: "Jean-Jacques Rousseau" },
-  { text: "The only way to build resilience is to repeatedly face discomfort with a resolute mind.", author: "Stoic Mentality" },
-  { text: "Discipline is the refusal to accept a lower standard for yourself.", author: "Mentor Mqsculus" },
-  { text: "Strength is forged in the silence of consistent, unglamorous execution.", author: "Stoic Action" },
-  { text: "Resilience is the ability to absorb a blow, smile, and immediately counterattack the problem.", author: "Mentor Mqsculus" },
-  { text: "Do not wish for things to be easier; wish for yourself to be stronger.", author: "Jim Rohn" },
-  { text: "You cannot forge steel without fire, and you cannot build a man without adversity.", author: "Mentor Mqsculus" },
-  { text: "Personal improvement requires a brutal honesty about your own weaknesses.", author: "Stoic Insight" },
-  { text: "Let your discipline be louder than your excuses.", author: "Stoic Discipline" }
+  { text: "Endurance and to be able to endure is the first lesson a child should learn because it's the one they will most need to know.", author: "Jean-Jacques Rousseau" }
 ];

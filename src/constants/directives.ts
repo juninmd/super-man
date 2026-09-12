@@ -28,13 +28,5 @@ export const DIRECTIVES = [
   "Do not complain about anything today, neither aloud nor in your head. Absolute acceptance.",
   "Tackle the task you fear the most right now. Hesitation only breeds weakness.",
   "Fast from all digital entertainment for the entire day. Reclaim your time and focus.",
-  "Go out of your way to do something difficult that has no immediate reward. Forge discipline in obscurity.",
-  "When you feel like quitting, perform three more repetitions. Train your mind to push past its perceived limits.",
-  "Identify one excuse you use frequently and ban it from your vocabulary forever.",
-  "Seek out a task you fear failing at, and do it today. Let resilience be built through the fire of attempt.",
-  "Replace a comforting habit with a challenging one for the next 7 days. Force adaptation.",
-  "When faced with adversity today, do not react with emotion. Analyze the situation with cold, calculated logic.",
-  "Commit to a rigorous physical challenge this weekend. Push your body to strengthen your spirit.",
-  "Eliminate one source of weakness in your daily routine immediately.",
-  "Train yourself to find peace within chaos. When everything goes wrong, remain the calmest person in the room."
+  "Go out of your way to do something difficult that has no immediate reward. Forge discipline in obscurity."
 ];
