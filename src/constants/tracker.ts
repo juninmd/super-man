@@ -48,7 +48,12 @@ export const HABITS = [
   "Iron Will: Fast for at least 16 hours to practice dietary discipline.",
   "Resilient Focus: Complete one hour of deep work without breaking concentration.",
   "Unwavering Standards: Refuse to take the easy way out on any task today.",
-  "Radical Action: Do one thing today that terrifies you."
+  "Radical Action: Do one thing today that terrifies you.",
+  "Unyielding Discipline: When the alarm rings, put your feet on the floor immediately. No hesitation.",
+  "Resilience Building: Seek out constructive criticism today and implement it without defensiveness.",
+  "Strength Conditioning: Add an extra set to your workout. Prove to yourself that you always have more in the tank.",
+  "Mental Toughness: Go 24 hours without complaining about anything, internally or externally.",
+  "Continuous Improvement: Spend 30 minutes learning a new skill that is difficult for you."
 ];
 
 export const REMINDERS = [
