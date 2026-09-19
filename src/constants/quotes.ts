@@ -86,5 +86,11 @@ export const QUOTES = [
   { text: "He who submits to discipline, conquers himself. He who conquers himself, conquers the world.", author: "Seneca" },
   { text: "Success is the sum of small efforts, repeated day in and day out. Discipline makes it possible.", author: "Robert Collier" },
   { text: "Mental toughness is many things and rather difficult to explain. Its qualities are sacrifice and self-denial.", author: "Vince Lombardi" },
-  { text: "Endurance and to be able to endure is the first lesson a child should learn because it's the one they will most need to know.", author: "Jean-Jacques Rousseau" }
+  { text: "Endurance and to be able to endure is the first lesson a child should learn because it's the one they will most need to know.", author: "Jean-Jacques Rousseau" },
+  { text: "Through endurance we conquer.", author: "Ernest Shackleton" },
+  { text: "Hard times create strong men. Strong men create good times. Good times create weak men. And, weak men create hard times.", author: "G. Michael Hopf" },
+  { text: "The pain you feel today is the strength you feel tomorrow.", author: "Unknown" },
+  { text: "Discipline is the soul of an army. It makes small numbers formidable; procures success to the weak, and esteem to all.", author: "George Washington" },
+  { text: "I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion.'", author: "Muhammad Ali" },
+  { text: "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength.", author: "Arnold Schwarzenegger" }
 ];
