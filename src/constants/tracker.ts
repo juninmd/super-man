@@ -48,7 +48,10 @@ export const HABITS = [
   "Iron Will: Fast for at least 16 hours to practice dietary discipline.",
   "Resilient Focus: Complete one hour of deep work without breaking concentration.",
   "Unwavering Standards: Refuse to take the easy way out on any task today.",
-  "Radical Action: Do one thing today that terrifies you."
+  "Radical Action: Do one thing today that terrifies you.",
+  "Relentless Pursuit: Persist in the face of all resistance.",
+  "Unshakable Core: Maintain emotional control regardless of external chaos.",
+  "Continuous Forge: Push your limits every single day."
 ];
 
 export const REMINDERS = [
@@ -82,5 +85,9 @@ export const REMINDERS = [
   "Your comfort zone is a beautiful place, but nothing ever grows there.",
   "Discipline is the bridge between your goals and your success.",
   "Endurance is not just the ability to bear a hard thing, but to turn it into glory.",
-  "Strength does not come from winning. Your struggles develop your strengths."
+  "Strength does not come from winning. Your struggles develop your strengths.",
+  "Resilience is not given; it is earned through suffering.",
+  "Discipline is the chisel you use to carve your own character.",
+  "Excuses are the language of the weak. Demand execution from yourself.",
+  "Master your reactions, and you master your reality."
 ];

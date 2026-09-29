@@ -86,5 +86,17 @@ export const QUOTES = [
   { text: "He who submits to discipline, conquers himself. He who conquers himself, conquers the world.", author: "Seneca" },
   { text: "Success is the sum of small efforts, repeated day in and day out. Discipline makes it possible.", author: "Robert Collier" },
   { text: "Mental toughness is many things and rather difficult to explain. Its qualities are sacrifice and self-denial.", author: "Vince Lombardi" },
-  { text: "Endurance and to be able to endure is the first lesson a child should learn because it's the one they will most need to know.", author: "Jean-Jacques Rousseau" }
+  { text: "Endurance and to be able to endure is the first lesson a child should learn because it's the one they will most need to know.", author: "Jean-Jacques Rousseau" },
+  { text: "He who has a why to live for can bear almost any how.", author: "Friedrich Nietzsche" },
+  { text: "That which does not kill us makes us stronger.", author: "Friedrich Nietzsche" },
+  { text: "To live is to suffer, to survive is to find some meaning in the suffering.", author: "Friedrich Nietzsche" },
+  { text: "I am not afraid of storms, for I am learning how to sail my ship.", author: "Louisa May Alcott" },
+  { text: "Fall seven times, stand up eight.", author: "Japanese Proverb" },
+  { text: "The capacity to learn is a gift; the ability to learn is a skill; the willingness to learn is a choice.", author: "Brian Herbert" },
+  { text: "For a man to conquer himself is the first and noblest of all victories.", author: "Plato" },
+  { text: "It is not the mountain we conquer, but ourselves.", author: "Edmund Hillary" },
+  { text: "Rule your mind or it will rule you.", author: "Horace" },
+  { text: "The greatest glory in living lies not in never falling, but in rising every time we fall.", author: "Nelson Mandela" },
+  { text: "Character is destiny.", author: "Heraclitus" },
+  { text: "What we achieve inwardly will change outer reality.", author: "Plutarch" }
 ];
