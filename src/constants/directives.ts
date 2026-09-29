@@ -29,12 +29,9 @@ export const DIRECTIVES = [
   "Tackle the task you fear the most right now. Hesitation only breeds weakness.",
   "Fast from all digital entertainment for the entire day. Reclaim your time and focus.",
   "Go out of your way to do something difficult that has no immediate reward. Forge discipline in obscurity.",
-  "Stop waiting for motivation. Act with absolute discipline.",
-  "Embrace suffering as the forge of your resilience.",
-  "Demand more of yourself today than you did yesterday.",
-  "Let logic dictate your actions, not passing emotions.",
-  "Find strength in silence; let your execution speak for you.",
-  "Reject the easy path. Weakness is built in comfort.",
-  "Assess your failures ruthlessly. They are the map to your improvement.",
-  "When the body begs to quit, the mind must command it to continue."
+  "When your mind tells you that you are done, that you are exhausted, know that you are only at 40% of your capacity. Push further today.",
+  "Identify your biggest weakness and do one thing today that directly attacks it.",
+  "Refuse the path of least resistance in every decision you make today. Choose the hard way.",
+  "Embrace silence. Speak only when necessary and let your actions demonstrate your discipline.",
+  "When a setback occurs today, immediately ask yourself: 'How can I use this to become stronger?'"
 ];
