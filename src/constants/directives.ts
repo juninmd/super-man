@@ -33,5 +33,10 @@ export const DIRECTIVES = [
   "Identify your biggest weakness and do one thing today that directly attacks it.",
   "Refuse the path of least resistance in every decision you make today. Choose the hard way.",
   "Embrace silence. Speak only when necessary and let your actions demonstrate your discipline.",
-  "When a setback occurs today, immediately ask yourself: 'How can I use this to become stronger?'"
+  "When a setback occurs today, immediately ask yourself: 'How can I use this to become stronger?'",
+  "Demand more of yourself today than anyone else expects of you.",
+  "When fatigue sets in, remind yourself: this is where character is built.",
+  "Silence the inner voice of weakness; let only the voice of discipline guide your actions.",
+  "Treat every challenge as a test of your resolve. Do not fail.",
+  "Accept no excuses. Execute the plan with absolute precision."
 ];

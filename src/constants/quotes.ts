@@ -92,5 +92,10 @@ export const QUOTES = [
   { text: "The pain you feel today is the strength you feel tomorrow.", author: "Unknown" },
   { text: "Discipline is the soul of an army. It makes small numbers formidable; procures success to the weak, and esteem to all.", author: "George Washington" },
   { text: "I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion.'", author: "Muhammad Ali" },
-  { text: "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength.", author: "Arnold Schwarzenegger" }
+  { text: "Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength.", author: "Arnold Schwarzenegger" },
+  { text: "We are more often frightened than hurt; and we suffer more from imagination than from reality.", author: "Seneca" },
+  { text: "To endure the pain of discipline is to avoid the pain of regret.", author: "Mentor Mqsculus" },
+  { text: "True strength lies in the constant, relentless pursuit of self-mastery.", author: "Stoic Discipline" },
+  { text: "Resilience is not merely bouncing back; it is forging forward through the fire.", author: "Resilience Protocol" },
+  { text: "The disciplined mind is an impenetrable fortress against chaos.", author: "Stoic Mindset" }
 ];
