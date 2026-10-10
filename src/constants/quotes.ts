@@ -97,5 +97,15 @@ export const QUOTES = [
   { text: "To endure the pain of discipline is to avoid the pain of regret.", author: "Mentor Mqsculus" },
   { text: "True strength lies in the constant, relentless pursuit of self-mastery.", author: "Stoic Discipline" },
   { text: "Resilience is not merely bouncing back; it is forging forward through the fire.", author: "Resilience Protocol" },
-  { text: "The disciplined mind is an impenetrable fortress against chaos.", author: "Stoic Mindset" }
+  { text: "The disciplined mind is an impenetrable fortress against chaos.", author: "Stoic Mindset" },
+  { text: "Do what you should do, when you should do it, whether you feel like it or not.", author: "Thomas Huxley" },
+  { text: "Only the disciplined are truly free. The undisciplined are slaves to moods, appetites and passions.", author: "Stephen Covey" },
+  { text: "You can never conquer the mountain. You can only conquer yourself.", author: "Jim Whittaker" },
+  { text: "I don't stop when I'm tired. I stop when I'm done.", author: "David Goggins" },
+  { text: "Seek out discomfort. Build resilience by deliberately exposing yourself to difficult conditions.", author: "Mentor Mqsculus" },
+  { text: "The true test of character is what you do when no one is watching.", author: "Stoic Mindset" },
+  { text: "Strength is born in the deep silence of long-suffering hearts.", author: "Arthur Helps" },
+  { text: "Suffer the pain of discipline or suffer the pain of regret.", author: "Unknown" },
+  { text: "Resilience is accepting your new reality, even if it's less good than the one you had before.", author: "Elizabeth Edwards" },
+  { text: "There is no comfort in the growth zone and no growth in the comfort zone.", author: "Unknown" }
 ];

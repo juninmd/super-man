@@ -38,5 +38,13 @@ export const DIRECTIVES = [
   "When fatigue sets in, remind yourself: this is where character is built.",
   "Silence the inner voice of weakness; let only the voice of discipline guide your actions.",
   "Treat every challenge as a test of your resolve. Do not fail.",
-  "Accept no excuses. Execute the plan with absolute precision."
+  "Accept no excuses. Execute the plan with absolute precision.",
+  "If you encounter a problem today, find three solutions before you speak of the problem.",
+  "Subject yourself to harsh conditions. Walk in the rain, embrace the cold. Build physical resilience.",
+  "When someone wrongs you today, respond with complete indifference. Protect your peace.",
+  "Identify a task you failed at recently. Analyze the failure objectively and try again immediately.",
+  "Push past failure in one physical movement today until muscle failure.",
+  "Do not sit down for the first two hours of your workday. Build endurance.",
+  "Skip your next meal purely to remind your body who is in control.",
+  "Commit to an uncomfortable conversation you have been avoiding. Resolve it today."
 ];
