@@ -51,12 +51,7 @@ export const HABITS = [
   "Radical Action: Do one thing today that terrifies you.",
   "Relentless Pursuit: Persist in the face of all resistance.",
   "Unshakable Core: Maintain emotional control regardless of external chaos.",
-  "Continuous Forge: Push your limits every single day.",
-  "Endure Discomfort: Complete a task you hate with zero complaints.",
-  "Relentless Consistency: Execute your routine regardless of how you feel.",
-  "Mind over Matter: Override physical fatigue with absolute willpower.",
-  "Eradicate Weakness: Pinpoint one poor habit and deny it completely today.",
-  "Embrace Friction: Seek out the hardest part of the day and conquer it first."
+  "Continuous Forge: Push your limits every single day."
 ];
 
 export const REMINDERS = [
@@ -94,10 +89,5 @@ export const REMINDERS = [
   "Resilience is not given; it is earned through suffering.",
   "Discipline is the chisel you use to carve your own character.",
   "Excuses are the language of the weak. Demand execution from yourself.",
-  "Master your reactions, and you master your reality.",
-  "You are what you repeatedly do. Excellence is not an act, but a habit.",
-  "The only bad workout is the one that didn't happen.",
-  "Your mind is a weapon. Keep it loaded.",
-  "Embrace the suck. It builds character.",
-  "Motivation is fleeting. Discipline is reliable."
+  "Master your reactions, and you master your reality."
 ];
