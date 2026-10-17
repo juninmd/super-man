@@ -97,5 +97,9 @@ export const QUOTES = [
   { text: "To endure the pain of discipline is to avoid the pain of regret.", author: "Mentor Mqsculus" },
   { text: "True strength lies in the constant, relentless pursuit of self-mastery.", author: "Stoic Discipline" },
   { text: "Resilience is not merely bouncing back; it is forging forward through the fire.", author: "Resilience Protocol" },
-  { text: "The disciplined mind is an impenetrable fortress against chaos.", author: "Stoic Mindset" }
+  { text: "The disciplined mind is an impenetrable fortress against chaos.", author: "Stoic Mindset" },
+  { text: "You must build a mind so strong that adversity becomes your competitive advantage.", author: "Resilience Protocol" },
+  { text: "Discipline is the chisel you use to carve your own character.", author: "Mentor Mqsculus" },
+  { text: "A strong mind does not hope for easy circumstances, it prepares for the hardest.", author: "Stoic Mindset" },
+  { text: "Do not negotiate with weakness. Destroy it with unrelenting discipline.", author: "Mentor Mqsculus" }
 ];
