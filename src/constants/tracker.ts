@@ -51,7 +51,13 @@ export const HABITS = [
   "Radical Action: Do one thing today that terrifies you.",
   "Relentless Pursuit: Persist in the face of all resistance.",
   "Unshakable Core: Maintain emotional control regardless of external chaos.",
-  "Continuous Forge: Push your limits every single day."
+  "Continuous Forge: Push your limits every single day.",
+  "Stoic Action: End your day with a ruthless self-examination. Where did you lack discipline?",
+  "Physical Fortitude: Perform physical exercise until you want to quit, and then do two more reps.",
+  "Discipline First: Wake up at the first sound of your alarm. Do not hit snooze.",
+  "Personal Improvement: Identify a weakness in your character. Build a rigorous plan today to destroy it.",
+  "Unbreakable Will: Refuse cheap dopamine today. No mindless scrolling. Guard your focus.",
+  "Radical Responsibility: Take absolute responsibility for a recent failure. Do not blame anyone else."
 ];
 
 export const REMINDERS = [
