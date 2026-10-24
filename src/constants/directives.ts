@@ -39,8 +39,10 @@ export const DIRECTIVES = [
   "Silence the inner voice of weakness; let only the voice of discipline guide your actions.",
   "Treat every challenge as a test of your resolve. Do not fail.",
   "Accept no excuses. Execute the plan with absolute precision.",
-  "When you feel like quitting today, do one more set, read one more page, work one more minute. Break the weakness.",
-  "Write down your ultimate goal. Now, write down the single hardest thing you must do today to achieve it. Do it first.",
-  "Whenever you encounter a problem today, say 'Good.' Use it as training for your resilience.",
-  "Identify the area of your life where you lack discipline the most. Attack it today with no mercy."
+  "Identify one trivial task that you have been putting off and complete it immediately. Constant personal improvement begins with small steps.",
+  "When you feel the urge to complain today, remain completely silent instead. True strength is quiet.",
+  "Do your hardest, most dreaded task first today. No excuses. This is how you forge discipline.",
+  "Push yourself past your physical limit in your next training session. Physical fortitude builds a resilient mind.",
+  "Embrace an obstacle today. Say 'Amor Fati' and attack the problem. This is the core of stoicism.",
+  "Track your failures ruthlessly. They are the exact coordinates of where your next improvement must occur."
 ];
