@@ -97,5 +97,11 @@ export const QUOTES = [
   { text: "To endure the pain of discipline is to avoid the pain of regret.", author: "Mentor Mqsculus" },
   { text: "True strength lies in the constant, relentless pursuit of self-mastery.", author: "Stoic Discipline" },
   { text: "Resilience is not merely bouncing back; it is forging forward through the fire.", author: "Resilience Protocol" },
-  { text: "The disciplined mind is an impenetrable fortress against chaos.", author: "Stoic Mindset" }
+  { text: "The disciplined mind is an impenetrable fortress against chaos.", author: "Stoic Mindset" },
+  { text: "You must build up your life action by action, and be content if each one achieves its goal as far as possible.", author: "Marcus Aurelius" },
+  { text: "It is essential that you show yourself to be strong. To complain, to whine, to seek comfort—these are the hallmarks of a weak mind. Eradicate them.", author: "Stoic Discipline" },
+  { text: "Your potential is on the other side of exhaustion. Keep pushing when others stop.", author: "Mentor Mqsculus" },
+  { text: "A strong man relies on his discipline, while a weak man relies on his motivation. Constant personal improvement demands the former.", author: "Seneca" },
+  { text: "Discipline is the bridge between goals and accomplishment.", author: "Stoic Mindset" },
+  { text: "He who sweats more in training bleeds less in war.", author: "Spartan Proverb" }
 ];
