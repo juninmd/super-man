@@ -1,11 +1,9 @@
 import { ArrowDown, Flame } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToTracker = () => {
-    const tracker = document.getElementById('tracker');
-    if (tracker) {
-      tracker.scrollIntoView({ behavior: 'smooth' });
-    }
+  const scrollToId = (id: string) => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.getElementById(id)?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
   };
 
   return (
@@ -34,7 +32,8 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
-            onClick={scrollToTracker}
+            type="button"
+            onClick={() => scrollToId('tracker')}
             className="group relative px-8 py-4 bg-primary text-black font-bold text-lg uppercase tracking-wide rounded-lg flex items-center gap-3 transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(245,158,11,0.4)] overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
@@ -43,7 +42,10 @@ const Hero = () => {
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           </button>
 
-          <button className="px-8 py-4 bg-white/5 border border-white/10 text-white font-medium text-lg uppercase tracking-wide rounded-lg hover:bg-white/10 transition-colors backdrop-blur-sm">
+          <button
+            type="button"
+            onClick={() => scrollToId('guide')}
+            className="px-8 py-4 bg-white/5 border border-white/10 text-white font-medium text-lg uppercase tracking-wide rounded-lg hover:bg-white/10 transition-colors backdrop-blur-sm">
             The Code
           </button>
         </div>
