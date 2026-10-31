@@ -101,5 +101,13 @@ export const QUOTES = [
   { text: "You must build a mind so strong that adversity becomes your competitive advantage.", author: "Resilience Protocol" },
   { text: "Discipline is the chisel you use to carve your own character.", author: "Mentor Mqsculus" },
   { text: "A strong mind does not hope for easy circumstances, it prepares for the hardest.", author: "Stoic Mindset" },
-  { text: "Do not negotiate with weakness. Destroy it with unrelenting discipline.", author: "Mentor Mqsculus" }
+  { text: "Do not negotiate with weakness. Destroy it with unrelenting discipline.", author: "Mentor Mqsculus" },
+  { text: "No man is more unhappy than he who never faces adversity. For he is not permitted to prove himself.", author: "Seneca" },
+  { text: "He who is brave is free.", author: "Seneca" },
+  { text: "To endure is to conquer.", author: "Epictetus" },
+  { text: "The impediment to action advances action. What stands in the way becomes the way.", author: "Marcus Aurelius" },
+  { text: "Endurance is the crowning quality, and patience all the passion of great hearts.", author: "James Russell Lowell" },
+  { text: "You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup.", author: "Bruce Lee" },
+  { text: "It is essential that we are always prepared, because the enemy never rests.", author: "Miyamoto Musashi" },
+  { text: "Do what you will. Even if you tear yourself apart, most people will continue doing the same things.", author: "Marcus Aurelius" },
 ];
