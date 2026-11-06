@@ -44,5 +44,13 @@ export const DIRECTIVES = [
   "Do your hardest, most dreaded task first today. No excuses. This is how you forge discipline.",
   "Push yourself past your physical limit in your next training session. Physical fortitude builds a resilient mind.",
   "Embrace an obstacle today. Say 'Amor Fati' and attack the problem. This is the core of stoicism.",
-  "Track your failures ruthlessly. They are the exact coordinates of where your next improvement must occur."
+  "Track your failures ruthlessly. They are the exact coordinates of where your next improvement must occur.",
+  "Train your mind to see the advantage in every failure.",
+  "Seek out the hardest path today. Comfort breeds weakness.",
+  "Never complain. Not even in your mind. Take action instead.",
+  "Build discipline through daily, unbreakable habits.",
+  "Your mind is a fortress. Do not let trivial things breach its walls.",
+  "Demand more of yourself than anyone else ever could.",
+  "Do not react to anger. Pause, evaluate, and respond with cold logic.",
+  "Embrace physical pain in training to build a resilient spirit.",
 ];

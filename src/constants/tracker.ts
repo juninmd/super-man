@@ -57,7 +57,12 @@ export const HABITS = [
   "Discipline First: Wake up at the first sound of your alarm. Do not hit snooze.",
   "Personal Improvement: Identify a weakness in your character. Build a rigorous plan today to destroy it.",
   "Unbreakable Will: Refuse cheap dopamine today. No mindless scrolling. Guard your focus.",
-  "Radical Responsibility: Take absolute responsibility for a recent failure. Do not blame anyone else."
+  "Radical Responsibility: Take absolute responsibility for a recent failure. Do not blame anyone else.",
+  "Mental Endurance: Read and analyze one stoic passage per day.",
+  "Physical Dominance: Incorporate strength training every morning.",
+  "Emotional Armor: Journal daily about obstacles and your stoic response to them.",
+  "Iron Will: Eliminate all complaining from your vocabulary.",
+  "Resilience Builder: Take on one task that you fear every week.",
 ];
 
 export const REMINDERS = [
