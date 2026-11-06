@@ -43,7 +43,21 @@ export const HABITS = [
   "Intellectual Rigor: Read one challenging article or chapter and summarize its core argument.",
   "Stoic Isolation: Spend 30 minutes in complete silence with no stimuli.",
   "Delayed Gratification: Postpone a desired reward by 24 hours.",
-  "Absolute Resolve: If you say you will do something today, it is done. Period."
+  "Absolute Resolve: If you say you will do something today, it is done. Period.",
+  "Total Commitment: Execute a workout session with zero compromises.",
+  "Iron Will: Fast for at least 16 hours to practice dietary discipline.",
+  "Resilient Focus: Complete one hour of deep work without breaking concentration.",
+  "Unwavering Standards: Refuse to take the easy way out on any task today.",
+  "Radical Action: Do one thing today that terrifies you.",
+  "Relentless Pursuit: Persist in the face of all resistance.",
+  "Unshakable Core: Maintain emotional control regardless of external chaos.",
+  "Continuous Forge: Push your limits every single day.",
+  "Stoic Action: End your day with a ruthless self-examination. Where did you lack discipline?",
+  "Physical Fortitude: Perform physical exercise until you want to quit, and then do two more reps.",
+  "Discipline First: Wake up at the first sound of your alarm. Do not hit snooze.",
+  "Personal Improvement: Identify a weakness in your character. Build a rigorous plan today to destroy it.",
+  "Unbreakable Will: Refuse cheap dopamine today. No mindless scrolling. Guard your focus.",
+  "Radical Responsibility: Take absolute responsibility for a recent failure. Do not blame anyone else."
 ];
 
 export const REMINDERS = [
@@ -72,5 +86,14 @@ export const REMINDERS = [
   "Excuses sound best to the person making them. Ignore them.",
   "Action is the only metric of true discipline.",
   "Let your actions speak so loudly that your words are unnecessary.",
-  "When the mind says stop, the body has only just begun."
+  "When the mind says stop, the body has only just begun.",
+  "The harder the conflict, the more glorious the triumph.",
+  "Your comfort zone is a beautiful place, but nothing ever grows there.",
+  "Discipline is the bridge between your goals and your success.",
+  "Endurance is not just the ability to bear a hard thing, but to turn it into glory.",
+  "Strength does not come from winning. Your struggles develop your strengths.",
+  "Resilience is not given; it is earned through suffering.",
+  "Discipline is the chisel you use to carve your own character.",
+  "Excuses are the language of the weak. Demand execution from yourself.",
+  "Master your reactions, and you master your reality."
 ];

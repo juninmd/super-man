@@ -18,8 +18,15 @@ const Tracker = ({ addToast }: TrackerProps) => {
   useEffect(() => {
     const todayKey = new Date().toISOString().split('T')[0];
     const storedDate = localStorage.getItem('habitDate2026');
-    const storedState = JSON.parse(localStorage.getItem('habitState2026') || '[]');
-    const storedStreak = parseInt(localStorage.getItem('habitStreak2026') || '0');
+    let storedState: boolean[] = [];
+    try {
+      const parsed: unknown = JSON.parse(localStorage.getItem('habitState2026') || '[]');
+      if (Array.isArray(parsed)) storedState = parsed.map(Boolean);
+    } catch {
+      // Corrupted value: fall back to an empty day instead of crashing the app.
+    }
+    const parsedStreak = parseInt(localStorage.getItem('habitStreak2026') || '0', 10);
+    const storedStreak = Number.isFinite(parsedStreak) && parsedStreak > 0 ? parsedStreak : 0;
 
     if (storedDate !== todayKey) {
       // New day logic

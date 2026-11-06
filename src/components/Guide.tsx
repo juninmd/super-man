@@ -10,7 +10,7 @@ const Guide = () => {
   };
 
   return (
-    <section className="max-w-4xl mx-auto mb-20 px-6">
+    <section id="guide" className="max-w-4xl mx-auto mb-20 px-6 scroll-mt-6">
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 uppercase tracking-tighter font-heading text-white">
           The Code
