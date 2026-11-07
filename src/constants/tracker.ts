@@ -57,7 +57,12 @@ export const HABITS = [
   "Discipline First: Wake up at the first sound of your alarm. Do not hit snooze.",
   "Personal Improvement: Identify a weakness in your character. Build a rigorous plan today to destroy it.",
   "Unbreakable Will: Refuse cheap dopamine today. No mindless scrolling. Guard your focus.",
-  "Radical Responsibility: Take absolute responsibility for a recent failure. Do not blame anyone else."
+  "Radical Responsibility: Take absolute responsibility for a recent failure. Do not blame anyone else.",
+  "Mental Fortitude: Embrace discomfort and do not complain for the entire day.",
+  "Unyielding Discipline: Execute your entire plan today without any deviation.",
+  "Focus Protocol: Eliminate one persistent distraction permanently.",
+  "Physical Dominance: Add extra volume to today's workout to break mental barriers.",
+  "Stoic Reflection: End the day analyzing where you failed to control your emotions."
 ];
 
 export const REMINDERS = [
@@ -95,5 +100,10 @@ export const REMINDERS = [
   "Resilience is not given; it is earned through suffering.",
   "Discipline is the chisel you use to carve your own character.",
   "Excuses are the language of the weak. Demand execution from yourself.",
-  "Master your reactions, and you master your reality."
+  "Master your reactions, and you master your reality.",
+  "Your potential is found on the other side of exhaustion.",
+  "Do not let a weak body dictate a weak mind. Train both relentlessly.",
+  "The only easy day was yesterday. Embrace the continuous grind.",
+  "Motivation is fleeting. Discipline is absolute.",
+  "Focus on the effort, not the outcome. The effort is under your control."
 ];
