@@ -53,4 +53,14 @@ export const DIRECTIVES = [
   "Demand more of yourself than anyone else ever could.",
   "Do not react to anger. Pause, evaluate, and respond with cold logic.",
   "Embrace physical pain in training to build a resilient spirit.",
+  "Master your morning to master your day. Rise early and attack the hardest task first.",
+  "Your excuses are invalid. Eradicate them and take extreme ownership of your life.",
+  "Seek discomfort voluntarily to fortify your mind against involuntary hardship.",
+  "When you feel like quitting, remember why you started. Push past the perceived limit.",
+  "Discipline is the only bridge between your current reality and your ultimate potential.",
+  "Focus entirely on what you can control. Discard anxiety over everything else.",
+  "Embrace the struggle. It is the very forge that strengthens your resilience.",
+  "A strong mind requires a strong body. Do not neglect your physical training today.",
+  "Eliminate a distraction today. Protect your focus with absolute ruthlessness.",
+  "Do not let your emotions dictate your actions. Rely on reason and unwavering discipline."
 ];

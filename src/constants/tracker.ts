@@ -47,9 +47,6 @@ export const HABITS = [
   "Total Commitment: Execute a workout session with zero compromises.",
   "Iron Will: Fast for at least 16 hours to practice dietary discipline.",
   "Resilient Focus: Complete one hour of deep work without breaking concentration.",
-  "Unwavering Standards: Refuse to take the easy way out on any task today.",
-  "Radical Action: Do one thing today that terrifies you.",
-  "Relentless Pursuit: Persist in the face of all resistance.",
   "Unshakable Core: Maintain emotional control regardless of external chaos.",
   "Continuous Forge: Push your limits every single day.",
   "Stoic Action: End your day with a ruthless self-examination. Where did you lack discipline?",
@@ -62,7 +59,7 @@ export const HABITS = [
   "Physical Dominance: Incorporate strength training every morning.",
   "Emotional Armor: Journal daily about obstacles and your stoic response to them.",
   "Iron Will: Eliminate all complaining from your vocabulary.",
-  "Resilience Builder: Take on one task that you fear every week.",
+  "Resilience Builder: Take on one task that you fear every week."
 ];
 
 export const REMINDERS = [
@@ -100,5 +97,10 @@ export const REMINDERS = [
   "Resilience is not given; it is earned through suffering.",
   "Discipline is the chisel you use to carve your own character.",
   "Excuses are the language of the weak. Demand execution from yourself.",
-  "Master your reactions, and you master your reality."
+  "Master your reactions, and you master your reality.",
+  "Your potential is found on the other side of exhaustion.",
+  "Do not let a weak body dictate a weak mind. Train both relentlessly.",
+  "The only easy day was yesterday. Embrace the continuous grind.",
+  "Motivation is fleeting. Discipline is absolute.",
+  "Focus on the effort, not the outcome. The effort is under your control."
 ];
