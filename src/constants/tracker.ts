@@ -47,9 +47,6 @@ export const HABITS = [
   "Total Commitment: Execute a workout session with zero compromises.",
   "Iron Will: Fast for at least 16 hours to practice dietary discipline.",
   "Resilient Focus: Complete one hour of deep work without breaking concentration.",
-  "Unwavering Standards: Refuse to take the easy way out on any task today.",
-  "Radical Action: Do one thing today that terrifies you.",
-  "Relentless Pursuit: Persist in the face of all resistance.",
   "Unshakable Core: Maintain emotional control regardless of external chaos.",
   "Continuous Forge: Push your limits every single day.",
   "Stoic Action: End your day with a ruthless self-examination. Where did you lack discipline?",
@@ -58,11 +55,11 @@ export const HABITS = [
   "Personal Improvement: Identify a weakness in your character. Build a rigorous plan today to destroy it.",
   "Unbreakable Will: Refuse cheap dopamine today. No mindless scrolling. Guard your focus.",
   "Radical Responsibility: Take absolute responsibility for a recent failure. Do not blame anyone else.",
-  "Mental Fortitude: Embrace discomfort and do not complain for the entire day.",
-  "Unyielding Discipline: Execute your entire plan today without any deviation.",
-  "Focus Protocol: Eliminate one persistent distraction permanently.",
-  "Physical Dominance: Add extra volume to today's workout to break mental barriers.",
-  "Stoic Reflection: End the day analyzing where you failed to control your emotions."
+  "Mental Endurance: Read and analyze one stoic passage per day.",
+  "Physical Dominance: Incorporate strength training every morning.",
+  "Emotional Armor: Journal daily about obstacles and your stoic response to them.",
+  "Iron Will: Eliminate all complaining from your vocabulary.",
+  "Resilience Builder: Take on one task that you fear every week."
 ];
 
 export const REMINDERS = [
