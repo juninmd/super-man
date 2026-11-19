@@ -137,7 +137,14 @@ const Tracker = ({ addToast }: TrackerProps) => {
           <span>Mission Status</span>
           <span className={progressPercentage === 100 ? "text-primary" : "text-white"}>{progressPercentage}%</span>
         </div>
-        <div className="h-3 bg-surface-200 rounded-full overflow-hidden">
+        <div
+          role="progressbar"
+          aria-label="Mission Status"
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-valuenow={progressPercentage}
+          className="h-3 bg-surface-200 rounded-full overflow-hidden"
+        >
           <div
             className="h-full bg-gradient-to-r from-primary to-orange-400 shadow-[0_0_20px_rgba(245,158,11,0.5)] transition-all duration-700 ease-out"
             style={{ width: `${progressPercentage}%` }}
@@ -147,17 +154,20 @@ const Tracker = ({ addToast }: TrackerProps) => {
 
       <div className="space-y-4">
         {HABITS.map((habit, index) => (
-          <div
+          <button
+            type="button"
             key={index}
+            role="checkbox"
+            aria-checked={checkedState[index]}
             onClick={() => handleOnChange(index)}
-            className={`group relative p-5 rounded-xl border transition-all duration-300 cursor-pointer flex items-center gap-4 overflow-hidden
+            className={`group relative w-full text-left p-5 rounded-xl border transition-all duration-300 cursor-pointer flex items-center gap-4 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary
                     ${checkedState[index]
                 ? 'bg-green-500/10 border-green-500/30'
                 : 'bg-white/5 border-white/5 hover:border-white/20 hover:bg-white/[0.07]'
               }
                 `}
           >
-            <div className={`
+            <div aria-hidden="true" className={`
                     w-6 h-6 rounded flex items-center justify-center transition-all duration-300 transform group-hover:scale-110
                     ${checkedState[index] ? 'bg-green-500 text-black' : 'border-2 border-text-secondary'}
                 `}>
@@ -172,8 +182,8 @@ const Tracker = ({ addToast }: TrackerProps) => {
             </span>
 
             {/* Hover Effect Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 pointer-events-none" />
-          </div>
+            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 pointer-events-none" />
+          </button>
         ))}
       </div>
 
