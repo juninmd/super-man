@@ -32,7 +32,7 @@ const MementoMori = () => {
 
   useEffect(() => {
     const storedDate = localStorage.getItem('mementoMoriDate');
-    if (storedDate) {
+    if (storedDate && !Number.isNaN(new Date(storedDate).getTime())) {
       setBirthDate(storedDate);
       setShowInput(false);
       calculateLife(storedDate);
@@ -53,7 +53,8 @@ const MementoMori = () => {
     const start = new Date(dateStr).getTime();
     const now = Date.now();
     const weeks = Math.floor((now - start) / (1000 * 60 * 60 * 24 * 7));
-    setWeeksLived(weeks);
+    // Future dates or lives past 80 years must not yield negative "weeks left" or an out-of-range grid marker.
+    setWeeksLived(Math.min(Math.max(weeks, 0), TOTAL_WEEKS));
     calculateTimeLeft(dateStr);
   };
 
@@ -124,13 +125,15 @@ const MementoMori = () => {
         {showInput ? (
           <div className="max-w-md mx-auto bg-surface-100 p-8 rounded-2xl border border-white/10 shadow-2xl backdrop-blur-md animate-fade-up">
             <form onSubmit={handleSaveDate} className="flex flex-col gap-6">
-              <label className="text-white font-medium flex items-center gap-2">
+              <label htmlFor="birthdate" className="text-white font-medium flex items-center gap-2">
                 <Calendar size={18} className="text-primary" />
                 Enter your birthdate:
               </label>
               <input
                 type="date"
+                id="birthdate"
                 name="birthdate"
+                max={new Date().toISOString().slice(0, 10)}
                 required
                 className="w-full bg-surface-200 border border-white/10 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-primary focus:outline-none transition-all"
               />

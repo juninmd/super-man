@@ -16,6 +16,16 @@ const HABITS = [
   "Avoid negative thoughts"
 ];
 
+// Corrupted or hand-edited storage must not crash the whole app on mount.
+function readStoredHabits(): Record<number, boolean> {
+  try {
+    const parsed: unknown = JSON.parse(localStorage.getItem('habitState') || '{}');
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? (parsed as Record<number, boolean>) : {};
+  } catch {
+    return {};
+  }
+}
+
 export function useHabits() {
   const [habits, setHabits] = useState<Record<number, boolean>>({});
   const [progress, setProgress] = useState(0);
@@ -28,7 +38,7 @@ export function useHabits() {
                      String(now.getDate()).padStart(2, '0');
 
     const storedDate = localStorage.getItem('habitDate');
-    const storedHabits = JSON.parse(localStorage.getItem('habitState') || '{}');
+    const storedHabits = readStoredHabits();
 
     if (storedDate !== todayKey) {
       localStorage.setItem('habitDate', todayKey);
