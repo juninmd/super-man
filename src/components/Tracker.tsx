@@ -8,6 +8,10 @@ interface TrackerProps {
   addToast: (msg: string, type?: 'info' | 'success' | 'warning') => void;
 }
 
+// Local calendar day: toISOString() is UTC and flips the day (wiping progress) hours early west of Greenwich.
+const localDateKey = (d = new Date()) =>
+  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
 const Tracker = ({ addToast }: TrackerProps) => {
   const [checkedState, setCheckedState] = useState<boolean[]>(
     new Array(HABITS.length).fill(false)
@@ -16,7 +20,7 @@ const Tracker = ({ addToast }: TrackerProps) => {
 
   // Initialize state from local storage
   useEffect(() => {
-    const todayKey = new Date().toISOString().split('T')[0];
+    const todayKey = localDateKey();
     const storedDate = localStorage.getItem('habitDate2026');
     let storedState: boolean[] = [];
     try {
@@ -62,9 +66,14 @@ const Tracker = ({ addToast }: TrackerProps) => {
     if (allCompleted && !checkedState.every(Boolean)) {
       fireConfetti();
       addToast("Protocol Complete. You won the day.", "success");
-      const newStreak = streak + 1;
-      setStreak(newStreak);
-      localStorage.setItem('habitStreak2026', newStreak.toString());
+      // Untick + retick must not farm the streak: credit at most once per day.
+      const today = localDateKey();
+      if (localStorage.getItem('habitStreakDate2026') !== today) {
+        const newStreak = streak + 1;
+        setStreak(newStreak);
+        localStorage.setItem('habitStreak2026', newStreak.toString());
+        localStorage.setItem('habitStreakDate2026', today);
+      }
     }
   };
 
