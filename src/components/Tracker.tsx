@@ -30,7 +30,14 @@ const Tracker = ({ addToast }: TrackerProps) => {
       // Corrupted value: fall back to an empty day instead of crashing the app.
     }
     const parsedStreak = parseInt(localStorage.getItem('habitStreak2026') || '0', 10);
-    const storedStreak = Number.isFinite(parsedStreak) && parsedStreak > 0 ? parsedStreak : 0;
+    // A streak is consecutive days: last credit before yesterday means a day was missed.
+    // No credit date at all (saved before it was tracked) is kept as is.
+    const streakDate = localStorage.getItem('habitStreakDate2026');
+    const now = new Date();
+    const yesterdayKey = localDateKey(new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1));
+    const streakBroken = streakDate !== null && streakDate !== todayKey && streakDate !== yesterdayKey;
+    const storedStreak = !streakBroken && Number.isFinite(parsedStreak) && parsedStreak > 0 ? parsedStreak : 0;
+    if (streakBroken) localStorage.setItem('habitStreak2026', '0');
 
     if (storedDate !== todayKey) {
       // New day logic
