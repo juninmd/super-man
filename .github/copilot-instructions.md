@@ -91,7 +91,7 @@ if (storedDate !== todayKey) { /* reset */ } else { /* load */ }
 - **Tailwind CSS v4**: Uses @import "tailwindcss" in index.css (new monolithic approach)
 
 ## Deployment
-- **Netlify**: netlify.toml present (CI/CD integration ready)
+- **GitHub Pages**: `.github/workflows/pages.yml` builds with `--base=/super-man/`
 - **Build Output**: `dist/` folder (gitignored, regenerated on deploy)
 
 ## Important Notes
