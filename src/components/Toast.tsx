@@ -1,4 +1,4 @@
-import { CheckCircle, Info, AlertTriangle } from 'lucide-react';
+import { CheckCircle, Info, AlertTriangle, X } from 'lucide-react';
 
 export interface Toast {
   id: string;
@@ -77,6 +77,20 @@ const ToastItem = ({ toast, onDismiss }: { toast: Toast; onDismiss?: (id: string
         {getIcon()}
         <span>{toast.message}</span>
       </div>
+      {onDismiss && (
+        // The clickable div is unreachable by keyboard; this button is the accessible dismiss control.
+        <button
+          type="button"
+          aria-label="Dismiss notification"
+          onClick={(e) => {
+            e.stopPropagation();
+            onDismiss(toast.id);
+          }}
+          className="shrink-0 rounded p-1 text-text-secondary hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+        >
+          <X size={16} aria-hidden="true" />
+        </button>
+      )}
     </div>
   );
 };
