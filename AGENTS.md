@@ -1,67 +1,45 @@
-```markdown
-# AGENTS.md File Guidelines
+# AGENTS.md
 
-These guidelines are designed to ensure the development of robust, maintainable, and efficient AI coding agents within this repository. Adherence to these principles is crucial for a successful project.
+Mqsculus Protocol: a client-only React dashboard for stoic discipline and personal routines (quotes, directives, readings, habits, Memento Mori). All state lives in the browser `localStorage`. There is no backend.
 
-## 1. DRY (Don't Repeat Yourself)
+## Stack
 
-*   **Single Responsibility Principle:** Each agent should have a single, well-defined purpose. Avoid creating multiple agents with overlapping functionality.
-*   **Reusable Components:** Design components (e.g., data processing, communication protocols) to be reusable across multiple agents.
-*   **Abstraction:**  Use abstract classes and interfaces to represent common behaviors, reducing code duplication.
-*   **Consistent Naming:**  Maintain a consistent naming convention for agents, functions, and data structures.
+- React 19, Vite, TypeScript, Tailwind CSS v4, Lucide React, canvas-confetti
+- Package manager: pnpm (`pnpm-lock.yaml`, `packageManager` pinned). `bun.lock` also exists and is updated by Dependabot. Do not hand-edit either lockfile
+- Node 22 in CI
 
-## 2. KISS (Keep It Simple, Stupid)
+## Commands
 
-*   **Minimize Complexity:**  Strive for the simplest solution that meets the requirements. Avoid over-engineering.
-*   **Clear Code:** Write code that is easily understandable and documented.
-*   **Readability:** Prioritize code readability through consistent formatting and appropriate variable names.
-*   **Focus on Core Logic:** Ensure each agent’s core logic is easily traceable and testable.
+- Install: `pnpm install`
+- Dev: `pnpm dev`
+- Build: `pnpm build` (`tsc && vite build`)
+- Preview: `pnpm preview`
+- Lint: `eslint.config.js` is present, but `package.json` has no lint script. Run `pnpm exec eslint .`
+- Tests: no test runner is configured in `package.json` yet
 
-## 3. SOLID Principles
+## Structure
 
-*   **Single Responsibility Principle:** (As mentioned above) Each class/agent has one and only one reason to change.
-*   **Open/Closed Principle:**  The agent's design should be open for extension but closed for modification. This is crucial for maintaining existing code without directly altering it.
-*   **Liskov Substitution Principle:**  Subclasses should be substitutable for their base classes without altering the correctness of the program.
-*   **Interface Segregation Principle:**  Clients should not be forced to depend on methods they do not use.
-*   **Dependency Inversion Principle:** Higher-level modules should not depend on implementation details.  Instead, they should depend on abstractions.
+- `src/main.tsx`, `src/App.tsx`: entry point. `App.tsx` mounts one component per section
+- `src/components/`: UI sections (`Hero`, `DailyStoic`, `Diagnosis`, `Tracker`, `MementoMori`, `Readings`, `Guide`, `Perspective`, `Toast`)
+- `src/constants/`: static content (quotes, directives, readings, guide, tracker habits)
+- `public/`: static assets
+- `.github/workflows/`: `pages.yml` (builds with `--base=/super-man/` and deploys to Pages), `validate.yml` (reusable from `juninmd/base-actions`), `sast.yml`, `security.yml`
 
-## 4. YAGNI (You Aren't Gonna Need It)
+## Conventions
 
-*   **Avoid Unnecessary Features:**  Only implement features that are currently needed and are essential for the agent's purpose.
-*   **Future-Proofing:**  Design for potential future requirements and avoid premature optimization.
+- DRY, KISS, SOLID, YAGNI. Implement only what is needed now. Extract repeated logic when it appears twice.
+- Max 180 lines of code per file (comments and docstrings excluded). Split by responsibility when a file grows.
+- Comments only for complex logic or non-obvious decisions. Prefer self-describing names.
+- Handle errors so the app does not crash, and give the user a clear message.
+- Mocks and fakes exist only in tests. Test data is realistic but controlled, with no personal data.
+- Tests come first (TDD) and cover the essential cases. Target: 80% coverage.
+- Every change goes through code review before merge.
 
-## 5. Development Practices
+## Gotchas
 
-*   **Test-Driven Development (TDD):** Write tests *before* writing the code. The tests should cover all essential cases.
-*   **Unit Testing:** Comprehensive unit tests should be written for each agent and function.
-*   **Integration Testing:** Ensure agents and their components work together correctly.
-*   **Code Reviews:** All code changes must undergo rigorous code reviews before merging.
-*   **Documentation:** Provide clear and concise documentation for each agent, including input/output specifications, error handling, and usage guidelines.
-*   **Maintainability:**  The codebase should be designed to be easily maintained and extended.
-
-## 6. Code Length & Structure
-
-*   **Maximum Code Length:** 180 lines of code (excluding comments and docstrings).
-*   **File Organization:**  Organize files logically using clear directory structure. Use meaningful file names.
-*   **Comments:**  Use comments sparingly and only to explain complex logic or non-obvious decisions. Aim for self-documenting code whenever possible.
-*   **Data Structures:**  Choose appropriate data structures for each agent to optimize performance and maintainability.
-*   **Error Handling:** Implement robust error handling to prevent crashes and provide informative error messages.
-
-## 7. Mocking & Test Emphasis
-
-*   **Only Mock for Testing:** All mocks and fake implementations *must* be used *only* for test execution.  No real implementation is required.
-*   **Focus on Isolation:** Mocks should isolate agents from each other to prevent unintended side effects during testing.
-*   **Realistic Mock Data:** Mock data should be realistic but controlled to avoid exposing sensitive information.
-*   **Test Coverage:**  Aim for a minimum of 80% test coverage.
-
-## 8.  General Considerations
-
-*   **Version Control:** Use a version control system (e.g., Git) to track code changes.
-*   **Continuous Integration/Continuous Deployment (CI/CD):**  Implement a CI/CD pipeline to automate testing and deployment.
-*   **Monitoring:**  Implement monitoring to track agent performance and identify potential issues.
-
-These guidelines are a foundational framework for development. Continuous refinement and improvement will be essential as the project evolves.
-```
+- `localStorage` holds the user's progress (date, habits, streak, Memento Mori). Changing its key or shape breaks existing users. Migrate it.
+- Vite base path: the Pages build uses `--base=/super-man/`. Keep asset paths relative or base-aware.
+- Do not commit secrets or personal data. The app has no backend and no API keys.
 
 <!-- base-actions-main-policy -->
 ## GitHub Actions — padrão obrigatório (@main)
